@@ -1,0 +1,47 @@
+# Co-first authors marked with 'cofirst: true'
+- name: "Nicole Cooper, PhD"
+  affil: [1]
+  cofirst: true
+- name: "Benjamin Muzekari, MA"
+  affil: [1]
+  cofirst: true
+
+# Other authors
+- name: "Mary Andrews, PhD"
+  affil: [2,3]
+- name: "Elizabeth Beard, PhD"
+  affil: [4]
+- name: "Melis E. Cakar, BA"
+  affil: [5]
+- name: "José Carreras-Tartak, MBDS"
+  affil: [1]
+- name: "Susan Hao, PhD"
+  affil: [1]
+- name: "Darin Johnson, PhD"
+  affil: [6]
+- name: "Bradley Mattan, PhD"
+  affil: [1]
+- name: "Alexandra M. Paul, BA"
+  affil: [1]
+- name: "Anthony Resnick, BS"
+  affil: [1]
+- name: "Farah Sayed, BA"
+  affil: [7]
+- name: "Christin Scholz, PhD"
+  affil: [8]
+- name: "Omaya Torres, MPH"
+  affil: [1]
+- name: "Ian Barnett, PhD"
+  affil: [9]
+- name: "Michael Fichman, MCP"
+  affil: [10]
+- name: "Lisa Henriksen, PhD"
+  affil: [11]
+- name: "Thomas Kirchner, PhD"
+  affil: [12, 13]
+- name: "David M. Lydon-Staley, PhD"
+  affil: [14, 15]
+- name: "Andrew A. Strasser, PhD"
+  affil: [1, 16, 17]
+- name: "Emily B. Falk, PhD"
+  affil: [1, 18, 19, 20, 21]

@@ -1,0 +1,45 @@
+<div class="authors-grid">
+    {% assign affil_data = site.data.affiliations %}
+    
+    {% for author in site.data.authors %}
+      <div class="author-card">
+        <h3>
+          {{ author.name }}
+          {% if author.cofirst %}<span class="cofirst-label">*</span>{% endif %}
+        </h3>
+        
+        <div class="affiliations">
+          {% for num in author.affil %}
+            <sup>{{ num }}</sup>{{ affil_data[num] }}{% unless forloop.last %}; {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
+  <style>
+    .authors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .author-card {
+      border: 1px solid #eee;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    
+    .cofirst-label {
+      color: #d4af37;
+      font-weight: bold;
+      margin-left: 0.3em;
+    }
+    
+    .affiliations {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 0.5em;
+    }
+  </style>

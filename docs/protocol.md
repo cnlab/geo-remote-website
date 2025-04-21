@@ -2,6 +2,9 @@
 layout: protocol
 title: Study Protocol
 ---
+
+{% include authors_grid.html %}
+
 ## Methods
 
 ### Inclusion Criteria
