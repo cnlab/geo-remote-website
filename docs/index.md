@@ -6,4 +6,4 @@ title: Home
 
 Here's what I do:
 - [About Me](/about)  
-- [My Projects](/projects)  
+- [Study](/protocol)  
