@@ -1,0 +1,11 @@
+title: "XYZ Research Study"
+description: "Clinical trial protocol and updates"
+theme: minima
+markdown: kramdown  # Better for tables/charts
+plugins:
+  - jekyll-figure  # For image labeling (install via Gemfile)
+defaults:
+  - scope:
+      path: "protocol"
+    values:
+      layout: protocol  # Special layout for protocol pages

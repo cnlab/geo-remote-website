@@ -1,0 +1,11 @@
+/* Research-specific styles */
+.protocol table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.protocol th, .protocol td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.figure { text-align: center; margin: 2em 0; }
+.caption { font-style: italic; }
