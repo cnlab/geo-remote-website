@@ -1,20 +1,16 @@
 <div class="authors-grid">
     {% for author in site.data.authors %}
-      <div class="author-card">
-        <input type="checkbox" class="expand-toggle" id="expand-{{ forloop.index }}">
-        
-        <img src="{{ '/assets/images/team/' | relative_url }}{{ author.photo }}" 
+      <div class="author-card" onclick="this.classList.toggle('expanded')">
+        <img src="{{ '/assets/images/team/processed/' | relative_url }}{{ author.photo }}" 
              alt="{{ author.name }}" 
              class="author-photo">
         
         <div class="author-info">
           <h3>
-            <label for="expand-{{ forloop.index }}" class="author-name">
-              {{ author.name }}
-            </label>
+            {{ author.name }}
             {% if author.website %}
-              <a href="{{ author.website }}" target="_blank" class="website-link">
-                <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path d="M14 3h5a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5V1h2v2zm-2 14H7v-2h5v2zm3-4H7v-2h8v2zm0-4H7V7h8v2z"/></svg>
+              <a href="{{ author.website }}" target="_blank" class="website-link" onclick="event.stopPropagation()">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M14 3h5a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5V1h2v2zm-2 14H7v-2h5v2zm3-4H7v-2h8v2zm0-4H7V7h8v2z"/></svg>
               </a>
             {% endif %}
           </h3>
@@ -25,14 +21,8 @@
   
           {% if author.bio %}
             <div class="author-bio">
-              <div class="bio-short">
-                {{ author.bio | truncate: 100, "..." }}
-                <label for="expand-{{ forloop.index }}" class="read-more">Read more</label>
-              </div>
-              <div class="bio-full">
-                {{ author.bio }}
-                <label for="expand-{{ forloop.index }}" class="read-less">Read less</label>
-              </div>
+              <span class="bio-short">{{ author.bio | truncate: 100 }}</span>
+              <span class="bio-full">{{ author.bio }}</span>
             </div>
           {% endif %}
         </div>
@@ -44,45 +34,4 @@
   .author-card.expanded .full-affil {
     display: block;
   }
-  /* Expanded bio (when checkbox is checked) */
-    .expand-toggle:checked ~ .author-info .bio-short {
-    display: none;
-    }
-
-    .expand-toggle:checked ~ .author-info .bio-full {
-    display: block;
-    }
-
-    .expand-toggle:checked ~ .author-info .read-more {
-    display: none;
-    }
-
-    .expand-toggle:checked ~ .author-info .read-less {
-    display: inline;
-    color: #4a90e2;
-    }
-
-    /* Clickable elements */
-    .read-more,
-    .read-less {
-    color: #4a90e2;
-    cursor: pointer;
-    font-size: 0.8em;
-    margin-left: 0.3em;
-    }
-
-    .read-more:hover,
-    .read-less:hover {
-    text-decoration: underline;
-    }
-
-    /* Visual feedback */
-    .author-card {
-    position: relative;
-    transition: all 0.2s ease;
-    }
-
-    .author-card:has(.expand-toggle:checked) {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
   </style>

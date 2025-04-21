@@ -96,7 +96,6 @@ body {
   font-weight: bold;
   margin-left: 0.3em;
 }
-
 /* Bio text styling */
 .author-bio {
   font-size: 0.8rem;
@@ -104,20 +103,27 @@ body {
   color: #555;
   line-height: 1.4;
 }
-/* Hide the checkbox */
-.expand-toggle {
-  position: absolute;
-  opacity: 0;
-}
 
-/* Truncated bio (default state) */
 .bio-full {
   display: none;
 }
 
-.read-less {
+.bio-short::after {
+  content: "…";
+}
+
+.author-card.expanded .bio-short {
   display: none;
 }
 
+.author-card.expanded .bio-full {
+  display: inline;
+}
 
-
+/* Visual cue for expandable cards */
+.author-card[onclick] {
+  cursor: pointer;
+}
+.author-card[onclick]:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
