@@ -1,35 +1,30 @@
 <div class="authors-grid">
-    {% assign affil_data = site.data.affiliations %}
-    
     {% for author in site.data.authors %}
       <div class="author-card" onclick="this.classList.toggle('expanded')">
-        {% if author.photo %}
-          <img src="{{ '/assets/images/team/' | relative_url }}{{ author.photo }}" 
-               alt="{{ author.name }}" 
-               class="author-photo">
-        {% endif %}
+        <img src="{{ '/assets/images/team/processed/' | relative_url }}{{ author.photo }}" 
+             alt="{{ author.name }}" 
+             class="author-photo">
         
         <div class="author-info">
           <h3>
             {{ author.name }}
-            {% if author.cofirst %}<span class="cofirst-label">*</span>{% endif %}
-            {% if author.orcid %}
-              <a href="https://orcid.org/{{ author.orcid }}" class="orcid-link" target="_blank" onclick="event.stopPropagation()">
-                <img src="{{ '/assets/images/orcid.svg' | relative_url }}" alt="ORCID" width="16">
+            {% if author.website %}
+              <a href="{{ author.website }}" target="_blank" class="website-link" onclick="event.stopPropagation()">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M14 3h5a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5V1h2v2zm-2 14H7v-2h5v2zm3-4H7v-2h8v2zm0-4H7V7h8v2z"/></svg>
               </a>
             {% endif %}
           </h3>
   
-          <div class="affiliations">
-            {% for num in author.affil %}
-              <sup>{{ num }}</sup>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-            <div class="full-affil">
-              {% for num in author.affil %}
-                {{ affil_data[num] }}{% unless forloop.last %}; {% endunless %}
-              {% endfor %}
-            </div>
+          <div class="affil-nums">
+            {% for num in author.affil %}<sup>{{ num }}</sup>{% unless forloop.last %}, {% endunless %}{% endfor %}
           </div>
+  
+          {% if author.bio %}
+            <div class="author-bio">
+              <span class="bio-short">{{ author.bio | truncate: 100 }}</span>
+              <span class="bio-full">{{ author.bio }}</span>
+            </div>
+          {% endif %}
         </div>
       </div>
     {% endfor %}

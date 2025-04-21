@@ -2,10 +2,13 @@
 - name: "Nicole Cooper, PhD"
   affil: [1]
   photo: "nicolecooper.jpg"
+  bio: "Nicole Cooper is the Managing Director of Research at the Communication Neuroscience Lab at the University of Pennsylvania's Annenberg School for Communication. Her research investigates the neural mechanisms of health behavior change and decision making. Several projects focus on predicting behavior change from interactions within networks of brain regions while individuals are exposed to messaging about smoking cessation, physical activity, or binge drinking. She received her Ph.D. in Neuroscience from the University of Pennsylvania."
+  orcid: ""
   cofirst: true
 - name: "Benjamin Muzekari, MA"
   affil: [1]
   photo: "benmuzekari.jpg"
+  bio: "Ben Muzekari studies how we can induce motivational factors to facilitate positive behavior change."
   cofirst: true
 
 # Other authors
@@ -59,6 +62,7 @@
   affil: [12, 13]
 - name: "David M. Lydon-Staley, PhD"
   photo: "davidlydonstaley.jpg"
+  orcid: "0000-0001-8702-3923"
   affil: [14, 15]
 - name: "Andrew A. Strasser, PhD"
   photo: "andrewstrasser.jpg"

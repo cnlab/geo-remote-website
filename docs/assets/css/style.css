@@ -96,3 +96,34 @@ body {
   font-weight: bold;
   margin-left: 0.3em;
 }
+/* Bio text styling */
+.author-bio {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.bio-full {
+  display: none;
+}
+
+.bio-short::after {
+  content: "…";
+}
+
+.author-card.expanded .bio-short {
+  display: none;
+}
+
+.author-card.expanded .bio-full {
+  display: inline;
+}
+
+/* Visual cue for expandable cards */
+.author-card[onclick] {
+  cursor: pointer;
+}
+.author-card[onclick]:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
