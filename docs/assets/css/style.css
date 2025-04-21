@@ -24,3 +24,66 @@ body {
 }
 .figure { text-align: center; margin: 2em 0; }
 .caption { font-style: italic; }
+
+/* Study Team Page styles */
+.authors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.author-card {
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.author-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: #4a90e2;
+}
+
+.author-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #f0f0f0;
+}
+
+.orcid-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.orcid-link:hover {
+  opacity: 1;
+}
+
+.cofirst-label {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* Placeholder for missing photos */
+.author-card:has(img[style*="display: none"]) {
+  padding-top: 2.5rem;
+}
+
+.author-card:not(:has(img))::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #eee;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
