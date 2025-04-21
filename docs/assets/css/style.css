@@ -1,3 +1,18 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.site-nav {
+  margin-bottom: 2rem;
+}
+.site-nav a {
+  margin-right: 1rem;
+}
+
 /* Research-specific styles */
 .protocol table {
   border-collapse: collapse;
