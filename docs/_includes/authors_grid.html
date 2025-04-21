@@ -36,66 +36,7 @@
   </div>
   
   <style>
-    .authors-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1rem;
-    }
-    
-    .author-card {
-      border: 1px solid #eee;
-      padding: 0.8rem;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-  
-    .author-card:hover {
-      border-color: #4a90e2;
-    }
-  
-    .author-card.expanded {
-      padding: 0.8rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-  
-    .author-photo {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-      float: left;
-      margin-right: 0.8rem;
-      border: 2px solid #f0f0f0;
-    }
-  
-    .author-info {
-      margin-left: 70px;
-    }
-  
-    h3 {
-      margin: 0 0 0.2rem 0;
-      font-size: 1rem;
-    }
-  
-    .affiliations {
-      font-size: 0.85rem;
-    }
-  
-    .full-affil {
-      display: none;
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
-      color: #555;
-      border-top: 1px dashed #ddd;
-      padding-top: 0.5rem;
-    }
-  
-    .author-card.expanded .full-affil {
-      display: block;
-    }
-  
-    .orcid-link {
-      margin-left: 0.3rem;
-    }
+  .author-card.expanded .full-affil {
+    display: block;
+  }
   </style>
