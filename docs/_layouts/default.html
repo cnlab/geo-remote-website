@@ -23,18 +23,5 @@
   <footer class="site-footer">
     <p>© {{ site.time | date: '%Y' }} {{ site.title }} Research Group</p>
   </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Auto-add ellipsis only when needed
-      document.querySelectorAll('.author-bio').forEach(bio => {
-        const short = bio.querySelector('.bio-short');
-        const full = bio.querySelector('.bio-full');
-        if (short.textContent.replace('…','').length === full.textContent.length) {
-          short.style.display = 'none';
-          full.style.display = 'inline';
-        }
-      });
-    });
-    </script>
 </body>
 </html>
