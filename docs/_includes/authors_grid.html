@@ -4,7 +4,7 @@
     {% for author in site.data.authors %}
       <div class="author-card" onclick="this.classList.toggle('expanded')">
         {% if author.photo %}
-          <img src="{{ '/assets/images/team/processed/' | relative_url }}{{ author.photo }}" 
+          <img src="{{ '/assets/images/team/' | relative_url }}{{ author.photo }}" 
                alt="{{ author.name }}" 
                class="author-photo">
         {% endif %}
