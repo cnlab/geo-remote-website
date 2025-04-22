@@ -1,5 +1,8 @@
 /* Basic styling */
 body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   max-width: 1000px;
@@ -113,4 +116,107 @@ ul, ol {
 }
 li {
   margin-bottom: 0.5rem;
+}
+
+/* Banner */
+.landing-header {
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.landing-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.header-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Content */
+.page-content {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.study-section {
+  margin-bottom: 4rem;
+}
+
+.section-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #2c6cb1;
+  font-weight: 500;
+}
+
+/* Methods Grid */
+.methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.method-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+/* Footer */
+.study-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  .landing-header {
+    padding: 5rem 1rem;
+  }
+}
+
+.sidebar {
+  background: #f8f9fa;
+  padding: 2rem;
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  box-sizing: border-box;
+  border-right: 1px solid #eee;
+}
+
+.main-content {
+  grid-column: 2;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .main-content {
+    grid-column: 1;
+  }
 }
