@@ -3,7 +3,6 @@ layout: protocol
 title: Study Protocol
 ---
 
-
 ## Methods
 
 ### Inclusion Criteria
