@@ -9,3 +9,5 @@ defaults:
       path: "protocol"
     values:
       layout: protocol  # Special layout for protocol pages
+source: .       
+destination: ../_site 
