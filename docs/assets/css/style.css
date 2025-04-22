@@ -96,3 +96,21 @@ body {
   font-weight: bold;
   margin-left: 0.3em;
 }
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.2rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}
