@@ -1,10 +1,26 @@
+/* ===== Base Styles ===== */
+:root {
+  --primary: #2c6cb1;
+  --secondary: #4a90e2;
+  --light-bg: #f8f9fa;
+  --border: #eee;
+}
+
 /* Basic styling */
 body {
-  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
   line-height: 1.6;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  gap: 2rem;
+}
+
+.main-content {
+  padding-right: 2rem;
 }
 .site-nav {
   margin-bottom: 2rem;
@@ -95,4 +111,220 @@ body {
   color: #d4af37;
   font-weight: bold;
   margin-left: 0.3em;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.2rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Banner ===== */
+.landing-header {
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.landing-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.header-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ===== Content Sections ===== */
+.page-content {
+  max-width: 1200px; 
+  margin: 3rem auto;
+  padding: 0 2rem; 
+}
+
+.study-section {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.study-section:last-child {
+  border-bottom: none;
+}
+
+/* ===== Method Cards ===== */
+.method-column {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.method-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.8rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  border-top: 4px solid var(--primary);
+  transition: all 0.2s ease;
+}
+
+.method-card:hover {
+  transform: translateY(-3px);
+}
+
+.method-card h3 {
+  margin-top: 0;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* ===== Links ===== */
+.section-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--secondary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.section-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Button Style */
+/* ===== Button ===== */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background: #1a4f8b;
+  border-color: #1a4f8b;
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* ===== Footer ===== */
+.study-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+}
+
+.trial-info {
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+/* ===== Responsive Behavior ===== */
+@media (max-width: 1024px) {
+  body {
+    grid-template-columns: 240px 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    height: auto;
+    position: relative;
+    padding: 1.5rem;
+  }
+  
+  .methods-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  background: #2c3e50; /* Dark blue */
+  color: white;
+  padding: 2rem 1.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-nav {
+  margin-top: 2rem;
+}
+
+.sidebar a {
+  color: rgba(255,255,255,0.8);
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  margin: 0.2rem 0;
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.sidebar .active {
+  background: var(--primary);
+  color: white;
+  font-weight: 500;
 }
