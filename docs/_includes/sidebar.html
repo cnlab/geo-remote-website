@@ -1,10 +1,8 @@
 <nav class="sidebar">
-    <div class="sidebar-content">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/protocol">Full Protocol</a></li>
-        <li><a href="/team">Research Team</a></li>
-        <li><a href="/results">Findings</a></li>
-      </ul>
-    </div>
+    <ul>
+      <li><a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
+      <li><a href="/protocol" class="{% if page.url contains '/protocol' %}active{% endif %}">Protocol</a></li>
+      <li><a href="/team" class="{% if page.url contains '/team' %}active{% endif %}">Team</a></li>
+      <li><a href="/results" class="{% if page.url contains '/results' %}active{% endif %}">Results</a></li>
+    </ul>
   </nav>
