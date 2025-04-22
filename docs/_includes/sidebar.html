@@ -1,8 +1,8 @@
 <nav class="sidebar">
     <ul>
-      <li><a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
-      <li><a href="/protocol" class="{% if page.url contains '/protocol' %}active{% endif %}">Protocol</a></li>
-      <li><a href="/team" class="{% if page.url contains '/team' %}active{% endif %}">Team</a></li>
-      <li><a href="/results" class="{% if page.url contains '/results' %}active{% endif %}">Results</a></li>
-    </ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/protocol/' | relative_url }}">Protocol</a></li>
+        <li><a href="{{ '/team/' | relative_url }}">Team</a></li>
+        <li><a href="{{ '/results/' | relative_url }}">Results</a></li>
+      </ul>
   </nav>
