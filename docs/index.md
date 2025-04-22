@@ -1,7 +1,7 @@
 ---
 layout: home
 title: GeoSmoking Study
-banner_image: /assets/images/banner.jpg
+banner_image: assets/images/banner.jpg
 ---
 
 {% include banner.html %}
