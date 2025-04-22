@@ -9,5 +9,7 @@ defaults:
       path: "protocol"
     values:
       layout: protocol  # Special layout for protocol pages
+baseurl: "/geo-remote-website"
+url: "https://cnlab.github.io"
 source: .       
 destination: ../_site 
