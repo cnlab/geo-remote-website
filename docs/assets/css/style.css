@@ -328,3 +328,24 @@ li {
   color: white;
   font-weight: 500;
 }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 0.9em;
+}
