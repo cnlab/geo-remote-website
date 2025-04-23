@@ -1,20 +1,32 @@
-/* ===== Base Styles ===== */
+/* ===== CSS VARIABLES ===== */
 :root {
   --primary: #2c6cb1;
+  --primary-dark: #1a4f8b;
   --secondary: #4a90e2;
+  --text-color: #333;
+  --text-light: #555;
+  --text-muted: #666;
   --light-bg: #f8f9fa;
   --border: #eee;
+  --border-dark: #ddd;
+  --border-hover: #4a90e2;
+  --sidebar-bg: #2c3e50;
+  --sidebar-width: 280px;
+  --sidebar-width-tablet: 240px;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --cofirst-color: #d4af37;
+  --max-content-width: 1200px;
 }
 
-/* Basic styling */
+/* ===== BASE LAYOUT ===== */
 body {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: var(--sidebar-width) 1fr;
   min-height: 100vh;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #333;
+  color: var(--text-color);
   line-height: 1.6;
-  max-width: 1200px;
+  max-width: var(--max-content-width);
   margin: 0 auto;
   gap: 2rem;
 }
@@ -22,116 +34,103 @@ body {
 .main-content {
   padding-right: 2rem;
 }
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ===== NAVIGATION ===== */
 .site-nav {
   margin-bottom: 2rem;
 }
+
 .site-nav a {
   margin-right: 1rem;
 }
 
-/* Research-specific styles */
-.protocol table {
-  border-collapse: collapse;
-  width: 100%;
-}
-.protocol th, .protocol td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-.figure { text-align: center; margin: 2em 0; }
-.caption { font-style: italic; }
-
-/* ===== TEAM GRID ===== */
-.authors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background: var(--sidebar-bg);
+  color: white;
+  padding: 2rem 1.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
 }
 
-.author-card {
-  border: 1px solid #eee;
-  padding: 0.8rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  cursor: pointer;
+.sidebar-nav {
+  margin-top: 2rem;
 }
 
-.author-card:hover {
-  border-color: #4a90e2;
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.author-card.expanded {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.sidebar li {
+  margin-bottom: 5px;
 }
 
-.author-photo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  float: left;
-  margin-right: 0.8rem;
-  border: 2px solid #f0f0f0;
+.sidebar li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: var(--text-color);
+  border-left: 3px solid transparent;
+  transition: background-color 0.2s, border-left-color 0.2s;
 }
 
-.author-info {
-  margin-left: 70px;
+.sidebar li a:hover {
+  background-color: var(--light-bg);
+  border-left-color: var(--border-dark);
 }
 
-.author-info h3 {
-  margin: 0 0 0.2rem 0;
-  font-size: 1rem;
-}
-
-.affiliations {
-  font-size: 0.85rem;
-}
-
-.full-affil {
-  display: none;
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
-  color: #555;
-  border-top: 1px dashed #ddd;
-  padding-top: 0.5rem;
-}
-
-.orcid-link {
-  margin-left: 0.3rem;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-
-.orcid-link:hover {
-  opacity: 1;
-}
-
-.cofirst-label {
-  color: #d4af37;
+.sidebar li.active a {
+  background-color: #f0f0f0;
+  border-left-color: #0366d6; /* GitHub blue color */
   font-weight: bold;
-  margin-left: 0.3em;
 }
 
-/* Tables */
-table {
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-}
-td, th {
-  border: 1px solid #ddd;
-  padding: 0.5rem 1rem;
+/* ===== IMAGES & FIGURES ===== */
+.img-responsive {
+  display: block;
+  max-width: 70%;
+  height: auto;
 }
 
-/* Lists */
-ul, ol {
-  padding-left: 1.2rem;
-}
-li {
-  margin-bottom: 0.5rem;
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* ===== Banner ===== */
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+.figure {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.caption {
+  font-style: italic;
+}
+
+/* ===== LANDING PAGE ===== */
 .landing-header {
   background-size: cover;
   background-position: center;
@@ -167,11 +166,11 @@ li {
   opacity: 0.9;
 }
 
-/* ===== Content Sections ===== */
+/* ===== PAGE CONTENT ===== */
 .page-content {
-  max-width: 1200px; 
+  max-width: var(--max-content-width);
   margin: 3rem auto;
-  padding: 0 2rem; 
+  padding: 0 2rem;
 }
 
 .study-section {
@@ -184,7 +183,79 @@ li {
   border-bottom: none;
 }
 
-/* ===== Method Cards ===== */
+/* ===== TEAM GRID ===== */
+.authors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.author-card {
+  border: 1px solid var(--border);
+  padding: 0.8rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.author-card:hover {
+  border-color: var(--border-hover);
+}
+
+.author-card.expanded {
+  box-shadow: var(--card-shadow);
+}
+
+.author-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+  margin-right: 0.8rem;
+  border: 2px solid #f0f0f0;
+}
+
+.author-info {
+  margin-left: 70px;
+}
+
+.author-info h3 {
+  margin: 0 0 0.2rem 0;
+  font-size: 1rem;
+}
+
+.affiliations {
+  font-size: 0.85rem;
+}
+
+.full-affil {
+  display: none;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: var(--text-light);
+  border-top: 1px dashed var(--border-dark);
+  padding-top: 0.5rem;
+}
+
+.orcid-link {
+  margin-left: 0.3rem;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.orcid-link:hover {
+  opacity: 1;
+}
+
+.cofirst-label {
+  color: var(--cofirst-color);
+  font-weight: bold;
+  margin-left: 0.3em;
+}
+
+/* ===== METHOD CARDS ===== */
 .method-column {
   max-width: 800px;
   margin: 2rem auto;
@@ -211,7 +282,39 @@ li {
   gap: 0.6rem;
 }
 
-/* ===== Links ===== */
+/* ===== TABLES ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  border: 1px solid var(--border-dark);
+  padding: 8px;
+}
+
+.protocol table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.protocol th, 
+.protocol td {
+  border: 1px solid var(--border-dark);
+  padding: 8px;
+}
+
+/* ===== LISTS ===== */
+ul, ol {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== LINKS & BUTTONS ===== */
 .section-link {
   display: inline-block;
   margin-top: 1rem;
@@ -226,8 +329,6 @@ li {
   text-decoration: underline;
 }
 
-/* Button Style */
-/* ===== Button ===== */
 .btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
@@ -243,8 +344,8 @@ li {
 }
 
 .btn-primary:hover {
-  background: #1a4f8b;
-  border-color: #1a4f8b;
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 .btn-outline {
@@ -257,7 +358,7 @@ li {
   color: white;
 }
 
-/* ===== Footer ===== */
+/* ===== FOOTER ===== */
 .study-footer {
   margin-top: 4rem;
   padding-top: 2rem;
@@ -268,11 +369,10 @@ li {
   font-size: 0.9rem;
 }
 
-/* ===== Responsive ===== */
-/* ===== Responsive Behavior ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   body {
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: var(--sidebar-width-tablet) 1fr;
     gap: 1.5rem;
   }
 }
@@ -291,70 +391,8 @@ li {
   .methods-grid {
     grid-template-columns: 1fr;
   }
-}
-
-/* ===== Sidebar ===== */
-.sidebar {
-  background: #2c3e50; /* Dark blue */
-  color: white;
-  padding: 2rem 1.5rem;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
-}
-
-.sidebar-nav {
-  margin-top: 2rem;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar li {
-  margin-bottom: 5px;
-}
-
-.sidebar li a {
-  display: block;
-  padding: 8px 15px;
-  text-decoration: none;
-  color: #333;
-  border-left: 3px solid transparent;
-  transition: background-color 0.2s, border-left-color 0.2s;
-}
-
-.sidebar li a:hover {
-  background-color: #f5f5f5;
-  border-left-color: #ddd;
-}
-
-.sidebar li.active a {
-  background-color: #f0f0f0;
-  border-left-color: #0366d6; /* GitHub blue color */
-  font-weight: bold;
-}
-
-.img-responsive {
-  display: block;
-  max-width: 70%;
-  height: auto;
-}
-
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.image-caption {
-  text-align: center;
-  font-style: italic;
-  margin-top: 8px;
-  margin-bottom: 20px;
-  color: #666;
-  font-size: 0.9em;
+  
+  .img-responsive {
+    max-width: 100%;
+  }
 }
