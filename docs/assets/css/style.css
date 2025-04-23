@@ -405,6 +405,8 @@ li {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin: 2rem 0;
+  min-width: 0; /* Allows content to shrink */
+  overflow-wrap: break-word; /* Breaks long text */
 }
 
 .side-by-side h4 {
