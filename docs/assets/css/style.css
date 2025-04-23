@@ -80,25 +80,23 @@ p {
 }
 
 .sidebar li a {
-  display: block;
-  padding: 8px 15px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8); /* Light text for dark bg */
   border-left: 3px solid transparent;
-  transition: background-color 0.2s, border-left-color 0.2s;
+  transition: all 0.2s ease;
+  border-radius: 4px;
 }
 
 .sidebar li a:hover {
-  background-color: var(--light-bg);
-  border-left-color: var(--border-dark);
-  color: var(--primary);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-left-color: var(--secondary);
 }
 
 .sidebar li.active a {
-  background-color: #f0f0f0;
-  border-left-color: #0366d6; /* GitHub blue color */
-  font-weight: bold;
-  color: var(--primary);
+  background: var(--primary);
+  color: white !important;
+  border-left-color: white;
+  font-weight: 500;
 }
 
 /* ===== IMAGES & FIGURES ===== */
