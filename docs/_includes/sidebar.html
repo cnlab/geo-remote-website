@@ -1,11 +1,9 @@
-<ul>
-    <li class="{% if page.url == '/' %}active{% endif %}">
-      <a href="{{ '/' | relative_url }}">Home</a>
-    </li>
-    <li class="{% if page.url contains '/protocol' %}active{% endif %}">
-      <a href="{{ '/protocol/' | relative_url }}">Protocol</a>
-    </li>
-    <li class="{% if page.url contains '/team' %}active{% endif %}">
-      <a href="{{ '/team/' | relative_url }}">Team</a>
-    </li>
-  </ul>
+<nav class="sidebar">
+    <ul>
+        <li{% if page.url == '/' %} class="active"{% endif %}><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li{% if page.url contains '/introduction/' %} class="active"{% endif %}><a href="{{ '/introduction/' | relative_url }}">Background</a></li>
+        <li{% if page.url contains '/protocol/' %} class="active"{% endif %}><a href="{{ '/protocol/' | relative_url }}">Protocol</a></li>
+        <li{% if page.url contains '/team/' %} class="active"{% endif %}><a href="{{ '/team/' | relative_url }}">Team</a></li>
+        <li{% if page.url contains '/results/' %} class="active"{% endif %}><a href="{{ '/results/' | relative_url }}">Results</a></li>
+    </ul>
+</nav>
