@@ -4,7 +4,7 @@ title: Understanding Tobacco Marketing in Retail Environments
 ---
 
 
-![Cigarette power wall in retail store](assets/images/introduction/power-wall.jpg "Tobacco power wall display behind a store counter")
+![Cigarette power wall in retail store](/assets/images/introduction/power-wall.jpg "Tobacco power wall display behind a store counter")
 *Example of a tobacco "power wall" commonly found near cash registers in convenience stores and gas stations.*
 
 ## Background
