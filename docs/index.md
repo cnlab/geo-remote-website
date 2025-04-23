@@ -1,6 +1,6 @@
 ---
 layout: home
-title: GeoScan and Remote Geo Smoking Study:
+title: GeoScan and Remote Geo Smoking Study
 banner_image: assets/images/banner.jpg
 ---
 
