@@ -61,7 +61,27 @@ This suggests that approximating tobacco retail exposure using geolocation track
 
 ### Experimental Approaches to Understanding Tobacco Retail Effects {#experimental-approaches}
 
+<div class="method-card">
+  <h4>Bridging the Gap from Correlation to Causation</h4>
+  <p>While modern technology enables better measurement of real-world exposures, experimental approaches are needed to establish causality between tobacco retail exposure and smoking behaviors.</p>
+</div>
+
 Leveraging modern technology is key to gaining real-world insights about tobacco retail exposure and smoking outcomes, but the approach described above is inherently correlational. Thus, another key question that remains is whether real-world tobacco retail exposure has causal impacts on craving and smoking. 
+
+<div class="research-grid">
+  <div class="research-item">
+    <h4>Virtual Store Studies</h4>
+    <p>Online simulations of retail environments</p>
+  </div>
+  <div class="research-item">
+    <h4>Store Replica Research</h4>
+    <p>Full-size convenience store mockups</p>
+  </div>
+  <div class="research-item">
+    <h4>Image Exposure Tests</h4>
+    <p>Controlled viewing of tobacco marketing images</p>
+  </div>
+</div>
 
 Recent work has used online, virtual stores, as well as full-size convenience store replicas, to test causal effects of exposure to retail and retail marketing. This work has found that removing retail marketing, or reducing its visibility, reduces purchase attempts, urges to smoke, and scores on a smoking susceptibility survey. In an online experiment, individuals who currently smoked reported greater craving after viewing point-of-sale cigarette promotion cues compared to non-smoking cues, which provides evidence that viewing images of tobacco marketing can increase craving. 
 

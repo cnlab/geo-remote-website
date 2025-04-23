@@ -454,6 +454,41 @@ body .highlight-box p {
   margin-top: 0;
 }
 
+/* Method Card */
+body .method-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-top: 3px solid var(--secondary);
+}
+
+body .method-card h4 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+/* Research Grid */
+body .research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+body .research-item {
+  background-color: var(--light-bg);
+  padding: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+body .research-item h4 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
 /* Research Timeline */
 .research-timeline {
   display: flex;
