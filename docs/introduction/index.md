@@ -17,6 +17,21 @@ Tobacco advertising and products are placed prominently in "power walls" near or
 
 ### Prior Research on Tobacco Retail Exposure {#prior-research}
 
+<div class="research-timeline">
+  <div class="timeline-item">
+    <span class="timeline-marker">Early Studies</span>
+    <p>Focused on neighborhood-based approximations of exposure</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-marker">Recent Advances</span>
+    <p>Real-time geolocation tracking provides more accurate measures</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-marker">Current Gap</span>
+    <p>Limited research on real-time effects in daily smokers</p>
+  </div>
+</div>
+
 Prior work suggests detrimental associations between exposure to tobacco marketing and smoking outcomes including increased odds of failed cessation attempts, craving, purchase urges, and impulse purchases. To enhance ecological validity, some of this prior research has utilized place-based research approaches to investigate associations between tobacco retail exposure and smoking outcomes. In these studies, a participant’s home address or neighborhood is commonly used to approximate real-world exposure, which is then later mapped to health behaviors, such as smoking. 
 
 <div class="side-by-side">
