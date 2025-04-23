@@ -11,7 +11,7 @@ banner_image: assets/images/banner.jpg
 
 Cigarette smoking accounts for **1 in 5 deaths** annually in the U.S. While tobacco retail exposure is linked to adverse smoking outcomes, naturalistic studies examining these effects remain relatively sparse. Our study combines ecological momentary assessment, geolocation tracking, and neuroimaging to investigate these relationships in real-world contexts.
 
-[Learn more about our research framework](/background){: .btn .btn-outline}
+[Learn more about our research framework](/introduction){: .btn .btn-outline}
 
 ## Objectives
 
