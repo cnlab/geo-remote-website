@@ -83,6 +83,6 @@ The GeoSmoking Study seeks to address these gaps through an innovative and multi
 
 The baseline period was followed by a longitudinal experiment period in which participants’ levels of tobacco retail exposure were manipulated by assigning them to enter an assigned store every day, while geolocation tracking and EMA continued. Participants were assigned to either enter a tobacco retail store (Tobacco retailer condition) or a non-tobacco retail store (Non-tobacco retailer condition), or to follow their normal routines (Control condition). The study concluded with an optional, in-person functional magnetic resonance imaging (fMRI) visit in which participants completed image rating tasks, which included tobacco marketing cues.
 
-[View Full Study Protocol](/protocol){: .btn .btn-outline}
+[View Full Study Protocol]({{ site.baseurl }}/protocol){: .btn .btn-outline}
 
-[Meet Our Team](/team){: .btn .btn-outline}
+[Meet Our Team]({{ site.baseurl }}/team){: .btn .btn-outline}
