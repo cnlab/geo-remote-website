@@ -23,7 +23,7 @@ Tobacco advertising and products are placed prominently in "power walls" near or
 
 ---
 
-## Research Evolution
+## Research Evolution {#research-evolution}
 
 ### Prior Research on Tobacco Retail Exposure {#prior-research}
 
@@ -59,7 +59,7 @@ While neighborhood approximated research has provided key insights, it lacks abi
 
 This suggests that approximating tobacco retail exposure using geolocation tracking is a significant upgrade from neighborhood approximated exposure, allowing researchers to measure environmental exposures more precisely, both geographically and temporally, as opposed to relying on a single, non-representative proxy or self-reported exposure. Using geolocation tracking, exposure to tobacco retailers has been linked to adolescents’ daily  smoking, as well as to smoking cessation success in adults. However, minimal prior work has assessed real-time, longitudinal, and naturalistic associations between tobacco retail exposure and smoking outcomes in adults who smoke daily, which adds to smoking-related health burdens.
 
-### Experimental Approaches to Understanding Tobacco Retail Effects
+### Experimental Approaches to Understanding Tobacco Retail Effects {#experimental-approaches}
 
 Leveraging modern technology is key to gaining real-world insights about tobacco retail exposure and smoking outcomes, but the approach described above is inherently correlational. Thus, another key question that remains is whether real-world tobacco retail exposure has causal impacts on craving and smoking. 
 
@@ -67,7 +67,7 @@ Recent work has used online, virtual stores, as well as full-size convenience st
 
 Together, these experimental studies have utilized randomized and controlled designs in tightly structured environments, strengthening internal validity for the effects of retail exposure on harmful smoking outcomes. However, there remains no research that capitalizes on modern technology to examine real-world casual effects. For example, an ecologically valid and real-world experiment in which levels of tobacco retail exposure are manipulated and smoking outcomes are assessed has not been conducted. Thus, an important question that remains is whether real-world visits to tobacco retailers have effects on craving and smoking in daily life, when individuals are not in highly controlled lab settings.
 
-### Neural Mechanisms of Smoking Cue Reactivity
+### Neural Mechanisms of Smoking Cue Reactivity {#neural-mechanisms}
 
 Theoretical models and empirical studies of addiction suggest that exposure to drug-cues, such as images of drug paraphernalia, enhances craving and consumption behavior in drug users, including individuals who smoke. Researchers have investigated the brain mechanisms of these associations, which can facilitate intervention strategies to decrease neural reactivity and exposure to cues known to elicit reward activation. 
 
@@ -75,10 +75,15 @@ Laboratory work has shown increased neural activity in regions associated with d
 
 Recent work assessed neural responses to photographs of familiar or unfamiliar tobacco retailers and found higher responses in regions related to self-relevance and smoking motivation; however, this study did not assess self-reported craving in response to different image categories. Thus, laboratory experiments implicate neural smoking cue reactivity and cigarette craving as mechanisms linking exposure to smoking cues and behavior, but significant questions remain about whether viewing tobacco marketing elicits activation in the same brain regions as standardized, proximal smoking cues like pictures of cigarettes, and, crucially, whether in-scanner brain activation is related to individuals’ real-world levels of tobacco retail exposure.
 
-### The GeoSmoking Study
+## The GeoSmoking Study {#geosmoking-study}
 
 Ultimately, cigarette smoking remains one of the top health concerns globally, and an extensive scientific literature has identified and examined tobacco retail exposure as one of the sources for this issue. Despite progress, there remains a lack of research utilizing naturalistic and time-sensitive approaches, evaluating real-world effects of tobacco marketing on smoking outcomes, and examining neural cue reactivity to marketing cues as a mechanistic explanation for the effects of tobacco retail marketing on behavior. 
 
 The GeoSmoking Study seeks to address these gaps through an innovative and multimodal protocol, leveraging insights and methods from across the social sciences. Specifically, we recruited adults who smoked cigarettes daily and who lived in one of three U.S. states (Pennsylvania, Delaware, and New Jersey) to participate in a remote, longitudinal study. In a baseline period, we used ecological momentary assessment (EMA) to capture reports of craving and smoking throughout the day, and geolocation tracking to assess real-world mobility. We curated a database of all tobacco retailers across the three states, and used this to assess participants’ real-world tobacco retail exposure. 
 
 The baseline period was followed by a longitudinal experiment period in which participants’ levels of tobacco retail exposure were manipulated by assigning them to enter an assigned store every day, while geolocation tracking and EMA continued. Participants were assigned to either enter a tobacco retail store (Tobacco retailer condition) or a non-tobacco retail store (Non-tobacco retailer condition), or to follow their normal routines (Control condition). The study concluded with an optional, in-person functional magnetic resonance imaging (fMRI) visit in which participants completed image rating tasks, which included tobacco marketing cues.
+
+<div class="cta-container">
+  <a href="{{ '/protocol/' | relative_url }}" class="btn btn-primary">View Full Study Protocol</a>
+  <a href="{{ '/team/' | relative_url }}" class="btn btn-outline">Meet Our Research Team</a>
+</div>

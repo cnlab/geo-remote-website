@@ -490,3 +490,11 @@ body .highlight-box p {
   color: var(--primary);
   margin-bottom: 0.5rem;
 }
+
+/* CTA Container */
+body .cta-container {
+  display: flex;
+  gap: 1rem;
+  margin: 3rem 0 1rem;
+  justify-content: center;
+}
