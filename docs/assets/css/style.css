@@ -415,24 +415,23 @@ li {
 }
 
 /* Research Timeline */
+/* Research Timeline */
 .research-timeline {
   display: flex;
   justify-content: space-between;
   margin: 2rem 0;
   position: relative;
-  min-width: 800px; /* Ensures enough space for 3 items */
 }
 
 .research-timeline::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 20px;
   left: 0;
   right: 0;
   height: 2px;
   background-color: var(--border-dark);
   z-index: 1;
-  transform: translateY(-50%);
 }
 
 .timeline-item {
@@ -444,7 +443,6 @@ li {
   border: 1px solid var(--border);
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .timeline-marker {
@@ -452,21 +450,4 @@ li {
   font-weight: bold;
   color: var(--primary);
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .research-timeline {
-    flex-direction: column;
-    min-width: auto;
-    align-items: center;
-    gap: 2rem;
-  }
-  .research-timeline::before {
-    display: none;
-  }
-  .timeline-item {
-    width: 80%;
-  }
 }
