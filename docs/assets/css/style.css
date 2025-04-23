@@ -470,21 +470,21 @@ body .method-card h4 {
 }
 
 /* Research Grid */
-body .research-grid {
+.research-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin: 2rem 0;
 }
 
-body .research-item {
+.research-item {
   background-color: var(--light-bg);
   padding: 1.2rem;
   border-radius: 8px;
   text-align: center;
 }
 
-body .research-item h4 {
+.research-item h4 {
   margin-top: 0;
   color: var(--primary);
 }
