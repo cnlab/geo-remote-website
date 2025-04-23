@@ -83,7 +83,7 @@ p {
   display: block;
   padding: 8px 15px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8) !important;
   border-left: 3px solid transparent;
   transition: background-color 0.2s, border-left-color 0.2s;
 }
