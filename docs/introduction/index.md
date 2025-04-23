@@ -3,12 +3,9 @@ layout: default
 title: Understanding Tobacco Marketing in Retail Environments
 ---
 
-## Background {#background}
+# The Impact of Tobacco Marketing
 
-<div class="key-statistic">
-  <span class="statistic-number">1 in 5</span>
-  <span class="statistic-description">deaths in the US are attributed to cigarette smoking</span>
-</div>
+## Background {#background}
 
 Cigarette smoking is the leading cause of preventable death and illness in the United States (US) and throughout the developed world. Smoking increases the odds of developing the most frequently diagnosed cancers and other leading causes of death, accounting for 1 in 5 deaths in the US and more than 7 million deaths worldwide each year.
 
@@ -25,6 +22,8 @@ Due to advertising restrictions in common communication outlets, the tobacco ind
 Tobacco advertising and products are placed prominently in "power walls" near or behind cash registers in retail outlets like convenience stores and gas stations, such that all customers are exposed to this marketing. This widespread and frequent exposure to tobacco retail is of great interest in tobacco control and cancer prevention research worldwide.
 
 ---
+
+## Research Evolution
 
 ### Prior Research on Tobacco Retail Exposure {#prior-research}
 
