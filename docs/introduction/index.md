@@ -3,7 +3,7 @@ layout: default
 title: Understanding Tobacco Marketing in Retail Environments
 ---
 
-## Background
+## Background {#background}
 
 Cigarette smoking is the leading cause of preventable death and illness in the United States (US) and throughout the developed world. Smoking increases the odds of developing the most frequently diagnosed cancers and other leading causes of death, accounting for 1 in 5 deaths in the US and more than 7 million deaths worldwide each year.
 
@@ -15,9 +15,20 @@ Tobacco advertising and products are placed prominently in "power walls" near or
 <p class="image-caption">Example of a tobacco "power wall" commonly found near cash registers in convenience stores and gas stations.</p>
 ---
 
-### Prior Research on Tobacco Retail Exposure
+### Prior Research on Tobacco Retail Exposure {#prior-research}
 
 Prior work suggests detrimental associations between exposure to tobacco marketing and smoking outcomes including increased odds of failed cessation attempts, craving, purchase urges, and impulse purchases. To enhance ecological validity, some of this prior research has utilized place-based research approaches to investigate associations between tobacco retail exposure and smoking outcomes. In these studies, a participant’s home address or neighborhood is commonly used to approximate real-world exposure, which is then later mapped to health behaviors, such as smoking. 
+
+<div class="side-by-side">
+  <div>
+    <h4>Traditional Approach</h4>
+    <p>In these studies, a participant's home address or neighborhood is commonly used to approximate real-world exposure, which is then later mapped to health behaviors, such as smoking.</p>
+  </div>
+  <div>
+    <h4>Modern Approach</h4>
+    <p>Geolocation tracking captures 55% more variance in exposure than neighborhood approximation methods, allowing for precise temporal and geographic measurement.</p>
+  </div>
+</div>
 
 While neighborhood approximated research has provided key insights, it lacks ability to evaluate exposures dynamically and within individuals across time. People’s daily lives often involve mobility, such as traveling for work, errands, or recreation. A pivotal study compared tobacco retail exposure estimates using neighborhood approximated exposure to real-time geolocation tracking and found that 55% of the variance accounted for by geolocation tracking was not accounted for using neighborhood approximated exposure. 
 
