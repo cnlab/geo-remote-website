@@ -340,7 +340,7 @@ li {
 
 .img-responsive {
   display: block;
-  max-width: 400px;
+  max-width: 70%;
   height: auto;
 }
 
