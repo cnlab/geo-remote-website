@@ -1,5 +1,5 @@
 ---
-layout: protocol
+layout: default
 title: Study Protocol
 ---
 

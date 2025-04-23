@@ -91,11 +91,13 @@ p {
 .sidebar li a:hover {
   background-color: #f5f5f5;
   border-left-color: #ddd;
+  color: #333 !important;
 }
 
 .sidebar li.active a {
   background-color: #f0f0f0;
   border-left-color: #0366d6; /* GitHub blue color */
+  color: #333 !important;
   font-weight: bold;
 }
 
