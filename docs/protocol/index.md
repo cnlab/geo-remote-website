@@ -1,7 +1,8 @@
 ---
-layout: protocol
+layout: default
 title: "Protocol"
 ---
+# Protocol
 
 <div class="highlight-box"> <p><strong>The GeoSmoking Study</strong> investigates the causal effects of exposure to tobacco retail environments on smoking behavior and neural reactivity among daily cigarette smokers.</p> </div>
 Study Setting and Design

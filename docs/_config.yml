@@ -1,16 +1,35 @@
 title: "Geoscan Smoking Study"
 description: "Clinical trial protocol and updates"
+baseurl: "/geo-remote-website"
+url: "https://cnlab.github.io"
+
+# GitHub Pages settings
 theme: minima
-markdown: kramdown  # Better for tables/charts
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins - only use GitHub Pages supported plugins
 plugins:
-  - jekyll-figure  # For image labeling (install via Gemfile)
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Remove problematic settings
+# source: .        # Remove this - causes issues
+# destination: ../_site  # Remove this - GitHub Pages handles it
+
+# Collections and defaults
 defaults:
   - scope:
       path: "protocol"
     values:
-      layout: protocol  # Special layout for protocol pages
-baseurl: "/geo-remote-website"
-url: "https://cnlab.github.io"
-permalink: pretty
-source: .       
-destination: ../_site 
+      layout: default  # Use 'default' or 'page' instead of custom 'protocol'
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+# Build settings
+safe: true  # GitHub Pages requirement
+incremental: false
