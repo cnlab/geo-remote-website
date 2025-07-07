@@ -1,13 +1,81 @@
----
-layout: default
----
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
-    {% include sidebar.html %}
-    <main class="main-content">
-      {{ content }}
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body class="protocol-layout">
+  {% include sidebar.html %}
+  
+  <nav class="protocol-nav">
+    <h3>📋 Page Contents</h3>
+    <ul>
+      <li><a href="#study-design" data-section="study-design">Study Design</a></li>
+      <li><a href="#eligibility" data-section="eligibility">Eligibility Criteria</a></li>
+      <li><a href="#recruitment" data-section="recruitment">Recruitment</a></li>
+      <li><a href="#consent" data-section="consent">Consent</a></li>
+      <li><a href="#screening" data-section="screening">Screening & Enrollment</a></li>
+      <li><a href="#baseline" data-section="baseline">Baseline Phase</a></li>
+      <li><a href="#intervention" data-section="intervention">Intervention Phase</a></li>
+      <li><a href="#fmri" data-section="fmri">fMRI Component</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <script>
+    // Highlight active section in navigation
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('h2[id]');
+      const navLinks = document.querySelectorAll('.protocol-nav a[data-section]');
+      
+      function highlightSection() {
+        let currentSection = '';
+        const scrollPos = window.scrollY + 150; // Offset for better detection
+        
+        // Find which section we're currently in
+        sections.forEach((section, index) => {
+          const sectionTop = section.offsetTop;
+          const nextSection = sections[index + 1];
+          const sectionBottom = nextSection ? nextSection.offsetTop : document.body.scrollHeight;
+          
+          if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+            currentSection = section.id;
+          }
+        });
+        
+        // If we're at the very top, highlight the first section
+        if (scrollPos < sections[0].offsetTop + 150) {
+          currentSection = sections[0].id;
+        }
+        
+        // Update navigation highlights
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.dataset.section === currentSection) {
+            link.classList.add('active');
+          }
+        });
+      }
+      
+      // Initial highlight
+      highlightSection();
+      
+      // Highlight on scroll
+      window.addEventListener('scroll', highlightSection);
+      
+      // Highlight on click
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          // Don't override the automatic highlighting
+          // Let the scroll event handler take care of it
+        });
+      });
+    });
+  </script>
+</body>
 </html>

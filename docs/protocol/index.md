@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: protocol
 title: "Protocol"
 ---
 # Protocol
@@ -7,8 +7,21 @@ title: "Protocol"
 <div class="highlight-box">
 <p><strong>The GeoSmoking Study</strong> investigates the causal effects of exposure to tobacco retail environments on smoking behavior and neural reactivity among daily cigarette smokers.</p>
 </div>
+<div class="protocol-toc">
+<h3>📋 Page Contents</h3>
+<ul>
+<li><a href="#study-design">Study Design</a></li>
+<li><a href="#eligibility">Eligibility Criteria</a></li>
+<li><a href="#recruitment">Recruitment</a></li>
+<li><a href="#consent">Consent</a></li>
+<li><a href="#screening">Screening & Enrollment</a></li>
+<li><a href="#baseline">Baseline Phase</a></li>
+<li><a href="#intervention">Intervention Phase</a></li>
+<li><a href="#fmri">fMRI Component</a></li>
+</ul>
+</div>
 
-## Study Setting and Design
+## Study Setting and Design {#study-design}
 
 <div class="method-card">
 <h3>🏛️ Study Overview</h3>
@@ -39,7 +52,7 @@ During the two-week baseline period, participants reported craving and smoking v
 
 Participants were randomly assigned to enter a tobacco retail store or a non-tobacco retail store once per day, or to follow their normal routines, while EMA and geolocation continued to be collected. Following the intervention period, eligible participants could opt into a fMRI session conducted at the University of Pennsylvania, designed to investigate neural reactivity to tobacco marketing cues.
 
-## Eligibility Criteria
+## Eligibility Criteria {#eligibility}
 
 ### Baseline Phase
 
@@ -123,7 +136,7 @@ Beginning on **October 6, 2023**, participants were asked at completion of the b
 </div>
 </div>
 
-## Recruitment
+## Recruitment {#recruitment}
 
 <div class="method-card">
 <h3>📢 Primary Recruitment Strategy</h3>
@@ -165,7 +178,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 <p><strong>fMRI Recruitment:</strong> Enrolled or completed participants who were potentially eligible for the optional fMRI session were contacted to screen them for interest in and eligibility for the scan session.</p>
 </div>
 
-## Consent
+## Consent {#consent}
 
 <div class="method-card">
 <h3>📋 Multi-Stage Consent Process</h3>
@@ -198,7 +211,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 
 **fMRI Component:** Participants who completed the baseline and intervention components and who were interested in the fMRI component provided electronic consent at the beginning of the fMRI screening survey. Eligible participants who completed the fMRI scan provided additional consent at the beginning of the session.
 
-## Screening and Enrollment Process
+## Screening and Enrollment Process {#screening}
 
 <div class="figure">
 <img src="{{ '/assets/images/protocol/study-design.png' | relative_url }}" alt="Graphic of study timeline described below" class="img-responsive center-block">

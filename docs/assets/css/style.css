@@ -35,6 +35,11 @@ body {
   padding-right: 2rem;
 }
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5rem;
@@ -532,4 +537,110 @@ body .cta-container {
   gap: 1rem;
   margin: 3rem 0 1rem;
   justify-content: center;
+}
+
+/* Three-column layout for protocol page with dual sidebars */
+.protocol-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 250px 1fr;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  gap: 0;
+}
+
+/* Protocol navigation sidebar (next to main sidebar) */
+.protocol-nav {
+  background: #f8f9fa;
+  padding: 2rem 1.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+}
+
+.protocol-nav h3 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.protocol-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.protocol-nav li {
+  margin-bottom: 0.25rem;
+}
+
+.protocol-nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  border-left: 3px solid transparent;
+}
+
+.protocol-nav a:hover {
+  background-color: rgba(44, 108, 177, 0.1);
+  color: var(--primary);
+  border-left-color: var(--secondary);
+}
+
+.protocol-nav a.active {
+  background-color: rgba(44, 108, 177, 0.15);
+  color: var(--primary);
+  font-weight: 600;
+  border-left-color: var(--primary);
+}
+
+/* Adjust main content for dual sidebar layout */
+.protocol-layout .main-content {
+  padding: 2rem;
+}
+
+/* Offset for anchor links */
+h2[id], h3[id] {
+  scroll-margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .protocol-layout {
+    grid-template-columns: var(--sidebar-width-tablet) 220px 1fr;
+  }
+  
+  .protocol-nav {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .protocol-layout {
+    grid-template-columns: var(--sidebar-width-tablet) 1fr;
+  }
+  
+  .protocol-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .protocol-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    height: auto;
+    position: relative;
+  }
 }
