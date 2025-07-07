@@ -7,19 +7,6 @@ title: "Protocol"
 <div class="highlight-box">
 <p><strong>The GeoSmoking Study</strong> investigates the causal effects of exposure to tobacco retail environments on smoking behavior and neural reactivity among daily cigarette smokers.</p>
 </div>
-<div class="protocol-toc">
-<h3>📋 Page Contents</h3>
-<ul>
-<li><a href="#study-design">Study Design</a></li>
-<li><a href="#eligibility">Eligibility Criteria</a></li>
-<li><a href="#recruitment">Recruitment</a></li>
-<li><a href="#consent">Consent</a></li>
-<li><a href="#screening">Screening & Enrollment</a></li>
-<li><a href="#baseline">Baseline Phase</a></li>
-<li><a href="#intervention">Intervention Phase</a></li>
-<li><a href="#fmri">fMRI Component</a></li>
-</ul>
-</div>
 
 ## Study Setting and Design {#study-design}
 

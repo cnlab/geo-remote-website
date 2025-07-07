@@ -1,58 +1,50 @@
-// Protocol page navigation highlighting
-document.addEventListener('DOMContentLoaded', function() {
-  const sections = document.querySelectorAll('h2[id]');
-  const navLinks = document.querySelectorAll('.protocol-nav a[data-section]');
+// Simple protocol navigation highlighting for GitHub Pages
+(function() {
+  'use strict';
   
-  if (sections.length === 0 || navLinks.length === 0) {
-    return; // Exit if elements don't exist
-  }
-  
-  function highlightSection() {
-    let currentSection = '';
-    const scrollPos = window.scrollY + 150; // Offset for better detection
+  function initProtocolNav() {
+    var sections = document.querySelectorAll('h2[id]');
+    var navLinks = document.querySelectorAll('.protocol-nav a[data-section]');
     
-    // Find which section we're currently in
-    sections.forEach(function(section, index) {
-      const sectionTop = section.offsetTop;
-      const nextSection = sections[index + 1];
-      const sectionBottom = nextSection ? nextSection.offsetTop : document.body.scrollHeight;
+    if (!sections.length || !navLinks.length) return;
+    
+    function highlightCurrentSection() {
+      var scrollY = window.pageYOffset;
+      var current = '';
       
-      if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
-        currentSection = section.id;
+      for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        var sectionTop = section.offsetTop - 200;
+        var sectionHeight = section.offsetHeight;
+        
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
       }
-    });
-    
-    // If we're at the very top, highlight the first section
-    if (scrollPos < sections[0].offsetTop + 150) {
-      currentSection = sections[0].id;
+      
+      for (var j = 0; j < navLinks.length; j++) {
+        var link = navLinks[j];
+        link.classList.remove('active');
+        
+        if (link.getAttribute('data-section') === current) {
+          link.classList.add('active');
+        }
+      }
     }
     
-    // Update navigation highlights
-    navLinks.forEach(function(link) {
-      link.classList.remove('active');
-      if (link.dataset.section === currentSection) {
-        link.classList.add('active');
-      }
+    // Run on load
+    highlightCurrentSection();
+    
+    // Run on scroll
+    window.addEventListener('scroll', function() {
+      highlightCurrentSection();
     });
   }
   
-  // Initial highlight
-  highlightSection();
-  
-  // Highlight on scroll
-  window.addEventListener('scroll', highlightSection);
-  
-  // Optional: Throttle scroll events for better performance
-  let ticking = false;
-  function throttledHighlight() {
-    if (!ticking) {
-      requestAnimationFrame(function() {
-        highlightSection();
-        ticking = false;
-      });
-      ticking = true;
-    }
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initProtocolNav);
+  } else {
+    initProtocolNav();
   }
-  
-  window.addEventListener('scroll', throttledHighlight);
-});
+})();
