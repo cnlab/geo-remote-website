@@ -27,55 +27,6 @@
     {{ content }}
   </main>
 
-  <script>
-    // Highlight active section in navigation
-    document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('h2[id]');
-      const navLinks = document.querySelectorAll('.protocol-nav a[data-section]');
-      
-      function highlightSection() {
-        let currentSection = '';
-        const scrollPos = window.scrollY + 150; // Offset for better detection
-        
-        // Find which section we're currently in
-        sections.forEach((section, index) => {
-          const sectionTop = section.offsetTop;
-          const nextSection = sections[index + 1];
-          const sectionBottom = nextSection ? nextSection.offsetTop : document.body.scrollHeight;
-          
-          if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
-            currentSection = section.id;
-          }
-        });
-        
-        // If we're at the very top, highlight the first section
-        if (scrollPos < sections[0].offsetTop + 150) {
-          currentSection = sections[0].id;
-        }
-        
-        // Update navigation highlights
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.dataset.section === currentSection) {
-            link.classList.add('active');
-          }
-        });
-      }
-      
-      // Initial highlight
-      highlightSection();
-      
-      // Highlight on scroll
-      window.addEventListener('scroll', highlightSection);
-      
-      // Highlight on click
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          // Don't override the automatic highlighting
-          // Let the scroll event handler take care of it
-        });
-      });
-    });
-  </script>
+  <script src="{{ '/assets/js/protocol-nav.js' | relative_url }}"></script>
 </body>
 </html>
