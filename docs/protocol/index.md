@@ -348,3 +348,317 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 <p>Consent, training, final verification</p>
 </div>
 </div>
+## Baseline Period {#baseline}
+
+<div class="method-card">
+<h3>📊 Baseline Data Collection</h3>
+<p>The baseline period began 2 days after completion of Online Session 1, and lasted for 14 days. During this period, participants completed EMA and location tracking to establish baseline smoking patterns.</p>
+</div>
+
+### Baseline Requirements
+
+**Duration:** 14 days starting 2 days after Online Session 1
+
+**Data Collection:**
+- EMA surveys (see Table 2)
+- Continuous geolocation tracking for tobacco retail exposure assessment
+
+### Quality Assurance
+
+<div class="side-by-side">
+<div>
+<h4>📞 Participant Support</h4>
+<ul>
+<li>Participants contacted if no EMA surveys completed in first few days</li>
+<li>Regular updates of % of surveys completed</li>
+<li>Technical support as needed</li>
+</ul>
+</div>
+<div>
+<h4>🎯 Compliance Requirements</h4>
+<ul>
+<li>≥75% EMA response rate required</li>
+<li>Geolocation tracking must be active (verified through location history files)</li>
+</ul>
+</div>
+</div>
+
+<div class="highlight-box">
+<p><strong>Flexibility:</strong> Participants were able to pause their participation as needed (for example, due to significant illness or disruptive life events) at any point during the study.</p>
+</div>
+
+## Online Session 2 {#session2}
+
+<div class="method-card">
+<h3>🖥️ Pre-Intervention Session</h3>
+<p>Participants completed Online Session 2 after the baseline period, with encouragement to complete within 1 week of invitation. Three participants received exceptions for longer delays.</p>
+</div>
+
+### Session Components
+
+**Duration:** 30-60 minutes via Qualtrics
+
+**Tasks Completed:**
+- Self-report measures (see Table 1)
+- Image rating task
+- Geolocation data export and upload
+- EMA setup and practice
+- Intervention task instructions and practice
+
+### Image Rating Task
+
+<div class="method-card">
+<h4>🖼️ Smoking Cue Reactivity Assessment</h4>
+<p>Participants viewed photographs and rated their craving response to assess reactivity to different types of smoking and retail cues.</p>
+</div>
+
+**Task Structure:**
+- **35 image sets** (2 images per set)
+- **3-second exposure** per image
+- **Craving rating** 0-100 scale after each set
+- **Technical issue reporting** via checkbox option
+
+**7 Categories** each repeated 5 times
+<div class="research-grid">
+<div class="research-item">
+<h4>Categories 1-2: Standard Cues</h4>
+<p><strong>1. Smoking cues:</strong> Cigarettes in a pack, in an ashtray, or alongside a lighter</p>
+<p><strong>2. Non-smoking cues:</strong> Pencils in a pack, with sharpener, or sitting on a table</p>
+</div>
+<div class="research-item">
+<h4>Categories 3-4: Retail Environments</h4>
+<p><strong>3. Non-tobacco retailers:</strong> Cash register areas at non-tobacco retailer stores</p>
+<p><strong>4. Tobacco retailers:</strong> Cash register and power wall area at tobacco retailer stores</p>
+</div>
+<div class="research-item">
+<h4>Categories 5-7: Product Images</h4>
+<p><strong>5. Cigarette packs:</strong> Close-up photographs of single brand cigarette packs</p>
+<p><strong>6. Promoted cigarettes:</strong> Single brand cigarette packs with price promotion features</p>
+<p><strong>7. Control products:</strong> Close-up photographs of gum packs with price promotion features</p>
+</div>
+</div>
+
+**Personalization Features:**
+- **Filter customization:** Brown or white filters matched to participant preferences
+- **Brand customization:** L&M, Pall Mall, Camel, Newport, or Marlboro based on preference
+- **Randomized presentation:** Category order randomized, image pairs within categories
+
+**Pre-Task Assessment:**
+- Time since last cigarette
+- Current craving level
+- Instruction to refrain from smoking during task
+
+### Additional Eligibility Screening
+
+<div class="highlight-box">
+<p><strong>Store Visit Capability:</strong> Starting 10/06/2023, participants were asked if they could complete store visits (before knowing their assignment). Those unable to complete visits were excluded and compensated for completed tasks.</p>
+</div>
+
+## Random Condition Assignment {#randomization}
+
+<div class="method-card">
+<h3>🎲 Randomization Procedure</h3>
+<p>Participants who completed baseline requirements were randomized using a blocked design to ensure balanced group assignment.</p>
+</div>
+
+### Randomization Strategy
+
+**Blocking Variables:**
+- **Gender:** Male, Female, Other
+- **Smoking level:** High (≥20 cigarettes/day), Low (<20 cigarettes/day)
+
+**Implementation Timeline:**
+- **Pre-12/01/2022:** Fully random assignment (66 participants)
+- **Post-12/01/2022:** Blocked randomization (216 participants)
+
+### Study Conditions
+
+<div class="research-grid">
+<div class="research-item">
+<h4>Tobacco Retailer</h4>
+<p>Enter 7-11 stores that sell tobacco within study area (PA, DE, NJ)</p>
+</div>
+<div class="research-item">
+<h4>Non-Tobacco Retailer</h4>
+<p>Enter CVS stores that do not sell tobacco within study area</p>
+</div>
+<div class="research-item">
+<h4>Control</h4>
+<p>No store entry required, equal compensation, same other tasks</p>
+</div>
+</div>
+
+## Intervention Period {#intervention}
+
+<div class="method-card">
+<h3>🏪 4-Week Intervention Phase</h3>
+<p>The intervention period began after Online Session 2 completion, involving 4 weeks of condition-specific store visits alongside continued EMA and location tracking.</p>
+</div>
+
+### Universal Tasks (All Participants)
+
+**Duration:** 4 weeks
+
+**Required Activities:**
+- EMA surveys (see Table 2)
+- Continuous location tracking
+- Weekly surveys
+
+### Store Visit Conditions
+
+<div class="side-by-side">
+<div>
+<h4>🏪 Store Visit Requirements</h4>
+<ul>
+<li><strong>Frequency:</strong> 5 times per week for 4 weeks</li>
+<li><strong>Purchase requirement:</strong> Small purchase (excluding tobacco)</li>
+<li><strong>Budget:</strong> $3 per visit via Greenphire Clincard</li>
+<li><strong>Documentation:</strong> Receipt photo via RealLife Exp app</li>
+</ul>
+</div>
+<div>
+<h4>🎯 Store Assignments</h4>
+<ul>
+<li><strong>Tobacco Retailer:</strong> Convenience stores selling tobacco</li>
+<li><strong>Non-Tobacco Retailer:</strong> Pharmacy stores not selling tobacco</li>
+<li><strong>Control:</strong> No store visits required</li>
+<li><strong>Compensation:</strong> Equal across all conditions</li>
+</ul>
+</div>
+</div>
+## Online Session 3 {#session3}
+
+<div class="method-card">
+<h3>📋 Post-Intervention Assessment</h3>
+<p>Following the Intervention Period, participants completed Online Session 3, encouraged to complete within 1 week of invitation. Two participants completed after longer delays.</p>
+</div>
+
+### Session Components
+
+**Tasks Completed:**
+- Self-report surveys (see Table 1)
+- Image rating task (repeat administration)
+- Geolocation data export and upload
+
+### Study Completion Procedures
+
+<div class="side-by-side">
+<div>
+<h4>📱 App Removal Instructions</h4>
+<ul>
+<li>Smartphone application uninstallation guidance</li>
+<li>Location tracking deactivation instructions</li>
+<li>Participant choice for data retention</li>
+</ul>
+</div>
+<div>
+<h4>📧 Non-Responder Protocol</h4>
+<ul>
+<li>Final payment sent after several contact attempts</li>
+<li>Smoking cessation information provided</li>
+<li>Study debriefing materials sent</li>
+</ul>
+</div>
+</div>
+
+### Debriefing and Resources
+
+<div class="highlight-box">
+<p><strong>Study Completion:</strong> Participants not interested in or eligible for fMRI received debriefing forms detailing study procedures and research goals, plus smoking cessation assistance information.</p>
+</div>
+
+**fMRI-Eligible Participants:** Debriefing and cessation resources provided after scan completion or upon determination of scan ineligibility.
+
+## fMRI Session {#fmri}
+
+<div class="method-card">
+<h3>🧠 Optional Neuroimaging Component</h3>
+<p>Participants who completed Online Session 3 and met eligibility criteria were invited for an optional 2-hour in-person fMRI session at the University of Pennsylvania.</p>
+</div>
+
+### Pre-Scan Procedures
+
+**Eligibility Confirmation:**
+- fMRI screening survey completion
+- Criteria verification (as described in Eligibility section)
+- Session scheduling at University of Pennsylvania
+
+**Day of Scan Protocol:**
+
+<div class="research-timeline">
+<div class="timeline-item">
+<span class="timeline-marker">Check-In</span>
+<h4>COVID-19 & Safety</h4>
+<p>University/hospital screening requirements, consent review</p>
+</div>
+<div class="timeline-item">
+<span class="timeline-marker">Pre-Scan</span>
+<h4>Final Verification</h4>
+<p>Urine sample, forms completion, surveys</p>
+</div>
+<div class="timeline-item">
+<span class="timeline-marker">Scanning</span>
+<h4>fMRI Session</h4>
+<p>Instructions, training, 1-hour scan protocol</p>
+</div>
+</div>
+
+### fMRI Image Rating Task
+
+<div class="method-card">
+<h4>🖼️ Neuroimaging Task Parameters</h4>
+<p>Enhanced version of the online image rating task, optimized for fMRI data collection.</p>
+</div>
+
+**Task Structure:**
+- **70 blocks** of 4 images each
+- **4-second exposure** per image
+- **3-second response window** for craving rating
+- **Rating scale:** 1 (not at all) to 5 (very much)
+
+**Image Categories (Same 7 as Online Task):**
+
+<div class="research-grid">
+<div class="research-item">
+<h4>Repetition Structure</h4>
+<p><strong>10 repetitions</strong> per category (vs. 5 in online task)</p>
+<p><strong>Each image repeated twice</strong> (vs. unique images online)</p>
+</div>
+<div class="research-item">
+<h4>Categories 1-4</h4>
+<p><strong>1.</strong> Smoking cues<br>
+<strong>2.</strong> Non-smoking cues<br>
+<strong>3.</strong> Non-tobacco retailers<br>
+<strong>4.</strong> Tobacco retailers</p>
+</div>
+<div class="research-item">
+<h4>Categories 5-7</h4>
+<p><strong>5.</strong> Cigarette packs<br>
+<strong>6.</strong> Promoted cigarettes<br>
+<strong>7.</strong> Control products (gum)</p>
+</div>
+</div>
+
+### Additional Scanning Components
+
+**Anatomical Scans:**
+- T1-weighted anatomical scan
+- T2-weighted anatomical scan
+- Fieldmap scan for distortion correction
+
+<div class="highlight-box">
+<p><strong>Technical Details:</strong> Complete scanning parameters can be found in Appendix: fMRI Scanning Parameters.</p>
+</div>
+
+### Session Summary
+
+<div class="key-statistic">
+<span class="statistic-number">23 Participants</span>
+<span class="statistic-description">completed the scanner task</span>
+</div>
+
+**Session Breakdown:**
+- **Pre-scan procedures:** COVID screening, consent, eligibility verification
+- **Task preparation:** Safety instructions, task training
+- **Scanning time:** ~1 hour (task + anatomical scans)
+- **Post-scan:** Debriefing and resource provision
