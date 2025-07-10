@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body class="psychometric-layout">
+  {% include sidebar.html %}
+  
+  <nav class="psychometric-nav">
+    <h3>📊 Psychometric Tests</h3>
+    <ul>
+      <li><a href="#smoker-self-concept" data-section="smoker-self-concept">Smoker Self-Concept Scale</a></li>
+      <li><a href="#fagerstrom" data-section="fagerstrom">Fagerström Test</a></li>
+      <li><a href="#perceived-stress" data-section="perceived-stress">Perceived Stress Scale</a></li>
+      <li><a href="#cesd" data-section="cesd">CESD Depression Scale</a></li>
+      <li><a href="#tcors-beliefs" data-section="tcors-beliefs">TCORS Smoking Beliefs</a></li>
+      <li><a href="#tcors-norms" data-section="tcors-norms">TCORS Smoking Norms</a></li>
+      <li><a href="#smoking-motivations" data-section="smoking-motivations">Smoking Motivations</a></li>
+      <li><a href="#purpose-in-life" data-section="purpose-in-life">Purpose in Life Scale</a></li>
+      <li><a href="#mindfulness" data-section="mindfulness">Mindful Attention Scale</a></li>
+      <li><a href="#impulsiveness" data-section="impulsiveness">Barratt Impulsiveness</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <script src="{{ '/assets/js/psychometric-nav.js' | relative_url }}"></script>
+</body>
+</html>
