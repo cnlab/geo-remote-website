@@ -1,105 +1,102 @@
-// Psychometric Measures Interactive Table
+// Psychometric Measures Interactive Table - Refactored
 // This script handles CSV loading, parsing, and table interactions
 
 // Global variables
 let psychometricData = [];
 let currentMeasure = null;
 
-// Function to get column value with flexible column name matching
+// Utility function to get column value with flexible column name matching
 function getColumnValue(row, possibleNames) {
     for (const name of possibleNames) {
-        if (row[name] !== undefined) {
+        if (row[name] !== undefined && row[name] !== null) {
             return row[name];
         }
     }
     return '';
 }
 
-// Function to check if a row is an instruction row
+// Check if a row is an instruction row
 function isInstructionRow(row) {
     const variable = getColumnValue(row, ['Variable / Field Name', 'Variable', 'variable', 'field_name']);
-    
-    // Check for instruction patterns in variable name
     return variable.includes('_instructions') || 
            variable.includes('_intro') || 
            variable.endsWith('_inst') ||
-           /^[a-zA-Z]+_0$/.test(variable); // Pattern like "bis_0" for instructions
+           /^[a-zA-Z]+_0$/.test(variable);
 }
 
-// Function to extract instructions from measure data
-function extractInstructions(measureData) {
-    const instructionRows = measureData.filter(row => isInstructionRow(row));
-    
-    if (instructionRows.length > 0) {
-        const instructionRow = instructionRows[0];
-        const instructions = getColumnValue(instructionRow, ['Field Label', 'field_label', 'FieldLabel', 'Field_Label', 'label']);
-        return cleanQuestionText(instructions); // Remove any "..." patterns if present
-    }
-    
-    return null;
-}
-
-// Function to filter out instruction rows from measure data
-function filterInstructionRows(measureData) {
-    return measureData.filter(row => !isInstructionRow(row));
-}
-
-// Robust CSV row parser that handles quotes and commas properly
+// CSV parsing functions
 function parseCSVRow(line) {
     const result = [];
     let current = '';
     let inQuotes = false;
-    let i = 0;
     
-    while (i < line.length) {
+    for (let i = 0; i < line.length; i++) {
         const char = line[i];
         
         if (char === '"') {
-            if (inQuotes && line[i + 1] === '"') {
-                // Escaped quote
+            if (inQuotes && i + 1 < line.length && line[i + 1] === '"') {
                 current += '"';
-                i += 2;
-            } else {
-                // Toggle quote state
-                inQuotes = !inQuotes;
                 i++;
+            } else {
+                inQuotes = !inQuotes;
             }
         } else if (char === ',' && !inQuotes) {
-            // End of field
             result.push(current.trim());
             current = '';
-            i++;
         } else {
             current += char;
-            i++;
         }
     }
     
-    // Add the last field
     result.push(current.trim());
     
-    // Clean up quotes from fields
     return result.map(field => {
         field = field.trim();
         if (field.startsWith('"') && field.endsWith('"')) {
-            field = field.slice(1, -1);
+            field = field.slice(1, -1).replace(/""/g, '"');
         }
         return field;
     });
 }
 
-// Function to parse CSV data - more robust version
 function parseCSV(csvText) {
-    // Remove BOM if present
-    csvText = csvText.replace(/^\uFEFF/, '');
+    csvText = csvText.replace(/^\uFEFF/, ''); // Remove BOM
     
-    const lines = csvText.split('\n').filter(line => line.trim());
+    const lines = [];
+    let currentLine = '';
+    let inQuotes = false;
+    
+    for (let i = 0; i < csvText.length; i++) {
+        const char = csvText[i];
+        
+        if (char === '"') {
+            if (inQuotes && i + 1 < csvText.length && csvText[i + 1] === '"') {
+                currentLine += '""';
+                i++;
+            } else {
+                inQuotes = !inQuotes;
+                currentLine += char;
+            }
+        } else if (char === '\n' && !inQuotes) {
+            if (currentLine.trim()) {
+                lines.push(currentLine);
+            }
+            currentLine = '';
+        } else if (char === '\r' && !inQuotes) {
+            continue;
+        } else {
+            currentLine += char;
+        }
+    }
+    
+    if (currentLine.trim()) {
+        lines.push(currentLine);
+    }
+    
     if (lines.length === 0) return [];
     
-    // Parse header line
     const headers = parseCSVRow(lines[0]);
-    console.log('Parsed headers:', headers);
-    console.log('Headers count:', headers.length);
+    console.log('CSV Headers:', headers);
     
     const data = [];
     for (let i = 1; i < lines.length; i++) {
@@ -110,143 +107,389 @@ function parseCSV(csvText) {
                 headers.forEach((header, index) => {
                     row[header] = values[index] || '';
                 });
-                
-                // Debug BIS rows specifically during parsing
-                if (values[0] && values[0].includes('bis_')) {
-                    console.log(`\nParsing BIS row: ${values[0]}`);
-                    console.log('  Raw line:', lines[i].substring(0, 200) + '...');
-                    console.log('  Parsed values count:', values.length);
-                    console.log('  Headers count:', headers.length);
-                    console.log('  Values[5] (choices):', values[5]); // Assuming choices is column 5
-                    console.log('  Full values array:', values);
-                }
-                
                 data.push(row);
             }
         } catch (e) {
-            console.warn('Error parsing line', i, ':', e.message);
-            console.warn('Problematic line:', lines[i]);
+            console.warn(`Error parsing line ${i}:`, e.message);
         }
     }
+    
     return data;
 }
 
-// Function to format response options
-function formatResponseOptions(choices) {
+// Text cleaning functions
+function cleanFieldLabel(fieldLabel, instructions) {
+    if (!fieldLabel) return '';
+    
+    let cleaned = fieldLabel.trim();
+    
+    if (instructions && instructions.trim()) {
+        const instructionText = instructions.trim();
+        
+        if (cleaned.startsWith(instructionText)) {
+            cleaned = cleaned.substring(instructionText.length).trim();
+        }
+        
+        const ellipsisMatch = cleaned.match(/^.*?\.\.\./);
+        if (ellipsisMatch) {
+            cleaned = cleaned.substring(ellipsisMatch[0].length).trim();
+        }
+        
+        if (cleaned.includes(instructionText)) {
+            cleaned = cleaned.replace(instructionText, '').trim();
+        }
+    }
+    
+    if (!cleaned) {
+        cleaned = fieldLabel.trim();
+    }
+    
+    cleaned = cleaned.replace(/^[.,:;\s]+/, '').trim();
+    return cleaned;
+}
+
+function extractInstructions(measureData) {
+    const instructionRows = measureData.filter(row => isInstructionRow(row));
+    
+    if (instructionRows.length > 0) {
+        const instructionRow = instructionRows[0];
+        const instructions = getColumnValue(instructionRow, ['Field Label']);
+        return cleanFieldLabel(instructions, null);
+    }
+    
+    return null;
+}
+
+// Slider creation functions
+function createSlider(minOption, maxOption, options, minValue, maxValue) {
+    const dataSourceInfo = `
+        <div class="slider-data-source">
+            <small>
+                <strong>Scale:</strong> ${minOption.originalValue} to ${maxOption.originalValue} 
+                ${minValue && maxValue ? '(from Text Validation Min/Max)' : '(from Choices)'}
+                ${options.length > 2 ? ` | ${options.length} total options` : ''}
+            </small>
+        </div>
+    `;
+    
+    let expandableOptions = '';
+    if (options.length > 2) {
+        const optionsList = options.map((opt, index) => {
+            const numericValue = minValue && maxValue && options.length > 2 
+                ? Math.round(parseInt(minValue) + (parseInt(maxValue) - parseInt(minValue)) * (index / (options.length - 1)))
+                : index + 1;
+            return `<li>${numericValue}: ${opt}</li>`;
+        }).join('');
+        
+        expandableOptions = `
+            <div class="slider-all-options">
+                <details>
+                    <summary>View all ${options.length} response options</summary>
+                    <div class="response-options-small">
+                        <p><strong>All options from left to right:</strong></p>
+                        <ul>${optionsList}</ul>
+                    </div>
+                </details>
+            </div>
+        `;
+    }
+    
+    return `
+        <div class="slider-container">
+            ${dataSourceInfo}
+            <div class="slider-track">
+                <div class="slider-endpoint slider-min">
+                    <div class="slider-value">${minOption.originalValue}</div>
+                    <div class="slider-label">${minOption.label}</div>
+                </div>
+                <div class="slider-bar">
+                    <div class="slider-fill"></div>
+                    <div class="slider-thumb slider-thumb-start"></div>
+                    <div class="slider-thumb slider-thumb-end"></div>
+                </div>
+                <div class="slider-endpoint slider-max">
+                    <div class="slider-value">${maxOption.originalValue}</div>
+                    <div class="slider-label">${maxOption.label}</div>
+                </div>
+            </div>
+            ${expandableOptions}
+        </div>
+    `;
+}
+
+function formatSliderOptions(choices, row) {
     if (!choices || choices.trim() === '') {
-        console.log('formatResponseOptions: choices is empty or null:', choices);
         return 'N/A';
     }
     
-    console.log('formatResponseOptions called with:', choices);
+    console.log('🎛️ Processing slider:', choices);
     
-    const options = choices.split('|').map(opt => opt.trim());
-    console.log('Split options:', options);
+    const minValue = getColumnValue(row, ['Text Validation Min']);
+    const maxValue = getColumnValue(row, ['Text Validation Max']);
     
-    // Parse and sort options by their numeric value
-    const parsedOptions = options.map(option => {
-        console.log('Processing option:', option);
-        const parts = option.split(',').map(p => p.trim());
-        console.log('  Split parts:', parts);
+    console.log('  Min/Max values:', minValue, maxValue);
+    
+    const options = choices.split('|').map(opt => opt.trim()).filter(opt => opt !== '');
+    console.log('  Choice options:', options);
+    
+    let minOption, maxOption;
+    
+    if (minValue && maxValue && options.length >= 2) {
+        // Use Text Validation Min/Max with choice labels
+        minOption = {
+            originalValue: minValue,
+            label: options[0],
+            value: parseInt(minValue, 10)
+        };
         
+        maxOption = {
+            originalValue: maxValue,
+            label: options[options.length - 1],
+            value: parseInt(maxValue, 10)
+        };
+        
+        console.log('  ✓ Using Text Validation Min/Max');
+    } else if (minValue && maxValue) {
+        // Use Text Validation Min/Max with generic labels
+        minOption = {
+            originalValue: minValue,
+            label: `Minimum (${minValue})`,
+            value: parseInt(minValue, 10)
+        };
+        
+        maxOption = {
+            originalValue: maxValue,
+            label: `Maximum (${maxValue})`,
+            value: parseInt(maxValue, 10)
+        };
+        
+        console.log('  ✓ Using Text Validation Min/Max with generic labels');
+    } else {
+        // Fallback to parsing choices
+        const parsedOptions = options.map(option => {
+            const parts = option.split(',').map(p => p.trim());
+            if (parts.length >= 2) {
+                const numericPart = parts[0].trim();
+                const value = parseInt(numericPart, 10);
+                const label = parts.slice(1).join(', ').trim();
+                
+                return {
+                    value: isNaN(value) ? 0 : value,
+                    originalValue: numericPart,
+                    label: label
+                };
+            }
+            return null;
+        }).filter(opt => opt !== null);
+        
+        if (parsedOptions.length < 2) {
+            console.log('  ⚠️ Cannot create slider - insufficient data');
+            return formatResponseOptions(choices);
+        }
+        
+        parsedOptions.sort((a, b) => a.value - b.value);
+        minOption = parsedOptions[0];
+        maxOption = parsedOptions[parsedOptions.length - 1];
+        
+        console.log('  ⚠️ Using fallback choice parsing');
+    }
+    
+    return createSlider(minOption, maxOption, options, minValue, maxValue);
+}
+
+function formatResponseOptions(choices, fieldType = null, row = null) {
+    if (!choices || choices.trim() === '') {
+        // For text fields, we don't need choices content
+        if (fieldType && fieldType.toLowerCase() === 'text') {
+            return createTextBox(row);
+        }
+        return 'N/A';
+    }
+    
+    // Handle text field type
+    if (fieldType && fieldType.toLowerCase() === 'text') {
+        return createTextBox(row);
+    }
+    
+    // Handle slider field type
+    if (fieldType && fieldType.toLowerCase() === 'slider') {
+        return createSimpleSlider(choices, row);
+    }
+    
+    // Handle regular radio/checkbox options
+    const options = choices.split('|').map(opt => opt.trim());
+    const parsedOptions = options.map(option => {
+        const parts = option.split(',').map(p => p.trim());
         if (parts.length >= 2) {
             const numericPart = parts[0].trim();
             const value = parseInt(numericPart, 10);
-            const label = parts.slice(1).join(', ').trim(); // Join with comma + space
-            
-            console.log('  Numeric part:', numericPart);
-            console.log('  Parsed value:', value);
-            console.log('  Label:', label);
+            const label = parts.slice(1).join(', ').trim();
             
             return {
-                value: isNaN(value) ? 9999 : value, // Put non-numeric values at end
+                value: isNaN(value) ? 9999 : value,
                 originalValue: numericPart,
                 label: label,
-                display: `${numericPart}: ${label}`,
-                original: option
+                display: `${numericPart}: ${label}`
             };
         }
         
-        // Handle options that don't have the expected format
-        console.log('  Option does not match expected format, treating as unparseable');
         return {
-            value: 9999, // Put unparseable options at end
+            value: 9999,
             originalValue: option,
             label: '',
-            display: option,
-            original: option
+            display: option
         };
     });
     
-    console.log('Parsed options before sorting:', parsedOptions);
-    
-    // Sort by numeric value
     parsedOptions.sort((a, b) => {
         if (a.value !== b.value) {
             return a.value - b.value;
         }
-        // If values are equal, sort by original string
-        return a.original.localeCompare(b.original);
+        return a.display.localeCompare(b.display);
     });
     
-    console.log('Parsed options after sorting:', parsedOptions);
-    
-    // Format for display
     const formattedOptions = parsedOptions.map(opt => opt.display);
-    console.log('Final formatted options:', formattedOptions);
     
-    const htmlResult = `<ul class="response-options">${formattedOptions.map(opt => `<li>${opt}</li>`).join('')}</ul>`;
-    console.log('Generated HTML:', htmlResult);
+    // Add field type class for styling
+    let fieldTypeClass = 'response-options';
+    if (fieldType) {
+        if (fieldType.toLowerCase() === 'radio') {
+            fieldTypeClass += ' response-options-radio';
+            console.log('🔘 Applied RADIO class:', fieldTypeClass);
+        } else if (fieldType.toLowerCase() === 'checkbox') {
+            fieldTypeClass += ' response-options-checkbox';
+            console.log('☑️ Applied CHECKBOX class:', fieldTypeClass);
+        } else {
+            console.log('📋 Field type not radio/checkbox:', fieldType);
+        }
+    } else {
+        console.log('❓ No field type specified, using default arrows');
+    }
     
-    return htmlResult;
+    return `<ul class="${fieldTypeClass}">${formattedOptions.map(opt => `<li>${opt}</li>`).join('')}</ul>`;
 }
 
-// Function to clean question text - simplified version
-function cleanQuestionText(fieldLabel) {
-    if (!fieldLabel) return '';
+// Simple slider creation function
+function createSimpleSlider(choices, row) {
+    console.log('🎛️ Creating simple slider with choices:', choices);
     
-    // Simple approach: only handle the "..." pattern
-    let cleaned = fieldLabel.replace(/^.*?\.\.\./g, '').trim();
+    // Get Text Validation Min and Max
+    const minValue = getColumnValue(row, ['Text Validation Min']);
+    const maxValue = getColumnValue(row, ['Text Validation Max']);
     
-    // If no "..." found, use the full text
-    if (cleaned === '') cleaned = fieldLabel;
+    console.log('  Min Value:', minValue);
+    console.log('  Max Value:', maxValue);
     
-    return cleaned;
+    // Split choices on | and clean up
+    // Handle cases like "| |" by replacing with single "|" first
+    const cleanChoices = choices.replace(/\|\s*\|/g, '|');
+    const parts = cleanChoices.split('|').map(part => part.trim()).filter(part => part !== '');
+    
+    console.log('  Cleaned parts:', parts);
+    
+    // Get left and right labels
+    const leftLabel = parts.length > 0 ? parts[0] : 'Min';
+    const rightLabel = parts.length > 1 ? parts[parts.length - 1] : 'Max';
+    
+    console.log('  Left label:', leftLabel);
+    console.log('  Right label:', rightLabel);
+    
+    // Build the slider HTML
+    return `
+        <div class="simple-slider-container">
+            <div class="simple-slider-track">
+                <div class="simple-slider-endpoint simple-slider-left">
+                    <div class="simple-slider-label">${leftLabel}</div>
+                </div>
+                <div class="simple-slider-bar">
+                    <div class="simple-slider-line"></div>
+                    <div class="simple-slider-thumb simple-slider-thumb-left"></div>
+                    <div class="simple-slider-thumb simple-slider-thumb-right"></div>
+                </div>
+                <div class="simple-slider-endpoint simple-slider-right">
+                    <div class="simple-slider-label">${rightLabel}</div>
+                </div>
+            </div>
+            ${minValue && maxValue ? `
+                <div class="simple-slider-values">
+                    <span class="simple-slider-min">${minValue}</span>
+                    <span class="simple-slider-max">${maxValue}</span>
+                </div>
+            ` : ''}
+        </div>
+    `;
 }
 
-// Function to get unique measures from data
+// Function to create a non-interactive text box
+function createTextBox(row) {
+    // Get any validation info that might be relevant for text fields
+    const minLength = getColumnValue(row, ['Text Validation Min', 'min_length', 'Min Length']);
+    const maxLength = getColumnValue(row, ['Text Validation Max', 'max_length', 'Max Length']);
+    const validationType = getColumnValue(row, ['Text Validation Type OR Show Slider Number', 'validation_type', 'Validation Type']);
+    
+    console.log('📝 Creating text box');
+    console.log('  Min Length:', minLength);
+    console.log('  Max Length:', maxLength);
+    console.log('  Validation Type:', validationType);
+    
+    // Create placeholder text based on validation info
+    let placeholder = 'Enter text here...';
+    if (validationType) {
+        if (validationType.toLowerCase().includes('email')) {
+            placeholder = 'Enter email address...';
+        } else if (validationType.toLowerCase().includes('number')) {
+            placeholder = 'Enter number...';
+        } else if (validationType.toLowerCase().includes('phone')) {
+            placeholder = 'Enter phone number...';
+        } else if (validationType.toLowerCase().includes('date')) {
+            placeholder = 'Enter date...';
+        }
+    }
+    
+    // Build validation info display
+    let validationInfo = '';
+    if (minLength || maxLength || validationType) {
+        const validationParts = [];
+        if (validationType) validationParts.push(`Type: ${validationType}`);
+        if (minLength) validationParts.push(`Min: ${minLength} chars`);
+        if (maxLength) validationParts.push(`Max: ${maxLength} chars`);
+        
+        validationInfo = `
+            <div class="text-validation-info">
+                <small>${validationParts.join(' | ')}</small>
+            </div>
+        `;
+    }
+    
+    return `
+        <div class="text-field-container">
+            <input type="text" 
+                   class="text-field-display" 
+                   placeholder="${placeholder}" 
+                   disabled 
+                   readonly>
+            ${validationInfo}
+        </div>
+    `;
+}
+
+// Data organization functions
 function getUniqueMeasures(data) {
-    if (data.length === 0) return [];
+    if (data.length === 0) return ['All Items'];
     
-    // Try different possible column names for section header
     const possibleSectionNames = ['Section Header', 'section_header', 'SectionHeader', 'Section_Header'];
     const columns = Object.keys(data[0]);
     const sectionCol = possibleSectionNames.find(name => columns.includes(name));
     
     if (!sectionCol) {
-        console.error('Could not find section header column. Available columns:', columns);
-        return [];
+        console.log('No section header column found. Available columns:', columns);
+        return ['All Items'];
     }
     
     const measures = [...new Set(data.map(row => row[sectionCol]).filter(Boolean))];
     return measures.sort();
 }
 
-// Function to create measure buttons
-function createMeasureButtons(measures) {
-    const container = document.getElementById('measure-buttons');
-    container.innerHTML = '';
-    
-    measures.forEach(measure => {
-        const button = document.createElement('button');
-        button.className = 'measure-btn';
-        button.textContent = formatMeasureName(measure);
-        button.onclick = () => selectMeasure(measure);
-        container.appendChild(button);
-    });
-}
-
-// Function to format measure name for display
 function formatMeasureName(measure) {
     return measure
         .replace(/_from_qualtrics/g, '')
@@ -256,11 +499,29 @@ function formatMeasureName(measure) {
         .join(' ');
 }
 
-// Function to select and display a measure
+// UI functions
+function createMeasureButtons(measures) {
+    const container = document.getElementById('measure-buttons');
+    container.innerHTML = '';
+    
+    measures.forEach(measure => {
+        const button = document.createElement('button');
+        button.className = 'measure-btn';
+        button.textContent = measure === 'All Items' ? measure : formatMeasureName(measure);
+        button.onclick = () => {
+            if (measure === 'All Items') {
+                selectAllItems();
+            } else {
+                selectMeasure(measure);
+            }
+        };
+        container.appendChild(button);
+    });
+}
+
 function selectMeasure(measure) {
     currentMeasure = measure;
     
-    // Update button states
     document.querySelectorAll('.measure-btn').forEach(btn => {
         btn.classList.remove('active');
         if (btn.textContent === formatMeasureName(measure)) {
@@ -268,26 +529,42 @@ function selectMeasure(measure) {
         }
     });
     
-    // Reset table scroll position
     const tableContainer = document.querySelector('.table-container');
     tableContainer.scrollTop = 0;
     
-    // Filter data for this measure
     const possibleSectionNames = ['Section Header', 'section_header', 'SectionHeader', 'Section_Header'];
     const sectionCol = possibleSectionNames.find(name => 
         psychometricData.length > 0 && Object.keys(psychometricData[0]).includes(name)
     );
     
-    const measureData = psychometricData.filter(row => row[sectionCol] === measure);
+    let measureData;
+    if (sectionCol) {
+        measureData = psychometricData.filter(row => row[sectionCol] === measure);
+    } else {
+        measureData = psychometricData;
+    }
     
-    // Update measure info
     updateMeasureInfo(measureData);
-    
-    // Update table
     updateTable(measureData);
 }
 
-// Function to update measure info section
+function selectAllItems() {
+    currentMeasure = 'All Items';
+    
+    document.querySelectorAll('.measure-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent === 'All Items') {
+            btn.classList.add('active');
+        }
+    });
+    
+    const tableContainer = document.querySelector('.table-container');
+    tableContainer.scrollTop = 0;
+    
+    updateMeasureInfoAllItems(psychometricData);
+    updateTable(psychometricData);
+}
+
 function updateMeasureInfo(measureData) {
     const infoDiv = document.getElementById('measure-info');
     
@@ -300,15 +577,15 @@ function updateMeasureInfo(measureData) {
     const codebookInfo = getColumnValue(firstRow, ['Codebook Info', 'codebook_info', 'CodebookInfo', 'Codebook_Info']);
     const formInfo = getColumnValue(firstRow, ['Form Info', 'form_info', 'FormInfo', 'Form_Info']);
     
-    // Extract instructions from the measure data
     const instructions = extractInstructions(measureData);
     
-    // Filter out instruction rows for the actual count
-    const actualQuestions = filterInstructionRows(measureData);
+    const actualQuestions = measureData.filter(row => {
+        const fieldType = getColumnValue(row, ['Field Type']);
+        return fieldType && fieldType.toLowerCase() !== 'descriptive' && !isInstructionRow(row);
+    });
     
     let content = `<h3>${formatMeasureName(currentMeasure)} <span class="item-count">${actualQuestions.length} items</span></h3>`;
     
-    // Add instructions if found
     if (instructions) {
         content += `<div class="measure-instructions" style="background: #f0f8ff; padding: 1rem; border-radius: 4px; margin: 1rem 0; border-left: 4px solid var(--secondary);">
             <h4 style="margin-top: 0; color: var(--secondary);">📋 Instructions</h4>
@@ -328,7 +605,26 @@ function updateMeasureInfo(measureData) {
     infoDiv.style.display = 'block';
 }
 
-// Function to update table with measure data
+function updateMeasureInfoAllItems(measureData) {
+    const infoDiv = document.getElementById('measure-info');
+    
+    if (measureData.length === 0) {
+        infoDiv.style.display = 'none';
+        return;
+    }
+    
+    const actualQuestions = measureData.filter(row => {
+        const fieldType = getColumnValue(row, ['Field Type']);
+        return fieldType && fieldType.toLowerCase() !== 'descriptive';
+    });
+    
+    let content = `<h3>All Survey Items <span class="item-count">${actualQuestions.length} items</span></h3>`;
+    content += `<p>Displaying all items from your CSV file. Sliders will be visualized with their Text Validation Min/Max values.</p>`;
+    
+    infoDiv.innerHTML = content;
+    infoDiv.style.display = 'block';
+}
+
 function updateTable(measureData) {
     const tbody = document.getElementById('measures-table-body');
     const tableContainer = document.querySelector('.table-container');
@@ -337,35 +633,37 @@ function updateTable(measureData) {
     if (measureData.length === 0) {
         tbody.innerHTML = '<tr><td colspan="3" class="no-data">No data available for this measure.</td></tr>';
         tableContainer.classList.remove('has-scroll');
-        scrollHint.style.display = 'none';
+        if (scrollHint) scrollHint.style.display = 'none';
         return;
     }
     
-    // Filter out instruction rows from the table
-    const questionData = filterInstructionRows(measureData);
+    const instructions = extractInstructions(measureData);
+    
+    const questionData = measureData.filter(row => {
+        const fieldType = getColumnValue(row, ['Field Type']);
+        return fieldType && fieldType.toLowerCase() !== 'descriptive' && !isInstructionRow(row);
+    });
     
     if (questionData.length === 0) {
         tbody.innerHTML = '<tr><td colspan="3" class="no-data">No question items found for this measure.</td></tr>';
         tableContainer.classList.remove('has-scroll');
-        scrollHint.style.display = 'none';
+        if (scrollHint) scrollHint.style.display = 'none';
         return;
     }
     
     const rows = questionData.map(row => {
         const variable = getColumnValue(row, ['Variable / Field Name', 'Variable', 'variable', 'field_name']);
-        const question = cleanQuestionText(getColumnValue(row, ['Field Label', 'field_label', 'FieldLabel', 'Field_Label', 'label']));
+        const rawQuestion = getColumnValue(row, ['Field Label']);
+        const question = cleanFieldLabel(rawQuestion, instructions);
+        const fieldType = getColumnValue(row, ['Field Type']);
+        const choicesRaw = getColumnValue(row, ['Choices, Calculations, OR Slider Labels']);
         
-        console.log(`\nProcessing row for variable: ${variable}`);
-        console.log(`  Available columns in this row:`, Object.keys(row));
+        console.log(`\n📋 Processing: ${variable}`);
+        console.log(`  Field Type: ${fieldType}`);
         console.log(`  Question: ${question}`);
+        console.log(`  Choices: ${choicesRaw}`);
         
-        const choicesRaw = getColumnValue(row, ['Choices, Calculations, OR Slider Labels', 'Choices', 'choices', 'options', 'response_options']);
-        console.log(`  Raw choices: ${choicesRaw}`);
-        console.log(`  Choices column check:`);
-        console.log(`    'Choices, Calculations, OR Slider Labels': "${row['Choices, Calculations, OR Slider Labels']}"`);
-        
-        const responses = formatResponseOptions(choicesRaw);
-        console.log(`  Formatted responses: ${responses}`);
+        const responses = formatResponseOptions(choicesRaw, fieldType, row);
         
         return `
             <tr>
@@ -378,113 +676,138 @@ function updateTable(measureData) {
     
     tbody.innerHTML = rows;
     
-    // Check if table needs scrolling and add visual indicator
     setTimeout(() => {
         if (tableContainer.scrollHeight > tableContainer.clientHeight) {
             tableContainer.classList.add('has-scroll');
-            scrollHint.style.display = 'block';
+            if (scrollHint) scrollHint.style.display = 'block';
             
-            // Hide hint after user scrolls
             let hasScrolled = false;
             tableContainer.addEventListener('scroll', function hideHintOnScroll() {
                 if (!hasScrolled) {
-                    scrollHint.style.display = 'none';
+                    if (scrollHint) scrollHint.style.display = 'none';
                     hasScrolled = true;
                     tableContainer.removeEventListener('scroll', hideHintOnScroll);
                 }
             });
         } else {
             tableContainer.classList.remove('has-scroll');
-            scrollHint.style.display = 'none';
+            if (scrollHint) scrollHint.style.display = 'none';
         }
     }, 100);
 }
 
-// Test data function for debugging
+// Test data function
 function loadTestData() {
-    console.log('Loading test data...');
+    console.log('Loading test data with your CSV structure...');
     
     psychometricData = [
         {
-            'Variable / Field Name': 'sscs_1',
+            'Field Type': 'descriptive',
+            'Field Label': 'Please respond to each pair of items below.',
+            'Choices, Calculations, OR Slider Labels': '',
+            'Field Note': '',
+            'Text Validation Type OR Show Slider Number': '',
+            'Text Validation Min': '',
+            'Text Validation Max': '',
+            'Section Header': 'semantic_differential_from_qualtrics',
             'Form Name': 'survey_measures',
-            'Section Header': 'smoker_selfconcept_scale_from_qualtrics',
+            'Variable / Field Name': 'instructions_semantic'
+        },
+        {
+            'Field Type': 'text',
+            'Field Label': 'What is your full name?',
+            'Choices, Calculations, OR Slider Labels': '',
+            'Field Note': 'Please enter your first and last name',
+            'Text Validation Type OR Show Slider Number': '',
+            'Text Validation Min': '2',
+            'Text Validation Max': '50',
+            'Section Header': 'demographic_info_from_qualtrics',
+            'Form Name': 'survey_measures',
+            'Variable / Field Name': 'participant_name'
+        },
+        {
+            'Field Type': 'text',
+            'Field Label': 'What is your email address?',
+            'Choices, Calculations, OR Slider Labels': '',
+            'Field Note': 'We will use this to contact you about the study',
+            'Text Validation Type OR Show Slider Number': 'email',
+            'Text Validation Min': '',
+            'Text Validation Max': '100',
+            'Section Header': 'demographic_info_from_qualtrics',
+            'Form Name': 'survey_measures',
+            'Variable / Field Name': 'participant_email'
+        },
+        {
+            'Field Type': 'slider',
+            'Field Label': 'Continuing to smoke the number of tobacco cigarettes I am smoking right now would be: Foolish <-----> Wise',
+            'Choices, Calculations, OR Slider Labels': 'Foolish | Wise',
+            'Field Note': '',
+            'Text Validation Type OR Show Slider Number': '',
+            'Text Validation Min': '1',
+            'Text Validation Max': '7',
+            'Section Header': 'semantic_differential_from_qualtrics',
+            'Form Name': 'survey_measures',
+            'Variable / Field Name': 'semantic_wise'
+        },
+        {
+            'Field Type': 'slider',
+            'Field Label': 'How would you rate your financial situation?',
+            'Choices, Calculations, OR Slider Labels': 'Worst off in the U.S. |  | Best off in the U.S.',
+            'Field Note': '',
+            'Text Validation Type OR Show Slider Number': '',
+            'Text Validation Min': '1',
+            'Text Validation Max': '10',
+            'Section Header': 'financial_measures_from_qualtrics',
+            'Form Name': 'survey_measures',
+            'Variable / Field Name': 'financial_status'
+        },
+        {
+            'Field Type': 'radio',
             'Field Label': 'Please indicate the extent to which you agree with the following statements...Smoking is part of my self-image.',
-            'Choices, Calculations, OR Slider Labels': '7, Strongly Agree | 1, Strongly disagree | 3, Somewhat disagree | 5, Somewhat agree | 2, Disagree | 4, Neither agree nor disagree | 6, Agree',
-            'Codebook Info': '<b>Smoker Self Concept Scale</b> <p>All five questions are asked, plus one addition ("Smoking defines me as a person")</p>',
-            'Form Info': 'Citation info would go here'
-        },
-        {
-            'Variable / Field Name': 'sscs_2',
-            'Form Name': 'survey_measures',
+            'Choices, Calculations, OR Slider Labels': '1, Strongly disagree | 2, Disagree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree',
+            'Field Note': '',
+            'Text Validation Type OR Show Slider Number': '',
+            'Text Validation Min': '',
+            'Text Validation Max': '',
             'Section Header': 'smoker_selfconcept_scale_from_qualtrics',
-            'Field Label': 'Please indicate the extent to which you agree with the following statements...Smoking is part of "who I am."',
-            'Choices, Calculations, OR Slider Labels': '7, Strongly Agree | 1, Strongly disagree | 3, Somewhat disagree | 5, Somewhat agree | 2, Disagree | 4, Neither agree nor disagree | 6, Agree',
-            'Codebook Info': '<b>Smoker Self Concept Scale</b> <p>All five questions are asked, plus one addition ("Smoking defines me as a person")</p>',
-            'Form Info': 'Citation info would go here'
+            'Form Name': 'survey_measures',
+            'Variable / Field Name': 'sscs_1'
         },
         {
-            'Variable / Field Name': 'sscs_3',
+            'Field Type': 'radio',
+            'Field Label': 'What is your highest level of education completed?',
+            'Choices, Calculations, OR Slider Labels': '1, Less than high school | 2, High school diploma or GED | 3, Some college | 4, Associate degree | 5, Bachelor degree | 6, Graduate degree',
+            'Field Note': '',
+            'Text Validation Type OR Show Slider Number': '',
+            'Text Validation Min': '',
+            'Text Validation Max': '',
+            'Section Header': 'demographic_info_from_qualtrics',
             'Form Name': 'survey_measures',
-            'Section Header': 'smoker_selfconcept_scale_from_qualtrics',
-            'Field Label': 'Please indicate the extent to which you agree with the following statements...Smoking is a part of my personality.',
-            'Choices, Calculations, OR Slider Labels': '7, Strongly Agree | 1, Strongly disagree | 3, Somewhat disagree | 5, Somewhat agree | 2, Disagree | 4, Neither agree nor disagree | 6, Agree',
-            'Codebook Info': '<b>Smoker Self Concept Scale</b> <p>All five questions are asked, plus one addition ("Smoking defines me as a person")</p>',
-            'Form Info': 'Citation info would go here'
+            'Variable / Field Name': 'education_level'
         },
         {
-            'Variable / Field Name': 'sscs_4',
+            'Field Type': 'checkbox',
+            'Field Label': 'Which of the following health conditions do you currently have? (Select all that apply)',
+            'Choices, Calculations, OR Slider Labels': '1, Diabetes | 2, High blood pressure | 3, Heart disease | 4, Asthma | 5, Depression | 6, Anxiety | 7, None of the above',
+            'Field Note': 'Check all that apply to you',
+            'Text Validation Type OR Show Slider Number': '',
+            'Text Validation Min': '',
+            'Text Validation Max': '',
+            'Section Header': 'health_conditions_from_qualtrics',
             'Form Name': 'survey_measures',
-            'Section Header': 'smoker_selfconcept_scale_from_qualtrics',
-            'Field Label': 'Please indicate the extent to which you agree with the following statements...Smoking is a large part of my daily life.',
-            'Choices, Calculations, OR Slider Labels': '7, Strongly Agree | 1, Strongly disagree | 3, Somewhat disagree | 5, Somewhat agree | 2, Disagree | 4, Neither agree nor disagree | 6, Agree',
-            'Codebook Info': '<b>Smoker Self Concept Scale</b> <p>All five questions are asked, plus one addition ("Smoking defines me as a person")</p>',
-            'Form Info': 'Citation info would go here'
+            'Variable / Field Name': 'health_conditions'
         },
         {
-            'Variable / Field Name': 'sscs_5',
+            'Field Type': 'checkbox',
+            'Field Label': 'Which social media platforms do you use regularly? (Select all that apply)',
+            'Choices, Calculations, OR Slider Labels': '1, Facebook | 2, Instagram | 3, Twitter/X | 4, TikTok | 5, LinkedIn | 6, Snapchat | 7, YouTube | 8, None of these',
+            'Field Note': 'Select all platforms you use at least once a week',
+            'Text Validation Type OR Show Slider Number': '',
+            'Text Validation Min': '',
+            'Text Validation Max': '',
+            'Section Header': 'social_media_from_qualtrics',
             'Form Name': 'survey_measures',
-            'Section Header': 'smoker_selfconcept_scale_from_qualtrics',
-            'Field Label': 'Please indicate the extent to which you agree with the following statements...Others view smoking as part of my personality.',
-            'Choices, Calculations, OR Slider Labels': '7, Strongly Agree | 1, Strongly disagree | 3, Somewhat disagree | 5, Somewhat agree | 2, Disagree | 4, Neither agree nor disagree | 6, Agree',
-            'Codebook Info': '<b>Smoker Self Concept Scale</b> <p>All five questions are asked, plus one addition ("Smoking defines me as a person")</p>',
-            'Form Info': 'Citation info would go here'
-        },
-        {
-            'Variable / Field Name': 'alcohol_1',
-            'Form Name': 'survey_measures',
-            'Section Header': 'alcohol_questions_from_qualtrics',
-            'Field Label': 'How often did you have a drink containing alcohol in the past 6 months?',
-            'Choices, Calculations, OR Slider Labels': '11, Every day | 10, 5-6 times a week | 9, 3-4 times a week | 8, Twice a week | 7, Once a week | 6, 2-3 times a month | 5, Once a month | 4, 3-5 times in the past 6 months | 3, 1-2 times in the past 6 months | 2, I did not drink alcohol in the last 6 months, but I did drink in the past | 1, I never drank any alcohol in my life',
-            'Codebook Info': '<b>Alcohol Questions</b> <p>Standard alcohol consumption screening</p>',
-            'Form Info': 'Alcohol consumption patterns and history'
-        },
-        {
-            'Variable / Field Name': 'cesd_1',
-            'Form Name': 'survey_measures',
-            'Section Header': 'cesd_depression_from_qualtrics',
-            'Field Label': 'Below is a list of the ways you might have felt or behaved. Please tell me how often you have felt this way during the past week...I was bothered by things that usually don\'t bother me.',
-            'Choices, Calculations, OR Slider Labels': '3, Most or all of the time (5-7 days) | 0, Rarely or none of the time (less than 1 day) | 2, Occasionally or a moderate amount of time (3-4 days) | 1, Some or a little of the time (1-2 days)',
-            'Codebook Info': '<b>CESD Depression Scale</b> <p>Center for Epidemiologic Studies Depression Scale</p>',
-            'Form Info': 'Standard depression screening instrument'
-        },
-        {
-            'Variable / Field Name': 'cesd_2',
-            'Form Name': 'survey_measures',
-            'Section Header': 'cesd_depression_from_qualtrics',
-            'Field Label': 'Below is a list of the ways you might have felt or behaved. Please tell me how often you have felt this way during the past week...I did not feel like eating; my appetite was poor.',
-            'Choices, Calculations, OR Slider Labels': '3, Most or all of the time (5-7 days) | 0, Rarely or none of the time (less than 1 day) | 2, Occasionally or a moderate amount of time (3-4 days) | 1, Some or a little of the time (1-2 days)',
-            'Codebook Info': '<b>CESD Depression Scale</b> <p>Center for Epidemiologic Studies Depression Scale</p>',
-            'Form Info': 'Standard depression screening instrument'
-        },
-        {
-            'Variable / Field Name': 'bis_1',
-            'Form Name': 'survey_measures',
-            'Section Header': 'barratt_impulsiveness_scale_from_qualtrics',
-            'Field Label': 'People differ in the ways they act and think in different situations. This is a test to measure some of the ways in which you act and think. Read each statement and select the appropriate response. Do not spend too much time on any statement. Answer quickly and honestly. I plan tasks carefully.',
-            'Choices, Calculations, OR Slider Labels': '1, Rarely/Never | 2, Occasionally | 3, Often | 4, Almost Always',
-            'Codebook Info': '<b>Barratt Impulsiveness Scale</b> <p>Measures behavioral and cognitive impulsiveness</p>',
-            'Form Info': 'Standard impulsiveness assessment tool'
+            'Variable / Field Name': 'social_media_use'
         }
     ];
     
@@ -492,30 +815,31 @@ function loadTestData() {
     createMeasureButtons(measures);
     
     if (measures.length > 0) {
-        selectMeasure(measures[0]);
+        if (measures[0] === 'All Items') {
+            selectAllItems();
+        } else {
+            selectMeasure(measures[0]);
+        }
     }
 }
 
-// Function to load CSV data
+// CSV loading function
 async function loadPsychometricData() {
     const tbody = document.getElementById('measures-table-body');
     
     try {
-        // Add debug info
-        console.log('Attempting to load CSV data...');
+        console.log('Loading CSV data...');
         tbody.innerHTML = '<tr><td colspan="3" class="loading">Loading CSV file...</td></tr>';
         
-        // Use the path set by Jekyll, with fallbacks
         const possiblePaths = [
-            window.CSV_PATH, // Set by Jekyll in the HTML
+            window.CSV_PATH,
             '/assets/data/psychometric_data.csv',
             './assets/data/psychometric_data.csv',
             '../assets/data/psychometric_data.csv',
             'psychometric_data.csv'
-        ].filter(Boolean); // Remove undefined values
+        ].filter(Boolean);
         
         let csvText = null;
-        let loadedPath = null;
         
         for (const path of possiblePaths) {
             try {
@@ -523,11 +847,8 @@ async function loadPsychometricData() {
                 const response = await fetch(path);
                 if (response.ok) {
                     csvText = await response.text();
-                    loadedPath = path;
                     console.log('Successfully loaded from:', path);
                     break;
-                } else {
-                    console.log('Response not ok for path:', path, 'Status:', response.status);
                 }
             } catch (e) {
                 console.log('Failed to load from:', path, e.message);
@@ -540,97 +861,29 @@ async function loadPsychometricData() {
         
         tbody.innerHTML = '<tr><td colspan="3" class="loading">Parsing CSV data...</td></tr>';
         
-        console.log('CSV text length:', csvText.length);
-        console.log('First 200 characters:', csvText.substring(0, 200));
-        
-        // Debug: Look for BIS data in the raw CSV text
-        const bisLinesInCSV = csvText.split('\n').filter(line => 
-            line.includes('bis_') || line.includes('barratt_impulsiveness')
-        );
-        console.log('BIS lines found in raw CSV:', bisLinesInCSV.length);
-        bisLinesInCSV.forEach((line, index) => {
-            console.log(`BIS CSV line ${index + 1}:`, line.substring(0, 150) + '...');
-        });
-        
         psychometricData = parseCSV(csvText);
         console.log('Parsed data length:', psychometricData.length);
-        console.log('Sample row:', psychometricData[0]);
         
-        // Debug: Look for any BIS rows in the raw parsed data
-        const rawBisData = psychometricData.filter(row => {
-            const variable = row['Variable / Field Name'] || '';
-            return variable.includes('bis_') || 
-                   (row['Section Header'] && row['Section Header'].includes('barratt'));
-        });
-        console.log('Raw BIS data found:', rawBisData.length, 'rows');
-        rawBisData.forEach((row, index) => {
-            const variable = row['Variable / Field Name'] || '';
-            const choices = row['Choices, Calculations, OR Slider Labels'] || '';
-            console.log(`Raw BIS row ${index + 1}: ${variable}`);
-            console.log(`  Raw choices data: "${choices}"`);
-            console.log(`  Raw choices length: ${choices.length}`);
-        });
-        
-        // Check column names
         if (psychometricData.length > 0) {
             console.log('Available columns:', Object.keys(psychometricData[0]));
         }
         
-        // Filter for survey measures only - try different possible column name variations
-        const possibleFormNames = ['Form Name', 'form_name', 'FormName', 'Form_Name'];
-        const possibleSectionNames = ['Section Header', 'section_header', 'SectionHeader', 'Section_Header'];
-        
-        let formNameCol = null;
-        let sectionCol = null;
-        
-        if (psychometricData.length > 0) {
-            const columns = Object.keys(psychometricData[0]);
-            formNameCol = possibleFormNames.find(name => columns.includes(name));
-            sectionCol = possibleSectionNames.find(name => columns.includes(name));
-            
-            console.log('Found form name column:', formNameCol);
-            console.log('Found section column:', sectionCol);
-        }
-        
-        if (formNameCol && sectionCol) {
-            psychometricData = psychometricData.filter(row => 
-                row[formNameCol] === 'survey_measures' && 
-                row[sectionCol] && 
-                row[sectionCol].trim() !== ''
-            );
-        } else {
-            console.warn('Could not find expected column names, showing all data');
-        }
-        
-        console.log('Filtered data length:', psychometricData.length);
-        
-        // Debug: Check specifically for BIS data
-        const bisData = psychometricData.filter(row => 
-            row[sectionCol] && row[sectionCol].includes('barratt_impulsiveness')
-        );
-        console.log('BIS data found:', bisData.length, 'rows');
-        bisData.forEach((row, index) => {
-            const variable = row['Variable / Field Name'] || '';
-            const choices = row['Choices, Calculations, OR Slider Labels'] || '';
-            console.log(`BIS row ${index + 1}: ${variable}`);
-            console.log(`  Choices data: "${choices}"`);
-            console.log(`  Choices length: ${choices.length}`);
-            console.log(`  Full row:`, row);
-        });
-        
         if (psychometricData.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="3" class="no-data">No survey measures found. Check the Form Name and Section Header columns.</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="3" class="no-data">No data found in CSV file.</td></tr>';
             return;
         }
         
         const measures = getUniqueMeasures(psychometricData);
-        console.log('Found measures:', measures);
+        console.log('Available measures:', measures);
         
         createMeasureButtons(measures);
         
-        // Select first measure by default
         if (measures.length > 0) {
-            selectMeasure(measures[0]);
+            if (measures[0] === 'All Items') {
+                selectAllItems();
+            } else {
+                selectMeasure(measures[0]);
+            }
         } else {
             tbody.innerHTML = '<tr><td colspan="3" class="no-data">No psychometric measures found in the data.</td></tr>';
         }

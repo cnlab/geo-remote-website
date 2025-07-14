@@ -82,276 +82,276 @@ q_straightliningcount,survey_measures,,text,# of items in straightlining,,,,,,,,
 q_straightliningpercentage,survey_measures,,text,% of questions straightlined,,,,,,,,,,,,,,,
 q_straightliningquestions,survey_measures,,text,QIDs for the straightlined questions,,,,,,,,,,,,,,,
 q_unansweredquestions,survey_measures,,text,QIDs for unanswered questions,,,,,,,,,,,,,,,
-t1_bhv_filter,survey_measures,t1onlysmoking_behavior_from_qualtrics,radio,What color is the filter of the tobacco cigarettes you smoke most often?,"2, White | 1, Brown | 3, Other (please specify)",,,,,,,,,,,,,,
-t1_bhv_filter_3_text,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,"Text entry for t1_bhv_filter=""Other (please specify)""",,,,,,,,,,,,,,,
-t1_lisa_01,survey_measures,t1onlysmoking_behavior_from_qualtrics,dropdown,About how many different stores do you purchase cigarettes from in a typical week?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, More than five",,,,,,,,,,,,,,
-t1_lisa_02,survey_measures,t1onlysmoking_behavior_from_qualtrics,radio,What type of store do you buy your cigarettes from most of the time?,"1, Convenience store or gas station | 2, Supermarket or grocery store | 3, Pharmacy or drug store | 4, Warehouse club (e.g., Costco, Sams) or discount store (e.g., Walmart, Family Dollar) | 5, Liquor store | 6, Smoke shop, tobacco specialty store, or tobacco outlet store | 7, Duty-free shop or military commissary | 8, Store on an Indian reservation | 9, Or from somewhere else, please specify:",,,,,,,,,,,,,,
-t1_lisa_02_9_text,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,"Text entry for t1_lisa_02=""Or from somewhere else, please specify:""",,,,,,,,,,,,,,,
-t1_habit_01_new_1,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,Where do you usually buy your cigarettes? Please be as specific as you can. - Store/Vendor Name,,,,,,,,,,,,,,,
-t1_habit_01_new_2,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,Where do you usually buy your cigarettes? Please be as specific as you can. - Street Address or Nearby Cross-Section,,,,,,,,,,,,,,,
-t1_habit_01_new_3,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,"Where do you usually buy your cigarettes? Please be as specific as you can. - City, State",,,,,,,,,,,,,,,
-t1_habit_01_new_4,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,Where do you usually buy your cigarettes? Please be as specific as you can. - Zip Code,,,,,,,,,,,,,,,
-t1_habit_01_old,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,Where do you usually buy your cigarettes?,,,,,,,,,,,,,,,
-t1_habit_02,survey_measures,t1onlysmoking_behavior_from_qualtrics,radio,How often do you buy cigarettes (at any location)?,"6, At least once a day | 5, A few times a week (please specify how many) | 4, Once a week | 3, A few times a month (please specify how many) | 2, Once a month | 1, Less than once a month (please specify how often)",,,,,,,,,,,,,,
-t1_habit_02_5_text,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,A few times a week (please specify how many),,,,,,,,,,,,,,,
-t1_habit_02_3_text,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,A few times a month (please specify how many),,,,,,,,,,,,,,,
-t1_habit_02_1_text,survey_measures,t1onlysmoking_behavior_from_qualtrics,text,"Less than once a month (please specify how often)
+t1_bhv_filter,survey_measures,Nicotine_and_tobacco_use,radio,What color is the filter of the tobacco cigarettes you smoke most often?,"2, White | 1, Brown | 3, Other (please specify)",,,,,,,,,,,,,,
+t1_bhv_filter_3_text,survey_measures,Nicotine_and_tobacco_use,text,"Text entry for t1_bhv_filter=""Other (please specify)""",,,,,,,,,,,,,,,
+t1_lisa_01,survey_measures,Nicotine_and_tobacco_purchase_habits,dropdown,About how many different stores do you purchase cigarettes from in a typical week?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, More than five",,,,,,,,,,,,,,
+t1_lisa_02,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,What type of store do you buy your cigarettes from most of the time?,"1, Convenience store or gas station | 2, Supermarket or grocery store | 3, Pharmacy or drug store | 4, Warehouse club (e.g., Costco, Sams) or discount store (e.g., Walmart, Family Dollar) | 5, Liquor store | 6, Smoke shop, tobacco specialty store, or tobacco outlet store | 7, Duty-free shop or military commissary | 8, Store on an Indian reservation | 9, Or from somewhere else, please specify:",,,,,,,,,,,,,,
+t1_lisa_02_9_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Text entry for t1_lisa_02=""Or from somewhere else, please specify:""",,,,,,,,,,,,,,,
+t1_habit_01_new_1,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Where do you usually buy your cigarettes? Please be as specific as you can. - Store/Vendor Name,,,,,,,,,,,,,,,
+t1_habit_01_new_2,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Where do you usually buy your cigarettes? Please be as specific as you can. - Street Address or Nearby Cross-Section,,,,,,,,,,,,,,,
+t1_habit_01_new_3,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Where do you usually buy your cigarettes? Please be as specific as you can. - City, State",,,,,,,,,,,,,,,
+t1_habit_01_new_4,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Where do you usually buy your cigarettes? Please be as specific as you can. - Zip Code,,,,,,,,,,,,,,,
+t1_habit_01_old,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Where do you usually buy your cigarettes?,,,,,,,,,,,,,,,
+t1_habit_02,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,How often do you buy cigarettes (at any location)?,"6, At least once a day | 5, A few times a week (please specify how many) | 4, Once a week | 3, A few times a month (please specify how many) | 2, Once a month | 1, Less than once a month (please specify how often)",,,,,,,,,,,,,,
+t1_habit_02_5_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,A few times a week (please specify how many),,,,,,,,,,,,,,,
+t1_habit_02_3_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,A few times a month (please specify how many),,,,,,,,,,,,,,,
+t1_habit_02_1_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Less than once a month (please specify how often)
 ",,,,,,,,,,,,,,,
-bhv_01_new_1_1_1,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"On average over the past week, how much have you smoked PER DAY? (average daily amount)",,,,,,,,,,,,,,,
-bhv_01_new_2_1,survey_measures,,dropdown,"On average over the past week, how much have you smoked PER DAY? (unit)","1, cigarettes | 2, packs",,,,,,,,,,,,,,
-bhv_02_new_01,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_01_new_1_1_1,survey_measures,Nicotine_and_tobacco_use,text,"On average over the past week, how much have you smoked PER DAY? (average daily amount)",,,,,,,,,,,,,,,
+bhv_01_new_2_1,survey_measures,Nicotine_and_tobacco_use,dropdown,"On average over the past week, how much have you smoked PER DAY? (unit)","1, cigarettes | 2, packs",,,,,,,,,,,,,,
+bhv_02_new_01,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Manufactured cigarettes (that is regular pre-packaged cigarettes from a store)?","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_02,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_02,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 E-cigarettes or vaping with nicotine?","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_03,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_03,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Roll your own cigarettes?","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_04,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_04,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Kreteks or clove cigarettes","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_05,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_05,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Pipes full of tobacco","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_06,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_06,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Large, or traditional, cigars","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_07,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_07,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Little cigars, filtered cigars, cheroots, or cigarillos","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_08,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_08,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Water pipe, hookah, shishah","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_09,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_09,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Smokeless oral tobacco (such as snus, chew or dip)","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_03,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use smokeless tobacco (like chewing tobacco, snuff, or snus)?
+bhv_03,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use smokeless tobacco (like chewing tobacco, snuff, or snus)?
 ","1, Daily | 2, Less than daily | 3, Not at all | 4, Don't know",,,,,,,,,,,,,,
-bhv_02_new_10,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_10,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Nicotine pouches (such as ZYN)","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_11,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_11,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Nicotine gum","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_12,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_12,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Nicotine patches","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_13,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_13,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Other 1 ([bhv_02_new_12_text])","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_13_text,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_02_new_12 = ""Other 1 (please describe)""",,,,,,,,,,,,,,,
-bhv_02_new_14,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_13_text,survey_measures,Nicotine_and_tobacco_use,text,"Text entry for bhv_02_new_12 = ""Other 1 (please describe)""",,,,,,,,,,,,,,,
+bhv_02_new_14,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Other 2 ([bhv_02_new_13_text])","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_14_text,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_02_new_13 = ""Other 2 (please describe)""",,,,,,,,,,,,,,,
-bhv_02_new_15,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"How often do you currently use each of the following nicotine or tobacco products?
+bhv_02_new_14_text,survey_measures,Nicotine_and_tobacco_use,text,"Text entry for bhv_02_new_13 = ""Other 2 (please describe)""",,,,,,,,,,,,,,,
+bhv_02_new_15,survey_measures,Nicotine_and_tobacco_use,radio,"How often do you currently use each of the following nicotine or tobacco products?
 
 Other 3 ([bhv_02_new_14_text])","1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,,,,,
-bhv_02_new_15_text,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_02_new_14 =""Other 3 (please describe)""",,,,,,,,,,,,,,,
-q402_01,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+bhv_02_new_15_text,survey_measures,Nicotine_and_tobacco_use,text,"Text entry for bhv_02_new_14 =""Other 3 (please describe)""",,,,,,,,,,,,,,,
+q402_01,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Manufactured cigarettes (that is regular pre-packaged cigarettes from a store)?","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_02,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_02,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 E-cigarettes or vaping with nicotine?","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_03,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_03,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Roll your own cigarettes?","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_04,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_04,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Kreteks or clove cigarettes","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_05,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_05,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Pipes full of tobacco","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_06,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_06,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Large, or traditional, cigars","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_07,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_07,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Little cigars, filtered cigars, cheroots, or cigarillos","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_08,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_08,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Water pipe, hookah, shishah","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_09,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_09,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Smokeless oral tobacco (such as snus, chew or dip)","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_10,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_10,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Nicotine pouches (such as ZYN)","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_11,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_11,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Nicotine gum","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_12,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_12,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Nicotine patches","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_13,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_13,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Other 1 ([bhv_02_new_13_text])","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_13_text,survey_measures,,text,Other (1),,,,,,,,,,,,,,,
-q402_14,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_13_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Other (1),,,,,,,,,,,,,,,
+q402_14,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Other 2 ([bhv_02_new_14_text])","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_14_text,survey_measures,,text,Other (2),,,,,,,,,,,,,,,
-q402_15,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Where do you most frequently purchase each product?
+q402_14_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Other (2),,,,,,,,,,,,,,,
+q402_15,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Where do you most frequently purchase each product?
 
 Other 3 ([bhv_02_new_15_text])","1, In a store | 2, Online | 3, Other",,,,,,,,,,,,,,
-q402_15_text,survey_measures,tcorssmoking_behavior_from_qualtrics,text,Other (3),,,,,,,,,,,,,,,
-q403_1,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q402_15_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Other (3),,,,,,,,,,,,,,,
+q403_1,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Manufactured cigarettes (that is regular pre-packaged cigarettes from a store)?",,,,,,,[q402_01]=3,,,,,,,,
-q403_2,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_2,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 E-cigarettes or vaping with nicotine?",,,,,,,,,,,,,,,
-q403_3,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_3,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Roll your own cigarettes?",,,,,,,,,,,,,,,
-q403_4,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_4,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Kreteks or clove cigarettes",,,,,,,,,,,,,,,
-q403_5,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_5,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Pipes full of tobacco",,,,,,,,,,,,,,,
-q403_6,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_6,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Large, or traditional, cigars",,,,,,,,,,,,,,,
-q403_7,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_7,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Little cigars, filtered cigars, cheroots, or cigarillos",,,,,,,,,,,,,,,
-q403_8,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_8,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Water pipe, hookah, shishah",,,,,,,,,,,,,,,
-q403_9,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_9,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Smokeless oral tobacco (such as snus, chew or dip)",,,,,,,,,,,,,,,
-q403_10,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_10,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Nicotine pouches (such as ZYN)",,,,,,,,,,,,,,,
-q403_11,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_11,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Nicotine gum",,,,,,,,,,,,,,,
-q403_12,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_12,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Nicotine patches",,,,,,,,,,,,,,,
-q403_13,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_13,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Other 1 ([bhv_02_new_12_text])",,,,,,,,,,,,,,,
-q403_14,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_14,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Other 2 ([bhv_02_new_13_text])",,,,,,,,,,,,,,,
-q403_15,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
+q403_15,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"You chose ""Other"" for at least one product. Please describe where you most frequently purchase each of those products.
 
 Other 3 ([bhv_02_new_14_text])",,,,,,,,,,,,,,,
-q404_01,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_01,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Manufactured cigarettes (that is regular pre-packaged cigarettes from a store)?","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_02,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_02,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 E-cigarettes or vaping with nicotine?","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_03,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_03,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Roll your own cigarettes?","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_04,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_04,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Kreteks or clove cigarettes","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_05,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_05,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Pipes full of tobacco","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_06,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_06,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Large, or traditional, cigars","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_07,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_07,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Little cigars, filtered cigars, cheroots, or cigarillos","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_08,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_08,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Water pipe, hookah, shishah","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_09,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_09,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Smokeless oral tobacco (such as snus, chew or dip)","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_10,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_10,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Nicotine pouches (such as ZYN)","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_11,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_11,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Nicotine gum","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_12,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_12,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Nicotine patches","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_13,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_13,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Other 1 ([bhv_02_new_12_text])","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_13_text,survey_measures,tcorssmoking_behavior_from_qualtrics,text,Text for q404_13,,,,,,,,,,,,,,,
-q404_14,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_13_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Text for q404_13,,,,,,,,,,,,,,,
+q404_14,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Other 2 ([bhv_02_new_13_text])","1, Yes | 2, No",,,,,,,,,,,,,,
-q404_14_text,survey_measures,tcorssmoking_behavior_from_qualtrics,text,Text for q404_14,,,,,,,,,,,,,,,
-q404_15,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products in a store?
+q404_14_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Text for q404_14,,,,,,,,,,,,,,,
+q404_15,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products in a store?
 
 Other 3 ([bhv_02_new_14_text])","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_01,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_01,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Manufactured cigarettes (that is regular pre-packaged cigarettes from a store)?","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_02,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_02,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 E-cigarettes or vaping with nicotine?","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_03,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_03,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Roll your own cigarettes?","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_04,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_04,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Kreteks or clove cigarettes","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_05,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_05,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Pipes full of tobacco","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_06,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_06,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Large, or traditional, cigars","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_07,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_07,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Little cigars, filtered cigars, cheroots, or cigarillos","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_08,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_08,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Water pipe, hookah, shishah","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_09,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_09,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Smokeless oral tobacco (such as snus, chew or dip)","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_10,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_10,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Nicotine pouches (such as ZYN)","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_11,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_11,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Nicotine gum","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_12,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_12,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Nicotine patches","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_13,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_13,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Other 1 ([bhv_02_new_12_text])","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_13_text,survey_measures,tcorssmoking_behavior_from_qualtrics,text,Text for q405_13,,,,,,,,,,,,,,,
-q405_14,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_13_text,survey_measures,Nicotine_and_tobacco_purchase_habits,text,Text for q405_13,,,,,,,,,,,,,,,
+q405_14,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Other 2 ([bhv_02_new_13_text])","1, Yes | 2, No",,,,,,,,,,,,,,
-q405_15,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"Do you ever purchase any of these products online?
+q405_15,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,"Do you ever purchase any of these products online?
 
 Other 3 ([bhv_02_new_14_text])","1, Yes | 2, No",,,,,,,,,,,,,,
-bhv_04,survey_measures,tcorssmoking_behavior_from_qualtrics,radio," When you buy tobacco cigarettes for yourself, do you purchase packs of cigarettes or loose cigarettes?","1, Packs of tobacco cigarettes | 2, Loose tobacco cigarettes | 3, Both",,,,,,,,,,,,,,
-bhv_05_1,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_05=""# of cigarette packs""",,,,,,,,,,,,,,,
-bhv_05_3,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_05=""Total price  $""",,,,,,,,,,,,,,,
-bhv_05_4,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_05=""Date of purchase<br />(MM/DD/YYYY)<br />ex: 07/02/2019""",,,,,,,,,,,,,,,
-bhv_06_1,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_06=""# of cigarette packs""",,,,,,,,,,,,,,,
-bhv_06_3,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_06=""Total price  $""",,,,,,,,,,,,,,,
-bhv_06_2,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_06=""Date of purchase<br />(MM/DD/YYYY)<br />ex: 07/02/2019""",,,,,,,,,,,,,,,
-bhv_07,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,Do you intend to change your smoking behavior over the next 3 months?,"1, Yes | 2, No",,,,,,,,,,,,,,
-bhv_07a,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"If yes, please describe how you intend to change your smoking behavior over the next 3 months.",,,,,,,,,,,,,,,
-bhv_08a,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,"In the past, have you ever made a serious attempt to quit smoking? That is, have you stopped smoking for at least one day or longer because you were trying to quit?","1, Yes | 2, No",,,,,,,,,,,,,,
-bhv_08b,survey_measures,tcorssmoking_behavior_from_qualtrics,radio,What was the longest length of time you stopped smoking because you were trying to quit?,"1, Less than 1 week | 2, 1 to 3 weeks | 3, 1 to 2 months | 4, 3 to 11 months | 5, 1 to 4 years | 6, 5 to 9 years | 7, 10 years or more",,,,,,,,,,,,,,
-bhv_09,survey_measures,tcorssmoking_behavior_from_qualtrics,text,About how old were you when you first starting smoking at least 1 cigarette per day?,,,,,,,,,,,,,,,
-bhv_10,survey_measures,tcorssmoking_behavior_from_qualtrics,checkbox,"Why do you use nicotine e-cigarettes / vapes?
+bhv_04,survey_measures,Nicotine_and_tobacco_purchase_habits,radio," When you buy tobacco cigarettes for yourself, do you purchase packs of cigarettes or loose cigarettes?","1, Packs of tobacco cigarettes | 2, Loose tobacco cigarettes | 3, Both",,,,,,,,,,,,,,
+bhv_05_1,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Text entry for bhv_05=""# of cigarette packs""",,,,,,,,,,,,,,,
+bhv_05_3,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Text entry for bhv_05=""Total price  $""",,,,,,,,,,,,,,,
+bhv_05_4,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Text entry for bhv_05=""Date of purchase<br />(MM/DD/YYYY)<br />ex: 07/02/2019""",,,,,,,,,,,,,,,
+bhv_06_1,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Text entry for bhv_06=""# of cigarette packs""",,,,,,,,,,,,,,,
+bhv_06_3,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Text entry for bhv_06=""Total price  $""",,,,,,,,,,,,,,,
+bhv_06_2,survey_measures,Nicotine_and_tobacco_purchase_habits,text,"Text entry for bhv_06=""Date of purchase<br />(MM/DD/YYYY)<br />ex: 07/02/2019""",,,,,,,,,,,,,,,
+bhv_07,survey_measures,Smoking_cessation_intentions_and_history,radio,Do you intend to change your smoking behavior over the next 3 months?,"1, Yes | 2, No",,,,,,,,,,,,,,
+bhv_07a,survey_measures,Smoking_cessation_intentions_and_history,text,"If yes, please describe how you intend to change your smoking behavior over the next 3 months.",,,,,,,,,,,,,,,
+bhv_08a,survey_measures,Smoking_cessation_intentions_and_history,radio,"In the past, have you ever made a serious attempt to quit smoking? That is, have you stopped smoking for at least one day or longer because you were trying to quit?","1, Yes | 2, No",,,,,,,,,,,,,,
+bhv_08b,survey_measures,Smoking_cessation_intentions_and_history,radio,What was the longest length of time you stopped smoking because you were trying to quit?,"1, Less than 1 week | 2, 1 to 3 weeks | 3, 1 to 2 months | 4, 3 to 11 months | 5, 1 to 4 years | 6, 5 to 9 years | 7, 10 years or more",,,,,,,,,,,,,,
+bhv_09,survey_measures,Smoking_cessation_intentions_and_history,text,About how old were you when you first starting smoking at least 1 cigarette per day?,,,,,,,,,,,,,,,
+bhv_10,survey_measures,Nicotine_and_tobacco_use,checkbox,"Why do you use nicotine e-cigarettes / vapes?
 
 Please select ALL that apply.","1, To cut back on cigarettes | 4, Vaping costs less than smoking cigarettes | 5, I vape in places where I can't smoke | 6, I enjoy the flavors | 7, I believe vaping is less harmful than smoking | 8, My family and/or friends vape nicotine | 9, Other (please describe)",,,,,,,,,,,,,,
-bhv_10_9_text,survey_measures,tcorssmoking_behavior_from_qualtrics,text,"Text entry for bhv_10=""Other (please describe)""",,,,,,,,,,,,,,,
-ftsd_01,survey_measures,fagerstrom_test_of_smoking_dependence_from_qualtri,dropdown,How soon after waking up do you smoke your first cigarette?,"3, Within 5 minutes | 2, 6-30 minutes | 1, 31-60 minutes | 0, After 60 minutes",,,,,,,,,,,,,,"<b>Fagerström Test for Nicotine Dependence (FTND)</b>
+bhv_10_9_text,survey_measures,Nicotine_and_tobacco_use,text,"Text entry for bhv_10=""Other (please describe)""",,,,,,,,,,,,,,,
+ftsd_01,survey_measures,fagerstrom_test_of_smoking_dependence,radio,How soon after waking up do you smoke your first cigarette?,"3, Within 5 minutes | 2, 6-30 minutes | 1, 31-60 minutes | 0, After 60 minutes",,,,,,,,,,,,,,"<b>Fagerström Test for Nicotine Dependence (FTND)</b>
 <p>Sometimes referred to within the study as the Fagerström Test for Smoking Dependence (FTSD)</p>
 <div class=""citation"">
   <span class=""authors"">Heatherton TF, Kozlowski LT, Frecker RC.</span>
@@ -360,12 +360,12 @@ ftsd_01,survey_measures,fagerstrom_test_of_smoking_dependence_from_qualtri,dropd
   <span class=""journal""> <em>British Journal of Addiction</em>,</span>
   <span class=""volume"">86</span><span class=""pages"">:1119-27.</span>
 </div>"
-ftsd_02,survey_measures,fagerstrom_test_of_smoking_dependence_from_qualtri,dropdown,"Do you find it difficult to refrain from smoking in places where it is forbidden? (for instance church, library, etc.)","1, Yes | 0, No",,,,,,,,,,,,,,
-ftsd_03,survey_measures,fagerstrom_test_of_smoking_dependence_from_qualtri,dropdown,Which cigarette would you hate to give up?,"1, The first in the morning | 0, Any other",,,,,,,,,,,,,,
-ftsd_04,survey_measures,fagerstrom_test_of_smoking_dependence_from_qualtri,dropdown,How many cigarettes a day do you smoke?,"0, 10 or less | 1, 11-20 | 2, 21-30 | 3, 31 or more",,,,,,,,,,,,,,
-ftsd_05,survey_measures,fagerstrom_test_of_smoking_dependence_from_qualtri,dropdown,Do you smoke more frequently during the first hours after you wake up than during the rest of the day?,"1, Yes | 0, No",,,,,,,,,,,,,,
-ftsd_06,survey_measures,fagerstrom_test_of_smoking_dependence_from_qualtri,dropdown,Do you smoke even if you are sick in bed most of the day?,"1, Yes | 0, No",,,,,,,,,,,,,,
-hbt_01,survey_measures,smoking_habits_from_qualtrics,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Do you live by yourself?</span></p></div>","1, Yes | 2, No",,,,,,,,,,,,,,"<b>Smoking Habits</b>
+ftsd_02,survey_measures,fagerstrom_test_of_smoking_dependence,radio,"Do you find it difficult to refrain from smoking in places where it is forbidden? (for instance church, library, etc.)","1, Yes | 0, No",,,,,,,,,,,,,,
+ftsd_03,survey_measures,fagerstrom_test_of_smoking_dependence,radio,Which cigarette would you hate to give up?,"1, The first in the morning | 0, Any other",,,,,,,,,,,,,,
+ftsd_04,survey_measures,fagerstrom_test_of_smoking_dependence,radio,How many cigarettes a day do you smoke?,"0, 10 or less | 1, 11-20 | 2, 21-30 | 3, 31 or more",,,,,,,,,,,,,,
+ftsd_05,survey_measures,fagerstrom_test_of_smoking_dependence,radio,Do you smoke more frequently during the first hours after you wake up than during the rest of the day?,"1, Yes | 0, No",,,,,,,,,,,,,,
+ftsd_06,survey_measures,fagerstrom_test_of_smoking_dependence,radio,Do you smoke even if you are sick in bed most of the day?,"1, Yes | 0, No",,,,,,,,,,,,,,
+hbt_01,survey_measures,Nicotine and tobacco use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Do you live by yourself?</span></p></div>","1, Yes | 2, No",,,,,,,,,,,,,,"<b>Smoking Habits</b>
 <div class=""citation govt-doc"">
   <span class=""authors"">U.S. Department of Health and Human Services. National Institutes of Health. National Cancer Institute.</span>
   <span class=""title""> Prostate, Lung, Colorectal and Ovarian (PLCO) Cancer Screening Trial, Supplemental Questionnaire.</span>
@@ -377,29 +377,29 @@ hbt_01,survey_measures,smoking_habits_from_qualtrics,radio,"<div class=""rich-te
   </div>
   <div class=""ref-type"">General References</div>
 </div>"
-hbt_02,survey_measures,smoking_habits_from_qualtrics,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Is smoking </span>tobacco cigarettes<span style=""font-weight: normal;""> allowed inside your home?</span></p></div>","1, Yes | 2, No | 3, Sometimes or in some places",,,,,,,,,,,,,,
-hbt_03,survey_measures,smoking_habits_from_qualtrics,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Is </span>vaping or e-cigarette use<span style=""font-weight: normal;""> allowed inside your home?</span></p></div>","1, Yes | 2, No | 3, Sometimes or in some places",,,,,,,,,,,,,,
-hbt_04_1,survey_measures,smoking_habits_from_qualtrics,radio,You smoke inside of your home.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
-hbt_04_2,survey_measures,smoking_habits_from_qualtrics,radio,Anyone other than you smokes inside your home.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
-hbt_04_3,survey_measures,smoking_habits_from_qualtrics,radio,You smoke in indoor areas where you work.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
-hbt_04_4,survey_measures,smoking_habits_from_qualtrics,radio,Anyone other than you smokes in indoor areas where you work.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
-marijuana_use,survey_measures,drug_and_psych_questions_from_qualtrics,radio,Have you used marijuana (edible/consumable or combustible) on a regular basis (i.e. once a month or more) in the past year?,"1, Yes | 2, No",,,,,,,,,,,,,,Qualtitative data on drug use and psych diagnoses. These questions have not been psychometrically validated
-marijuana_freq,survey_measures,drug_and_psych_questions_from_qualtrics,radio,How often do you use marijuana?,"1, Every day | 2, Most days | 3, Some Days",,,,,,,,,,,,,,
-sud_dx,survey_measures,drug_and_psych_questions_from_qualtrics,radio,"Apart from nicotine products like cigarettes, have you ever received a diagnosis of substance abuse (e.g., alcohol, opioids including heroin, cocaine, marijuana, or stimulants)?","1, Yes | 2, No",,,,,,,,,,,,,,
-diagnosis,survey_measures,drug_and_psych_questions_from_qualtrics,text,What was your diagnosis?,,,,,,,,,,,,,,,
-sud_tx,survey_measures,drug_and_psych_questions_from_qualtrics,radio,"Apart from nicotine products like cigarettes, have you ever received treatment for substance abuse? One example of a common substance abuse treatment is a prescription for methadone.","1, Yes | 2, No",,,,,,,,,,,,,,
-when_tx,survey_measures,drug_and_psych_questions_from_qualtrics,radio,Have you received this treatment within the last year?,"1, Yes | 2, No",,,,,,,,,,,,,,
-what_treated,survey_measures,drug_and_psych_questions_from_qualtrics,text,For what substance did you receive treatment?,,,,,,,,,,,,,,,
-psych_dx,survey_measures,drug_and_psych_questions_from_qualtrics,radio,"Have you ever received any mental health diagnoses from a doctor? Common examples include major depression, anxiety disorders, bipolar affective disorder, schizophrenia or psychosis, ADHD, and dementia.","1, Yes | 2, No",,,,,,,,,,,,,,
-psych_diagnosis,survey_measures,drug_and_psych_questions_from_qualtrics,text,What was your mental health diagnosis?,,,,,,,,,,,,,,,
-psych_hosp,survey_measures,drug_and_psych_questions_from_qualtrics,radio,Have you been admitted to a psychiatric hospital as a patient in the past year?,"1, Yes | 2, No",,,,,,,,,,,,,,
-controlled_sub,survey_measures,drug_and_psych_questions_from_qualtrics,radio,"Over the past 2 weeks, have you used any controlled (potentially addictive) medication as prescribed by a doctor? This includes drugs like opioids, benzodiazepines, marijuana, or stimulants. (If you are unsure, please check to see if the drug is on this list of controlled substances.)","1, Yes | 2, No",,,,,,,,,,,,,,
-meds_follow_up,survey_measures,drug_and_psych_questions_from_qualtrics,text,What medication?,,,,,,,[controlled_sub]=1,,,,,,,,
-meds_freq,survey_measures,drug_and_psych_questions_from_qualtrics,radio,Do you plan to take such medications daily over the next 6 weeks?,"1, Yes | 2, No",,,,,,,,,,,,,,
-meds_open_ended,survey_measures,drug_and_psych_questions_from_qualtrics,text,What medications do you plan to take over the next 6 weeks?,,,,,,,,,,,,,,,
-addictive_drugs,survey_measures,drug_and_psych_questions_from_qualtrics,radio,"Have you taken any controlled (potentially addictive) drug(s) recreationally on a regular basis (i.e., once a month or more) in the past year? This includes all illegal substances and prescription drugs that you take without a prescription or more than you are prescribed. This includes drugs like opioids including heroin, cocaine, benzodiazepines, marijuana, or stimulants. If you are unsure, please check to see if the drug is on this list of controlled substances.)","1, Yes | 2, No",,,,,,,,,,,,,,
-rec_drugs,survey_measures,drug_and_psych_questions_from_qualtrics,text,Which recreational drugs have you taken?,,,,,,,,,,,,,,,
-quit_01,survey_measures,cessation_intentions_from_qualtrics,radio,"To what extent do you agree or disagree with the following statement?
+hbt_02,survey_measures,Nicotine and tobacco use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Is smoking </span>tobacco cigarettes<span style=""font-weight: normal;""> allowed inside your home?</span></p></div>","1, Yes | 2, No | 3, Sometimes or in some places",,,,,,,,,,,,,,
+hbt_03,survey_measures,Nicotine and tobacco use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Is </span>vaping or e-cigarette use<span style=""font-weight: normal;""> allowed inside your home?</span></p></div>","1, Yes | 2, No | 3, Sometimes or in some places",,,,,,,,,,,,,,
+hbt_04_1,survey_measures,Nicotine and tobacco use,radio,You smoke inside of your home.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
+hbt_04_2,survey_measures,Nicotine and tobacco use,radio,Anyone other than you smokes inside your home.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
+hbt_04_3,survey_measures,Nicotine and tobacco use,radio,You smoke in indoor areas where you work.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
+hbt_04_4,survey_measures,Nicotine and tobacco use,radio,Anyone other than you smokes in indoor areas where you work.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
+marijuana_use,survey_measures,Drug_use_and_psychiatric_history,radio,Have you used marijuana (edible/consumable or combustible) on a regular basis (i.e. once a month or more) in the past year?,"1, Yes | 2, No",,,,,,,,,,,,,,Qualtitative data on drug use and psych diagnoses. These questions have not been psychometrically validated
+marijuana_freq,survey_measures,Drug_use_and_psychiatric_history,radio,How often do you use marijuana?,"1, Every day | 2, Most days | 3, Some Days",,,,,,,,,,,,,,
+sud_dx,survey_measures,Drug_use_and_psychiatric_history,radio,"Apart from nicotine products like cigarettes, have you ever received a diagnosis of substance abuse (e.g., alcohol, opioids including heroin, cocaine, marijuana, or stimulants)?","1, Yes | 2, No",,,,,,,,,,,,,,
+diagnosis,survey_measures,Drug_use_and_psychiatric_history,text,What was your diagnosis?,,,,,,,,,,,,,,,
+sud_tx,survey_measures,Drug_use_and_psychiatric_history,radio,"Apart from nicotine products like cigarettes, have you ever received treatment for substance abuse? One example of a common substance abuse treatment is a prescription for methadone.","1, Yes | 2, No",,,,,,,,,,,,,,
+when_tx,survey_measures,Drug_use_and_psychiatric_history,radio,Have you received this treatment within the last year?,"1, Yes | 2, No",,,,,,,,,,,,,,
+what_treated,survey_measures,Drug_use_and_psychiatric_history,text,For what substance did you receive treatment?,,,,,,,,,,,,,,,
+psych_dx,survey_measures,Drug_use_and_psychiatric_history,radio,"Have you ever received any mental health diagnoses from a doctor? Common examples include major depression, anxiety disorders, bipolar affective disorder, schizophrenia or psychosis, ADHD, and dementia.","1, Yes | 2, No",,,,,,,,,,,,,,
+psych_diagnosis,survey_measures,Drug_use_and_psychiatric_history,text,What was your mental health diagnosis?,,,,,,,,,,,,,,,
+psych_hosp,survey_measures,Drug_use_and_psychiatric_history,radio,Have you been admitted to a psychiatric hospital as a patient in the past year?,"1, Yes | 2, No",,,,,,,,,,,,,,
+controlled_sub,survey_measures,Drug_use_and_psychiatric_history,radio,"Over the past 2 weeks, have you used any controlled (potentially addictive) medication as prescribed by a doctor? This includes drugs like opioids, benzodiazepines, marijuana, or stimulants. (If you are unsure, please check to see if the drug is on this list of controlled substances.)","1, Yes | 2, No",,,,,,,,,,,,,,
+meds_follow_up,survey_measures,Drug_use_and_psychiatric_history,text,What medication?,,,,,,,[controlled_sub]=1,,,,,,,,
+meds_freq,survey_measures,Drug_use_and_psychiatric_history,radio,Do you plan to take such medications daily over the next 6 weeks?,"1, Yes | 2, No",,,,,,,,,,,,,,
+meds_open_ended,survey_measures,Drug_use_and_psychiatric_history,text,What medications do you plan to take over the next 6 weeks?,,,,,,,,,,,,,,,
+addictive_drugs,survey_measures,Drug_use_and_psychiatric_history,radio,"Have you taken any controlled (potentially addictive) drug(s) recreationally on a regular basis (i.e., once a month or more) in the past year? This includes all illegal substances and prescription drugs that you take without a prescription or more than you are prescribed. This includes drugs like opioids including heroin, cocaine, benzodiazepines, marijuana, or stimulants. If you are unsure, please check to see if the drug is on this list of controlled substances.)","1, Yes | 2, No",,,,,,,,,,,,,,
+rec_drugs,survey_measures,Drug_use_and_psychiatric_history,text,Which recreational drugs have you taken?,,,,,,,,,,,,,,,
+quit_01,survey_measures,Smoking_cessation_intentions_and_history,radio,"To what extent do you agree or disagree with the following statement?
  
 I would be able to stop smoking tobacco cigarettes if I wanted to.","1, Strongly disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,"<b>Cessation Intentions</b>
 <p>Questions taken from the Tobacco section of NCI's Supplemental Questionnaire (SQX)</p>
@@ -414,14 +414,14 @@ I would be able to stop smoking tobacco cigarettes if I wanted to.","1, Strongly
     </a>
   </div>
 </div>"
-quit_02,survey_measures,cessation_intentions_from_qualtrics,radio,"During the past 12 months, have you tried to stop smoking tobacco cigarettes?","1, Yes | 2, No",,,,,,,,,,,,,,
-quit_03,survey_measures,cessation_intentions_from_qualtrics,radio,"During any visit to a doctor or health care provider in the past 12 months, were you advised to quit smoking tobacco cigarettes?","1, Yes | 2, No",,,,,,,,,,,,,,
-quit_04,survey_measures,cessation_intentions_from_qualtrics,radio,"During the past 6 months, did you stop smoking tobacco cigarettes for one day or longer because you were trying to quit smoking for good?","1, Yes | 2, No | 3, Don't know",,,,,,,,,,,,,,
-quit_05_1,survey_measures,cessation_intentions_from_qualtrics,radio,"In the next 6 months, how likely is it that you will...quit smoking completely (that is stop smoking tobacco cigarettes entirely)","1, Definitely will not | 2, Probably will not | 3, Don't know | 4, Probably will | 5, Definitely will",,,,,,,,,,,,,,
-quit_05_2,survey_measures,cessation_intentions_from_qualtrics,radio,"In the next 6 months, how likely is it that you will...reduce the number of tobacco cigarettes that you smoke","1, Definitely will not | 2, Probably will not | 3, Don't know | 4, Probably will | 5, Definitely will",,,,,,,,,,,,,,
-quit_05_3,survey_measures,cessation_intentions_from_qualtrics,radio,"In the next 6 months, how likely is it that you will...hold off from smoking tobacco cigarettes","1, Definitely will not | 2, Probably will not | 3, Don't know | 4, Probably will | 5, Definitely will",,,,,,,,,,,,,,
-quit_05_4,survey_measures,cessation_intentions_from_qualtrics,radio,"In the next 6 months, how likely is it that you will...talk to a friend, family member, or spouse/partner about quitting smoking tobacco cigarettes","1, Definitely will not | 2, Probably will not | 3, Don't know | 4, Probably will | 5, Definitely will",,,,,,,,,,,,,,
-belcig_self_01,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will develop headaches","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,"<b>TCORS Smoking Beliefs</b>
+quit_02,survey_measures,Smoking_cessation_intentions_and_history,radio,"During the past 12 months, have you tried to stop smoking tobacco cigarettes?","1, Yes | 2, No",,,,,,,,,,,,,,
+quit_03,survey_measures,Smoking_cessation_intentions_and_history,radio,"During any visit to a doctor or health care provider in the past 12 months, were you advised to quit smoking tobacco cigarettes?","1, Yes | 2, No",,,,,,,,,,,,,,
+quit_04,survey_measures,Smoking_cessation_intentions_and_history,radio,"During the past 6 months, did you stop smoking tobacco cigarettes for one day or longer because you were trying to quit smoking for good?","1, Yes | 2, No | 3, Don't know",,,,,,,,,,,,,,
+quit_05_1,survey_measures,Smoking_cessation_intentions_and_history,radio,"In the next 6 months, how likely is it that you will...quit smoking completely (that is stop smoking tobacco cigarettes entirely)","1, Definitely will not | 2, Probably will not | 3, Don't know | 4, Probably will | 5, Definitely will",,,,,,,,,,,,,,
+quit_05_2,survey_measures,Smoking_cessation_intentions_and_history,radio,"In the next 6 months, how likely is it that you will...reduce the number of tobacco cigarettes that you smoke","1, Definitely will not | 2, Probably will not | 3, Don't know | 4, Probably will | 5, Definitely will",,,,,,,,,,,,,,
+quit_05_3,survey_measures,Smoking_cessation_intentions_and_history,radio,"In the next 6 months, how likely is it that you will...hold off from smoking tobacco cigarettes","1, Definitely will not | 2, Probably will not | 3, Don't know | 4, Probably will | 5, Definitely will",,,,,,,,,,,,,,
+quit_05_4,survey_measures,Smoking_cessation_intentions_and_history,radio,"In the next 6 months, how likely is it that you will...talk to a friend, family member, or spouse/partner about quitting smoking tobacco cigarettes","1, Definitely will not | 2, Probably will not | 3, Don't know | 4, Probably will | 5, Definitely will",,,,,,,,,,,,,,
+belcig_self_01,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will develop headaches","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,"<b>TCORS Smoking Beliefs</b>
 <p>Adapted from Hornik's research</p>
 <div class=""citation"">
   <span class=""author"">Hornik, R. C., Volinsky, A. C., Mannis, S., Gibson, L., Brennan, E., Lee, S. J., &amp; Tan, A. S. L.</span>
@@ -436,84 +436,102 @@ belcig_self_01,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I 
     </a>
   </div>
 </div>"
-belcig_self_02,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will develop sexual and/or fertility problems","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_03,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will develop cancer","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_04,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will get wrinkles","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_05,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,"If I smoke everyday, I will lose my teeth
+belcig_self_02,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will develop sexual and/or fertility problems","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_03,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will develop cancer","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_04,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will get wrinkles","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_05,survey_measures,Smoking_beliefs,radio,"If I smoke everyday, I will lose my teeth
 ","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_06,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will get yellow fingers","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_07,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will become addicted to nicotine","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_08,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will be controlled by smoking","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_09,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will look uncool","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_10,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, It will be a turn off to other people","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_11,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio," If I smoke everyday, I will feel relaxed","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_self_12,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,"If I smoke everyday, I will enjoy my life more","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_laws_01,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,"Please rate the degree to which you agree with the following statements:
+belcig_self_06,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will get yellow fingers","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_07,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will become addicted to nicotine","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_08,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will be controlled by smoking","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_09,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will look uncool","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_10,survey_measures,Smoking_beliefs,radio," If I smoke everyday, It will be a turn off to other people","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_11,survey_measures,Smoking_beliefs,radio," If I smoke everyday, I will feel relaxed","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_self_12,survey_measures,Smoking_beliefs,radio,"If I smoke everyday, I will enjoy my life more","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
+belcig_laws_01,survey_measures,Smoking_beliefs,radio,"Please rate the degree to which you agree with the following statements:
 The tobacco industry intentionally designed cigarettes to make them more addictive.","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_laws_02,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,"Please rate the degree to which you agree with the following statements:
+belcig_laws_02,survey_measures,Smoking_beliefs,radio,"Please rate the degree to which you agree with the following statements:
 Smoking tobacco cigarettes should be banned in outdoor places.","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_laws_03,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,"Please rate the degree to which you agree with the following statements:
+belcig_laws_03,survey_measures,Smoking_beliefs,radio,"Please rate the degree to which you agree with the following statements:
 The price of tobacco cigarettes should be increased because it will reduce smoking.","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_laws_04,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,"Please rate the degree to which you agree with the following statements:
+belcig_laws_04,survey_measures,Smoking_beliefs,radio,"Please rate the degree to which you agree with the following statements:
 Tobacco companies should have to put anti-smoking warnings on cigarette packages.","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_laws_06,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,"Please rate the degree to which you agree with the following statements:
+belcig_laws_06,survey_measures,Smoking_beliefs,radio,"Please rate the degree to which you agree with the following statements:
 Vaping or using e-cigarettes should not be allowed in the same public places where smoking is not allowed.","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-belcig_laws_07,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,"Please rate the degree to which you agree with the following statements:
+belcig_laws_07,survey_measures,Smoking_beliefs,radio,"Please rate the degree to which you agree with the following statements:
 Youth under 21 should not be allowed to buy e-cigarettes.","1, Strongly Disagree | 2, Disagree | 3, Neither Agree nor Disagree | 4, Agree | 5, Strongly Agree",,,,,,,,,,,,,,
-bel_03,survey_measures,tcorssmoking_beliefs_from_qualtrics,radio,How much do you think breathing smoke from other people's tobacco cigarettes harms you?,"1, Not at all | 2, A little | 3, Somewhat | 4, A lot",,,,,,,,,,,,,,
-att_01,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
+bel_03,survey_measures,Smoking_beliefs,radio,How much do you think breathing smoke from other people's tobacco cigarettes harms you?,"1, Not at all | 2, A little | 3, Somewhat | 4, A lot",,,,,,,,,,,,,,
+att_instructions,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
+
+Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:",,,number,1,7,,,,RH,,,,,,
+att_01,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
 
 Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Foolish:Wise",Foolish |  | Wise,,number,1,7,,,,RH,,,,,,
-att_03,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
+Foolish <-----> Wise",Foolish | Wise,,number,1,7,,,,RH,,,,,,
+att_03,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
 
 Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Correct:Incorrect",Correct |  | Incorrect,,,1,7,,,,RH,,,,,,
-att_04,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
-
-Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Difficult:Easy",Difficult |  | Easy,,,1,7,,,,RH,,,,,,
-att_05,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
-
-Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Unenjoyable:Enjoyable",Unenjoyable |  | Enjoyable,,,1,7,,,,RH,,,,,,
-att_06,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
-
-Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Good:Bad",Good |  | Bad,,,1,7,,,,RH,,,,,,
-att_07,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
-
-Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Something I'd like:Something I'd dislike",Something I'd like |  | Something I'd dislike,,,1,7,,,,RH,,,,,,
-att_08,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
-
-Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Harmful:Beneficial",Harmful |  | Beneficial,,,1,7,,,,RH,,,,,,
-att_09,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
-
-Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Boring:Fun",Boring |  | Fun,,,1,7,,,,RH,,,,,,
-att_10,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
-
-Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Healthy:Unhealthy",Healthy |  | Unhealthy,,,1,7,,,,RH,,,,,,
-att_02,survey_measures,tcorssmoking_beliefs_from_qualtrics,slider,"Please respond to each pair of items below.
+Correct <-----> Incorrect",Correct |  | Incorrect,,,1,7,,,,RH,,,,,,
+att_04,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
 
 Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
-Pleasant:Unpleasant",Pleasant |  | Unpleasant,,,1,7,,,,RH,,,,,,
-norm_01_1,survey_measures,tcorssmoking_norms_from_qualtrics,radio,"How do you think the following people feel about you smoking tobacco cigarettes every day?
+Difficult <-----> Easy",Difficult |  | Easy,,,1,7,,,,RH,,,,,,
+att_05,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
+
+Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
+Unenjoyable <-----> Enjoyable",Unenjoyable |  | Enjoyable,,,1,7,,,,RH,,,,,,
+att_06,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
+
+Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
+Good <-----> Bad",Good |  | Bad,,,1,7,,,,RH,,,,,,
+att_07,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
+
+Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
+Something I'd like <-----> Something I'd dislike",Something I'd like |  | Something I'd dislike,,,1,7,,,,RH,,,,,,
+att_08,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
+
+Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
+Harmful <-----> Beneficial",Harmful |  | Beneficial,,,1,7,,,,RH,,,,,,
+att_09,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
+
+Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
+Boring <-----> Fun",Boring |  | Fun,,,1,7,,,,RH,,,,,,
+att_10,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
+
+Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
+Healthy <-----> Unhealthy",Healthy |  | Unhealthy,,,1,7,,,,RH,,,,,,
+att_02,survey_measures,Smoking_attitudes,slider,"Please respond to each pair of items below.
+
+Continuing to smoke the number of tobacco cigarettes I am smoking right now would be:
+Pleasant <-----> Unpleasant",Pleasant |  | Unpleasant,,,1,7,,,,RH,,,,,,
+norm_01_1,survey_measures,smoking_norms,radio,"How do you think the following people feel about you smoking tobacco cigarettes every day?
 Your close friends","1, Strongly disapprove | 2, Disapprove | 3, Neither approve nor disapprove | 4, Approve | 5, Strongly approve | 6, N/A",,,,,,,,,,,,,,
-norm_01_2,survey_measures,tcorssmoking_norms_from_qualtrics,radio,"How do you think the following people feel about you smoking tobacco cigarettes every day?
+norm_01_2,survey_measures,smoking_norms,radio,"How do you think the following people feel about you smoking tobacco cigarettes every day?
 The people you live with","1, Strongly disapprove | 2, Disapprove | 3, Neither approve nor disapprove | 4, Approve | 5, Strongly approve | 6, N/A",,,,,,,,,,,,,,
-norm_01_3,survey_measures,tcorssmoking_norms_from_qualtrics,radio,"How do you think the following people feel about you smoking tobacco cigarettes every day?
+norm_01_3,survey_measures,smoking_norms,radio,"How do you think the following people feel about you smoking tobacco cigarettes every day?
 The people you work with","1, Strongly disapprove | 2, Disapprove | 3, Neither approve nor disapprove | 4, Approve | 5, Strongly approve | 6, N/A",,,,,,,,,,,,,,
-norm_01_4,survey_measures,tcorssmoking_norms_from_qualtrics,radio,"How do you think the following people feel about you smoking tobacco cigarettes every day?
+norm_01_4,survey_measures,smoking_norms,radio,"How do you think the following people feel about you smoking tobacco cigarettes every day?
 Your family","1, Strongly disapprove | 2, Disapprove | 3, Neither approve nor disapprove | 4, Approve | 5, Strongly approve | 6, N/A",,,,,,,,,,,,,,
-norm_02,survey_measures,tcorssmoking_norms_from_qualtrics,radio,How many of your 4 closest friends smoke tobacco cigarettes?,"1, 0 | 2, 1 | 3, 2 | 4, 3 | 5, 4",,,,,,,,,,,,,,
-norm_03,survey_measures,tcorssmoking_norms_from_qualtrics,radio,How many of the people you live with smoke tobacco cigarettes?,"2, None | 3, Some but not all | 4, All | 1, I live alone",,,,,,,,,,,,,,
-norm_04,survey_measures,tcorssmoking_norms_from_qualtrics,radio,How many of the people you work with smoke tobacco cigarettes?,"1, None | 2, A minority | 3, About half | 4, A majority | 5, Don't know | 6, I don't have coworkers",,,,,,,,,,,,,,
-norm_05,survey_measures,tcorssmoking_norms_from_qualtrics,radio,How many people your age would you guess smoke tobacco cigarettes ?,"1, None | 2, A minority | 3, About half | 4, A majority | 5, Don't know",,,,,,,,,,,,,,
-mot_01_1,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+norm_02,survey_measures,smoking_norms,radio,How many of your 4 closest friends smoke tobacco cigarettes?,"1, 0 | 2, 1 | 3, 2 | 4, 3 | 5, 4",,,,,,,,,,,,,,
+norm_03,survey_measures,smoking_norms,radio,How many of the people you live with smoke tobacco cigarettes?,"2, None | 3, Some but not all | 4, All | 1, I live alone",,,,,,,,,,,,,,
+norm_04,survey_measures,smoking_norms,radio,How many of the people you work with smoke tobacco cigarettes?,"1, None | 2, A minority | 3, About half | 4, A majority | 5, Don't know | 6, I don't have coworkers",,,,,,,,,,,,,,
+norm_05,survey_measures,smoking_norms,radio,How many people your age would you guess smoke tobacco cigarettes ?,"1, None | 2, A minority | 3, About half | 4, A majority | 5, Don't know",,,,,,,,,,,,,,
+mot_instructions,survey_measures,smoking_motivations_for_daily_smokers,radio,Please rate the following statements based on the scale provided below:,"0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,"<b>PROMIS Social Motivations for Smoking</b>
+<p>From the RAND Smoking Assessment Toolkit. We ask all questions in the ""Daily Smokers"" question bank</p>
+<div class=""citation"">
+  <span class=""author"">Tucker, J. S., Shadel, W. G., Edelen, M. O., Stucky, B. D., Kuhfeld, M., Hansen, M., &amp; Cai, L.</span>
+  <span class=""year""> (2014).</span>
+  <span class=""title""> Development of the PROMIS Social Motivations for Smoking item banks.</span>
+  <span class=""journal""> <em>Nicotine &amp; Tobacco Research</em>,</span>
+  <span class=""volume"">16(Suppl 3),</span>
+  <span class=""pages"">S241–S249.</span>
+  <div class=""url"">
+    <a href=""https://doi.org/10.1093/ntr/ntt283"" target=""_blank"" rel=""noopener noreferrer"">
+      https://doi.org/10.1093/ntr/ntt283
+    </a>
+  </div>
+</div>"
+mot_01_1,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 Smoking makes me feel better in social situations.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,"<b>PROMIS Social Motivations for Smoking</b>
 <p>From the RAND Smoking Assessment Toolkit. We ask all questions in the ""Daily Smokers"" question bank</p>
 <div class=""citation"">
@@ -529,29 +547,29 @@ Smoking makes me feel better in social situations.","0, Not at all | 1, A little
     </a>
   </div>
 </div>"
-mot_01_2,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_2,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 Smoking helps me feel more relaxed when I'm with other people.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_01_3,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_3,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 I feel like part of a group when I'm around other smokers.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_01_4,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_4,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 I enjoy the social aspect of smoking with other smokers.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_01_5,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_5,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 If I quit smoking I will be less welcome around my friends who smoke.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_01_6,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_6,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 Smoking is part of my self-image.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_01_7,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_7,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 I feel a bond with other smokers.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_01_8,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_8,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 Smoking gives me something to do with my hands.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_01_9,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_9,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 If I always smoke in a certain place it is hard to be there and not smoke.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_01_10,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following statements based on the scale provided below:
+mot_01_10,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following statements based on the scale provided below:
 If I quit smoking I will feel uncomfortable around smokers.","0, Not at all | 1, A little bit | 2, Somewhat | 3, Quite a bit | 4, Very much",,,,,,,,,,,,,,
-mot_02_1,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following based on the scale below:
+mot_02_1,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following based on the scale below:
 I am tempted to smoke when I see someone enjoying a cigarette.","0, Never | 1, Rarely | 2, Sometimes | 3, Often | 4, All of the Time",,,,,,,,,,,,,,
-mot_02_2,survey_measures,smoking_motivations_item_banks_for_daily_smokers_s,radio,"Please rate the following based on the scale below:
+mot_02_2,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following based on the scale below:
 I am tempted to smoke when I am with other people who are smoking.","0, Never | 1, Rarely | 2, Sometimes | 3, Often | 4, All of the Time",,,,,,,,,,,,,,
-sscs_1,survey_measures,smoker_selfconcept_scale_from_qualtrics,radio,Please indicate the extent to which you agree with the following statements...Smoking is part of my self-image.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,"<b>Smoker Self Concept Scale</b>
+sscs_1,survey_measures,smoker_self_concept_scale,radio,Please indicate the extent to which you agree with the following statements...Smoking is part of my self-image.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,"<b>Smoker Self Concept Scale</b>
 <p> All five questions are asked, plus one addition (""Smoking defines me as a person"")</p> 
 <div class=""citation"">
   <span class=""authors"">Shadel, W. G., &amp; Mermelstein, R.</span>
@@ -566,12 +584,27 @@ sscs_1,survey_measures,smoker_selfconcept_scale_from_qualtrics,radio,Please indi
     </a>
   </div>
 </div>"
-sscs_2,survey_measures,smoker_selfconcept_scale_from_qualtrics,radio,"Please indicate the extent to which you agree with the following statements...Smoking is part of ""who I am.""","1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
-sscs_3,survey_measures,smoker_selfconcept_scale_from_qualtrics,radio,Please indicate the extent to which you agree with the following statements...Smoking is a part of my personality.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
-sscs_4,survey_measures,smoker_selfconcept_scale_from_qualtrics,radio,Please indicate the extent to which you agree with the following statements...Smoking is a large part of my daily life.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
-sscs_5,survey_measures,smoker_selfconcept_scale_from_qualtrics,radio,Please indicate the extent to which you agree with the following statements...Others view smoking as part of my personality.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
-sscs_6,survey_measures,smoker_selfconcept_scale_from_qualtrics,radio,Please indicate the extent to which you agree with the following statements...Smoking defines me as a person.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
-pss_01,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+sscs_2,survey_measures,smoker_self_concept_scale,radio,"Please indicate the extent to which you agree with the following statements...Smoking is part of ""who I am.""","1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
+sscs_3,survey_measures,smoker_self_concept_scale,radio,Please indicate the extent to which you agree with the following statements...Smoking is a part of my personality.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
+sscs_4,survey_measures,smoker_self_concept_scale,radio,Please indicate the extent to which you agree with the following statements...Smoking is a large part of my daily life.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
+sscs_5,survey_measures,smoker_self_concept_scale,radio,Please indicate the extent to which you agree with the following statements...Others view smoking as part of my personality.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
+sscs_6,survey_measures,smoker_self_concept_scale,radio,Please indicate the extent to which you agree with the following statements...Smoking defines me as a person.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,
+pss_instructions,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,"<b>Percieved Stress Scale, 10-item Short Form (PSS-10)</b>
+<p>The scale usually asks about the last month, but we ask about the last 2 weeks</p>
+<div class=""citation"">
+  <span class=""author"">Tucker, J. S., Shadel, W. G., Edelen, M. O., Stucky, B. D., Kuhfeld, M., Hansen, M., &amp; Cai, L.</span>
+  <span class=""year""> (2014).</span>
+  <span class=""title""> Development of the PROMIS Social Motivations for Smoking item banks.</span>
+  <span class=""journal""> <em>Nicotine &amp; Tobacco Research</em>,</span>
+  <span class=""volume"">16(Suppl 3),</span>
+  <span class=""pages"">S241–S249.</span>
+  <div class=""url"">
+    <a href=""https://doi.org/10.1093/ntr/ntt283"" target=""_blank"" rel=""noopener noreferrer"">
+      https://doi.org/10.1093/ntr/ntt283
+    </a>
+  </div>
+</div>"
+pss_01,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...been upset because of something that happened unexpectedly?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,"<b>Percieved Stress Scale, 10-item Short Form (PSS-10)</b>
 <p>The scale usually asks about the last month, but we ask about the last 2 weeks</p>
@@ -588,33 +621,33 @@ In the last two weeks, how often have you...been upset because of something that
     </a>
   </div>
 </div>"
-pss_02,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_02,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...felt that you were unable to control the important things in your life?
 ","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-pss_04,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_04,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...felt confident about your ability to handle your personal problems?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-pss_03,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_03,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...felt nervous and ""stressed""?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-pss_05,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_05,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...felt that things were going your way?
 ","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-pss_06,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_06,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...found out that you could not cope with all the things that you had to do?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-pss_07,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_07,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...been able to control irritations in your life?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-pss_08,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_08,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...felt that you were on top of things?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-pss_09,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_09,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...been angered because of things that were outside of your control?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-pss_10,survey_measures,perceived_stress_scale_pss10_cohen_and_williamson_,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
+pss_10,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...felt difficulties were piling up so high you could not overcome them?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
 cosw_1,survey_measures,codeswitching_measure_from_qualtrics,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
@@ -701,6 +734,20 @@ pil_7,survey_measures,purpose_in_life_scale_from_qualtrics,radio,"Please indicat
 I have a sense of direction and purpose in my life.","1, Strongly disagree | 2, Slightly disagree | 3, Somewhat disagree | 4, Slightly agree | 5, Somewhat agree | 6, Strongly agree",,,,,,,,,,,,,,
 pil_ben_1,survey_measures,purpose_in_life_scale_from_qualtrics,radio,"Using the same scale from above, my purpose in life is...About benefiting myself","1, Strongly disagree | 2, Slightly disagree | 3, Somewhat disagree | 4, Slightly agree | 5, Somewhat agree | 6, Strongly agree",,,,,,,,,,,,,,
 pil_ben_2,survey_measures,purpose_in_life_scale_from_qualtrics,radio,"Using the same scale from above, my purpose in life is...About benefiting others","1, Strongly disagree | 2, Slightly disagree | 3, Somewhat disagree | 4, Slightly agree | 5, Somewhat agree | 6, Strongly agree",,,,,,,,,,,,,,
+cesd_instructions,survey_measures,CES-D,radio,Below is a list of some of the ways you may have felt or behaved recently. Please indicate how often you have felt this way during the past week by checking the appropriate box for each question.,"0, rarely or none of the time (less than 1 day) | 1, some or a little of the time (1-2 days) | 2, occasionally or a moderate amount of time (3-4 days) | 3, most or all the time (5-7 days)",,,,,,,,,,,,,,"<b>Center for the Epidemiological Studies of Depression, 10-item Short Form (CES-D-10)</b>
+<div class=""citation"">
+  <span class=""author"">Haroz, E. E., Ybarra, M. L., &amp; Eaton, W. W.</span>
+  <span class=""year""> (2014).</span>
+  <span class=""title""> Psychometric evaluation of a self-report scale to measure adolescent depression: the CESDR-10 in two national adolescent samples in the United States.</span>
+  <span class=""journal""> <em>Journal of Affective Disorders</em>,</span>
+  <span class=""volume"">158,</span>
+  <span class=""pages"">154–160.</span>
+  <div class=""url"">
+    <a href=""https://doi.org/10.1016/j.jad.2014.02.009"" target=""_blank"" rel=""noopener noreferrer"">
+      https://doi.org/10.1016/j.jad.2014.02.009
+    </a>
+  </div>
+</div>"
 cesd_1,survey_measures,CES-D,radio,"Below is a list of some of the ways you may have felt or behaved recently. Please indicate how often you have felt this way during the past week by checking the appropriate box for each question.
 
 I was bothered by things that usually don't bother me.","0, rarely or none of the time (less than 1 day) | 1, some or a little of the time (1-2 days) | 2, occasionally or a moderate amount of time (3-4 days) | 3, most or all the time (5-7 days)",,,,,,,,,,,,,,"<b>Center for the Epidemiological Studies of Depression, 10-item Short Form (CES-D-10)</b>
@@ -744,7 +791,7 @@ I felt lonely.","0, rarely or none of the time (less than 1 day) | 1, some or a 
 cesd_10,survey_measures,CES-D,radio,"Below is a list of some of the ways you may have felt or behaved recently. Please indicate how often you have felt this way during the past week by checking the appropriate box for each question.
 
 I could not ""get going.""","0, rarely or none of the time (less than 1 day) | 1, some or a little of the time (1-2 days) | 2, occasionally or a moderate amount of time (3-4 days) | 3, most or all the time (5-7 days)",,,,,,,,,,,,,,
-exp_01,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,"In the past 30 days, have you received things like coupons, special price offers or discounts on cigarettes or other promotional items in the mail from tobacco companies?","1, Yes | 2, No",,,,,,,,,,,,,,"<div class=""citation"">
+exp_01,survey_measures,smoking_info_exposure,radio,"In the past 30 days, have you received things like coupons, special price offers or discounts on cigarettes or other promotional items in the mail from tobacco companies?","1, Yes | 2, No",,,,,,,,,,,,,,"<div class=""citation"">
   <span class=""author"">World Health Organization.</span>
   <span class=""year""> (2020).</span>
   <span class=""title""> GATS Questionnaire.</span>
@@ -756,25 +803,25 @@ exp_01,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,
   </div>
   <div class=""original-work"">(Original work published 1998)</div>
 </div>"
-exp_02_1,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
+exp_02_1,survey_measures,smoking_info_exposure,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
 Free samples of cigarettes","1, Yes | 2, No",,,,,,,,,,,,,,
-exp_02_2,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
+exp_02_2,survey_measures,smoking_info_exposure,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
 Cigarettes at sale price","1, Yes | 2, No",,,,,,,,,,,,,,
-exp_02_3,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
+exp_02_3,survey_measures,smoking_info_exposure,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
 Coupons for cigarettes","1, Yes | 2, No",,,,,,,,,,,,,,
-exp_02_4,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
+exp_02_4,survey_measures,smoking_info_exposure,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
 Free gifts or special discount offers on other products when buying cigarettes
 ","1, Yes | 2, No",,,,,,,,,,,,,,
-exp_02_5,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
+exp_02_5,survey_measures,smoking_info_exposure,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
 Clothing or other items with a cigarette brand name or logo
 
 ","1, Yes | 2, No",,,,,,,,,,,,,,
-exp_02_6,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
+exp_02_6,survey_measures,smoking_info_exposure,radio,"In the last 30 days, have you noticed any of the following types of cigarette promotions? 
 Cigarette promotions in the mail
 
 
 ","1, Yes | 2, No",,,,,,,,,,,,,,
-exp_03,survey_measures,modified_tcorssmoking_info_exposure_from_qualtrics,radio,"If you're running low on cigarettes, how likely are you to reduce or delay your smoking until you come across a discount?","1, Very unlikely | 2, Unlikely | 3, Neutral | 4, Likely | 6, Very likely",,,,,,,,,,,,,,
+exp_03,survey_measures,smoking_info_exposure,radio,"If you're running low on cigarettes, how likely are you to reduce or delay your smoking until you come across a discount?","1, Very unlikely | 2, Unlikely | 3, Neutral | 4, Likely | 6, Very likely",,,,,,,,,,,,,,
 slei,survey_measures,stressful_life_experiences_inventory,checkbox,"In the past 12 months, which of the following major life events have taken place in your life? Select each event that you have experienced this year. 
 ","1, Death of spouse | 2, Divorce | 3, Marital separation | 4, Jail term | 5, Death of close family member | 6, Personal injury or illness | 7, Marriage | 8, Fired from work | 9, Marital reconciliation | 10, Retirement | 11, Change in family member's health | 12, Pregnancy | 13, Sex difficulties | 14, Addition to family | 15, Business readjustment | 16, Change in financial status | 17, Death of a close friend | 18, Change to a different line of work | 19, Change in number of marital arguments | 20, Mortgage or loan over $10,000 | 21, Foreclosure of mortgage or loan | 22, Change in work responsibilities | 44, Child (e.g., son or daughter) leaving home | 23, Trouble with in-laws | 24, Outstanding personal achievement | 25, Spouse begins or stops work | 26, Starting or finishing school | 27, Change in living conditions | 28, Revision of personal habits | 29, Trouble with boss | 30, Change in work hours, conditions | 31, Change in residence (where you live) | 32, Change in schools | 33, Change in recreational habits | 34, Change in church activities | 35, Change in social activities | 36, Mortgage or loan under $10,000 | 37, Change in sleeping habits | 38, Change in number of family gatherings | 39, Change in eating habits | 40, Vacation | 41, Christmas season | 42, Minor violation of the law",,,,,,,,,,,,,,"<b>Modified Social Readjustment Rating Scale</b>
 <div class=""citation"">
@@ -800,6 +847,16 @@ alcohol_1,survey_measures,alcohol_questions_from_qualtrics,radio,"During the las
   <span class=""pages"">187-192.</span>
 </div>"
 alcohol_2,survey_measures,alcohol_questions_from_qualtrics,radio,"During the 6 months, how many alcoholic drinks did you have on a typical day when you drank alcohol?","11, 25 or more drinks | 10, 19-24 drinks | 9, 16-18 drinks | 8, 12 - 15 drinks | 7, 9-11 drinks | 6, 7-8 drinks | 5, 5-6 drinks | 4, 3-4 drinks | 3, 2 drinks | 2, 1 drink | 1, 0 drinks",,,,,,,,,,,,,,
+maas_instructions,survey_measures,mindful_attention_awareness_scale,radio,"Below is a collection of statements about your everyday experience. Using the 1-6 scale below, please indicate how frequently or infrequently you currently have each experience. Please answer according to what really reflects your experience rather than what you think your experience should be. Please treat each item separately from every other item.","1, Almost always | 2, Very frequently | 3, Somewhat frequently | 4, Somewhat infrequently | 5, Very infrequently | 6, Almost never",,,,,,,,,,,,,,"<b>Mindful Attention Awareness Scale (MAAS)</b>
+<p>Asked during the fMRI session (outside of the scanner)</p>
+<div class=""citation"">
+  <span class=""author"">Brown, K. W., &amp; Ryan, R. M.</span>
+  <span class=""year""> (2003).</span>
+  <span class=""title""> The benefits of being present: Mindfulness and its role in psychological well-being.</span>
+  <span class=""journal""> <em>Journal of Personality and Social Psychology</em>,</span>
+  <span class=""volume"">84,</span>
+  <span class=""pages"">822-848.</span>
+</div>"
 maas_1,survey_measures,mindful_attention_awareness_scale,radio,"Below is a collection of statements about your everyday experience. Using the 1-6 scale below, please indicate how frequently or infrequently you currently have each experience. Please answer according to what really reflects your experience rather than what you think your experience should be. Please treat each item separately from every other item.
 
 I could be experiencing some emotion and not be conscious of it until some time later.","1, Almost always | 2, Very frequently | 3, Somewhat frequently | 4, Somewhat infrequently | 5, Very infrequently | 6, Almost never",,,,,,,,,,,,,,"<b>Mindful Attention Awareness Scale (MAAS)</b>
