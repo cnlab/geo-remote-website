@@ -1,0 +1,338 @@
+﻿Variable / Field Name,Form Name,Field Label,Field Type,"Choices, Calculations, OR Slider Labels",Numeric Assign.,Block,Text Validation Min,Text Validation Max,Branching Logic,Codebook Info,Form Info
+microagg_day,Generated Data,Did the participant list any microaggressions in the microagg questions?,yesno,"1, Yes | 0, No",,,,,,,These data are processed from the original ema questions to give daily summaries or binary values (whether or not a participant experienced stress or microaggressions that day).
+microagg_count,Generated Data,How many microaggressions did the participant experience that day?,numeric text,,,,,,,,
+stress_day,Generated Data,Did the participant list any stressors in the stress questions?,,,,,,,,,
+stress_count,Generated Data,How many stressors did the participant experience that day?,,,,,,,,,
+daily_average_crave,Generated Data,Average of the two stress questions for that day,,,,,,,,,
+daily_cigs,Generated Data,cvg_1 + cvg_2; Number of cigarettes smoked that day,,,,,,,,,
+daily_average_pos,Generated Data,Average positive rating for that day,,,,,,,,,
+daily_average_neg,Generated Data,Average negative rating for that day,,,,,,,,,
+daily_stress,Generated Data,Average stress rating for that day,,,,,,,,,
+daily_talkAll_val,Generated Data,Average talkAll_val rating for that day,,,,,,,,,
+daily_talkAll_urge,Generated Data,Average talkAll_urge rating for that day,,,,,,,,,
+crave,Check-Ins,"Right now, how much are you craving a cigarette?",range slider,[0-100],"0 = Not at All
+100 = Extremely",Craving,,,,,
+pos,Check-Ins,How POSITIVE do you feel right now?,range slider,[0-100],"0 = Not at All
+100 = Extremely",Mood_rand,,,,,
+neg,Check-Ins,How NEGATIVE do you feel right now?,range slider,[0-100],"0 = Not at All
+100 = Extremely",Mood_rand,,,,,
+cigs,Check-Ins,"Within the last hour, how many cigarettes did you smoke?",numeric entry,,[0-99],Cigs,,,,,
+lastCig,Check-Ins,How long ago did you last smoke a cigarette?,amount of time,amount of time,,Cigs,,,,,
+nicotine_binary,Check-Ins,"Since the last survey, have you used any nicotine or tobacco products besides tobacco cigarettes?",multiple choice,"Yes
+No","1 = Yes
+2 = No",,,,,,
+wake,Summary 1,What time did you wake up today?,Date and Time,,,Wake_Time,,,,,
+cvg_1,Summary 1,"Between the time when you woke up and [check pak variation], how many cigarettes have you smoked in total?",Numeric Entry,[0-99],,Cov_1,,,,,
+cvg_2,Summary 2,"Between [check pak variation] (e.g. 11am and 5pm), how many cigarettes have you smoked in total?",Numeric entry,,,Cov_2,,,,,
+smokeConv_yn,Summary 2,"In the past 24 hours, did you talk to anybody about smoking tobacco cigarettes?",multiple choice,"Yes
+No","1 = Yes
+2 = No",Cov_2,,,,,
+talkCig_intro,Summary 2,Now we are going to ask you a few questions about the conversations about smoking tobacco cigarettes that you had in the past 24 hours.,text statement,,,Cov_2,,,smokeConv == 1,,
+talkAll_intro,Summary 2,Now we are going to ask you a few questions about ALL of the conversations that you had in the past 24 hours.,text statement,,,Cov_2,,,smokeConv == 2,,
+talkCig/talkAll Instructions (not a variable),Summary 2,"Whom did you speak to about smoking tobacco cigarettes in the past 24 hours?
+Scroll through the list and select all that apply",,,,,,,,,
+talkCig_who_a friend or family member,Summary 2,a friend or family member,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 1,,
+talkCig_who_an acquaintance,Summary 2,an acquaintance,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 1,,
+talkCig_who_someone who approves of my smoking,Summary 2,someone who approves of my smoking,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 1,,
+talkCig_who_someone who disapproves of my smoking,Summary 2,someone who disapproves of my smoking,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 1,,
+talkCig_who_someone who tends to smoke as much as I do or more,Summary 2,someone who tends to smoke as much as I do or more,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 1,,
+talkCig_who_someone who tends to smoke less than me,Summary 2,someone who tends to smoke less than me,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 1,,
+talkCig_who_someone who is trying to quit smoking,Summary 2,someone who is trying to quit smoking,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 1,,
+talkCig_who_someone who does not smoke,Summary 2,someone who does not smoke,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 1,,
+talkAll_who_an acquaintance,Summary 2,a friend or family member,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkAll_who_someone who approves of my smoking,Summary 2,an acquaintance,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkAll_who_someone who disapproves of my smoking,Summary 2,someone who approves of my smoking,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkAll_who_a friend or family member,Summary 2,someone who disapproves of my smoking,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkAll_who_someone who tends to smoke less than me,Summary 2,someone who tends to smoke as much as I do or more,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkAll_who_someone who is trying to quit smoking,Summary 2,someone who tends to smoke less than me,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkAll_who_I didn’t talk to anyone today,Summary 2,someone who is trying to quit smoking,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkAll_who_someone who does not smoke,Summary 2,someone who does not smoke,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkAll_who_someone who tends to smoke as much as I do or more,Summary 2,I didn't talk to anyone today,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,smokeConv = 2,,
+talkCig_val,Summary 2,"Overall, how negatively or positively did you speak about smoking tobacco cigarettes during the conversations you had in the past 24 hours?",multiple choice,"Entirely negative
+Mostly negative
+Mixed (equally positive and negative)
+Mostly positive
+Entirely positive
+Neither (did not highlight positive or negative things about smoking)","Entirely negative - 1
+Mostly negative - 2
+Mixed (equally positive and negative) - 3
+Mostly positive - 4
+Entirely positive - 5
+Neither (did not highlight positive or negative things about smoking) - 6",Cov_2,,,smokeConv = 1,,
+talkAll_val,Summary 2,"Overall, how negative or positive were the conversations you had in the past 24 hours?",multiple choice,"Entirely negative
+Mostly negative
+Mixed (equally positive and negative)
+Mostly positive
+Entirely positive
+Neither (did not highlight positive or negative things about smoking)","Entirely negative - 1
+Mostly negative - 2
+Mixed (equally positive and negative) - 3
+Mostly positive - 4
+Entirely positive - 5
+Neither (did not highlight positive or negative things about smoking) - 6",Cov_2,,,smokeConv = 2,,
+talkCig_urge,Summary 2,"To what extent do you agree or disagree with the following statement?
+
+""The conversations I had in the past 24 hours about smoking tobacco cigarettes made me crave a cigarette.""
+
+Note: 5 = Neither Agree nor Disagree",range slider,[0-10],"0 = Totally Disagree
+10 = Totally Agree",Cov_2,,,smokeConv = 1,,
+talkAll_urge,Summary 2,"To what extent do you agree or disagree with the following statement?
+
+""The conversations I had in the past 24 hours about smoking tobacco cigarettes made me crave a cigarette""
+
+Note: 5 = Neither Agree nor Disagree""",range slider,[0-10],"0 = Totally Disagree
+10 = Totally Agree",Cov_2,,,smokeConv = 2,,
+stress,Summary 2,How stressed did you feel in the last 24 hrs?,range slider,[0-100],"0 = Not at all
+100 = A lot",Cov_2,,,,,
+stress events question (not a var),Summary 2,"Select whether you did or did not experience these sources of stress in the past 24 hours?
+
+Scroll through the list and select all that apply",,,,Cov_2,,,,,
+stress_events_interpersonal tensions,Summary 2,interpersonal tensions,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+stress_events_home,Summary 2,home,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+stress_events_work/education,Summary 2,work/education,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+stress_events_finances,Summary 2,finances,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+stress_events_health/accident,Summary 2,health/accident,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+stress_events_events that happened to others,Summary 2,events that happened to others,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+stress_events_being evaluated,Summary 2,being evaluated,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+stress_events_other,Summary 2,other,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+stress_events_none of the above,Summary 2,none of the above,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg instructions (not a variable),Summary 2,"In the last 24 hours, I felt that someone treated me negatively:
+
+Scroll through the list and select all that apply",multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_Because of my gender,Summary 2,Because of my gender,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_Because of my race,Summary 2,Because of my race,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_Because of my sexual orientation,Summary 2,Because of my sexual orientation,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_Because of my education,Summary 2,Because of my education,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_Because of my income level,Summary 2,Because of my income,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_Because I am a smoker,Summary 2,Because I am a smoker,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_Because of another personal attribute,Summary 2,Because of another personal attribute,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_None of the above / Not applicable,Summary 2,None of the above/Not applicable,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",Cov_2,,,,,
+microagg_text,Summary 2,"You selected ""In the last 24 hours, I felt that someone treated me negatively: Because of another personal attribute""
+
+Please use the text entry box below to specify the other personal attribute(s).",free text entry,,,Cov_2,,,microagg_Because of another personal attribute = 1,,
+microagg_text...61,Summary 2,"You selected ""In the last 24 hours, I felt that someone treated me negatively: Because of another personal attribute""
+
+Please use the text entry box below to specify the other personal attribute(s).",free text entry,,,Cov_2,,,microagg_Because of another personal attribute = 1,,
+microagg_text…76,Summary 2,"You selected ""In the last 24 hours, I felt that someone treated me negatively: Because of another personal attribute""
+
+Please use the text entry box below to specify the other personal attribute(s).",free text entry,,,Cov_2,,,microagg_Because of another personal attribute = 1,,
+purpose,Summary 2,"Please indicate the degree to which you agree with the following statement.
+
+""Today, overall, I feel that I had a sense of direction and purpose in my life.""",range slider,[0-100],"0 = Not at all
+100 = Extremely",Cov_2,,,,,
+panas_intro,Summary 2,"This scale consists of a number of words that describe different feelings and emotions. Read each item and then use the scale below to indicate to what extent you felt this way in the past 24 hours.
+
+Click OK to start this section of the survey.",text statement,,,PANASin_nf,,,,,
+pa_active,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Active",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+pa_determined,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Determined",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+pa_attentive,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Attentive",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+pa_inspired,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Inspired",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+pa_alert,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Alert",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+na_afraid,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Afraid",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+na_nervous,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Nervous",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+na_upset,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Upset",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+na_hostile,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Hostile",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+na_ashamed,Summary 2,"Use the scale below to indicate to what extent you felt this way in the past 24 hours:
+Ashamed",multiple choice,"Very slightly or not at all
+A little
+Moderately
+Quite a bit
+Extremely","1 - Very slightly or not at all
+2 - A little
+3 - Moderately
+4 - Quite a bit
+5 - Extremely",PANAS-SFnf,,,,,
+nicotine_list question (not a variable),Summary 2,"At any point today, did you use any of the following nicotine or tobacco products?",,,,,,,,,
+nicotine_list_Manufactured cigarettes,Summary 2,Manufactured cigarettes,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+nicotine_list_E-cigarettes or vaping with nicotine,Summary 2,E-cigarettes or vaping with nicotine,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+nicotine_list_Roll your own cigarettes,Summary 2,Roll your own cigarettes,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+nicotine_list_Kreteks or clove cigarettes,Summary 2,Kreteks or clove cigarettes,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+nicotine_list_Pipes full of tobacco,Summary 2,Pipes full of tobacco,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+"nicotine_list_Large, or traditional, cigars",Summary 2,"Large, or traditional, cigars",multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+"nicotine_list_Little cigars, filtered cigars, cheroots, or cigarillos",Summary 2,"Little cigars, filtered cigars, cheroots, or cigarillos",multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+"nicotine_list_Water pipe, hookah, shisha",Summary 2,"Water pipe, hookah, shisha",multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+"nicotine_list_Smokeless oral tobacco (such as snus, chew or dip)",Summary 2,"Smokeless oral tobacco (such as snus, chew, or dip)",multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+nicotine_list_Nicotine pouches (such as ZYN),Summary 2,Nicotine pouches (such as ZYN),multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+nicotine_list_Nicotine gum,Summary 2,Nicotine gum,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+nicotine_list_Nicotine patches,Summary 2,Nicotine patches,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+nicotine_list_None of the above,Summary 2,None of the above,multi-select,"Not Selected
+Selected","0 - Not Selected
+1 - Selected",,,,,,
+leave_house,Summary 2,"At any point today, did you leave the property where you live?",multiple choice,"Yes
+No","1 = Yes
+2 = No",,,,,,

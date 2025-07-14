@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: psychometric
 title: "Psychometric Measures"
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/psychometric.css' | relative_url }}">
 # Data
 
 <div class="highlight-box">
@@ -72,9 +71,26 @@ title: "Psychometric Measures"
 - Geographic location and mobility
 - COVID-19 vaccination status
 
+## Ecological Momentary Assessment (EMA) through LifeData {#EMA}
 <div class="method-card">
-<h3>📱 Ecological Momentary Assessment (EMA)</h3>
-<p>Real-time data collected via smartphone app throughout the study period to capture moment-to-moment experiences and behaviors.</p>
+<h3>📱 What is EMA?</h3>
+<p>We used LifeData's Real Life Exp app to deliver surveys to participants throughout the day for the entire study. Participants would choose a start time that fit with their schedule and would receive four surveys a day. In order to continue to the intervention phase of the study, participants needed to respond to at least 75% of surveys during the baseline phase.</p>
+</div>
+
+<div class="image-set-container">
+    <div class="image-set-caption">
+        <strong>EMA Schedule:</strong> Participants receive surveys at two set times a day, and twice at any point during a survey window. For an 8am start time, these windows are between 8am and 12pm, and 2pm and 6pm, and the set times are at 1pm and 7pm.
+    </div>
+    <div class="image-pair-small">
+        <div>
+            <img src="{{ '/assets/images/measures/Capstone_EMA_8AM.jpg' | relative_url }}" alt="8am start time schedule">
+            <div class="image-individual-caption">A) 8am start time</div>
+        </div>
+        <div>
+            <img src="{{ '/assets/images/measures/Capstone_EMA_10AM.png' | relative_url }}" alt="10am start time schedule">
+            <div class="image-individual-caption">B) 10am start time</div>
+        </div>
+    </div>
 </div>
 
 **Assessment Domains:**
@@ -122,7 +138,7 @@ title: "Psychometric Measures"
 ## Interactive Data Codebook
 
 <div class="cta-container">
-<a href="#" class="btn btn-primary">
+<a href="#psychometric-measures" class="btn btn-primary">
 📊 Explore Variable Codebook
 </a>
 <a href="#" class="btn btn-outline">
@@ -153,51 +169,60 @@ title: "Psychometric Measures"
 </div>
 </div>
 
-<div class="psychometric-container">
-    <h1>Psychometric Measures</h1>
-    
-    <div class="highlight-box">
-        <p><strong>Interactive Codebook:</strong> Select a psychometric measure below to view the complete variable list, questions, and response options used in the GeoSmoking Study.</p>
-    </div>
+---
 
-    <div class="measure-selector">
-        <h3>Select a Measure:</h3>
-        <div style="margin-bottom: 15px;">
-            <button onclick="loadTestData()" class="test-data-btn">
-                🧪 Load Test Data (if CSV not working)
-            </button>
-        </div>
-        <div class="measure-buttons" id="measure-buttons">
-            <!-- Buttons will be populated by JavaScript -->
-        </div>
-    </div>
+## Psychometric Measures - Interactive Codebook
 
-    <div class="measure-info" id="measure-info" style="display: none;">
-        <!-- Measure description and citation will appear here -->
-    </div>
-
-    <div class="table-container">
-        <table class="measures-table">
-            <thead>
-                <tr>
-                    <th class="variable-column">Variable</th>
-                    <th class="question-column">Question/Item</th>
-                    <th class="response-column">Response Options</th>
-                </tr>
-            </thead>
-            <tbody id="measures-table-body">
-                <tr>
-                    <td colspan="3" class="loading">
-                        Loading psychometric measures...
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="highlight-box">
+<p><strong>Select a measure below</strong> to view the complete variable list, questions, and response options used in the GeoSmoking Study. The table is limited to 5 rows at a time - scroll within the table to see more items.</p>
 </div>
 
+<div id="psychometric-measures"></div>
+
 <script>
-    // Pass the correct CSV path to JavaScript (Jekyll processes this)
-    window.CSV_PATH = '{{ "/assets/data/psychometric_data.csv" | relative_url }}';
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('=== Psychometric Table Debug ===');
+    console.log('PsychometricTable available:', typeof PsychometricTable);
+    console.log('Container exists:', !!document.getElementById('psychometric-measures'));
+    console.log('CSV path:', '{{ "/assets/data/psychometric_data.csv" | relative_url }}');
+    
+    // Check if PsychometricTable class is available
+    if (typeof PsychometricTable === 'undefined') {
+        console.error('❌ PsychometricTable class not found! Check that PsychometricTable.js is loaded.');
+        document.getElementById('psychometric-measures').innerHTML = `
+            <div style="padding: 2rem; text-align: center; background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; color: #721c24;">
+                <h4>⚠️ JavaScript Error</h4>
+                <p>PsychometricTable.js file not loaded. Check:</p>
+                <ul style="text-align: left; display: inline-block;">
+                    <li>File exists at: <code>docs/assets/js/PsychometricTable.js</code></li>
+                    <li>Layout includes the script tag</li>
+                    <li>No JavaScript errors in console</li>
+                </ul>
+            </div>
+        `;
+        return;
+    }
+    
+    // Initialize the psychometric table with the new reusable class
+    try {
+        const psychometricTable = new PsychometricTable({
+            containerId: 'psychometric-measures',
+            csvPath: '{{ "/assets/data/psychometric_data.csv" | relative_url }}',
+            maxVisibleRows: 5,
+            title: 'Interactive Codebook',
+            showMeasureButtons: true,
+            showMeasureInfo: true
+        });
+        
+        console.log('✅ Psychometric table initialized successfully');
+    } catch (error) {
+        console.error('❌ Error initializing table:', error);
+        document.getElementById('psychometric-measures').innerHTML = `
+            <div style="padding: 2rem; text-align: center; background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; color: #721c24;">
+                <h4>⚠️ Initialization Error</h4>
+                <p>Error: ${error.message}</p>
+            </div>
+        `;
+    }
+});
 </script>
-<script src="{{ '/assets/js/psychometric.js' | relative_url }}"></script>

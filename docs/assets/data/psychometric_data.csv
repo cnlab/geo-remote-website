@@ -569,6 +569,21 @@ mot_02_1,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rat
 I am tempted to smoke when I see someone enjoying a cigarette.","0, Never | 1, Rarely | 2, Sometimes | 3, Often | 4, All of the Time",,,,,,,,,,,,,,
 mot_02_2,survey_measures,smoking_motivations_for_daily_smokers,radio,"Please rate the following based on the scale below:
 I am tempted to smoke when I am with other people who are smoking.","0, Never | 1, Rarely | 2, Sometimes | 3, Often | 4, All of the Time",,,,,,,,,,,,,,
+sscs_instructions,survey_measures,smoker_self_concept_scale,radio,Please indicate the extent to which you agree with the following statements…,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,"<b>Smoker Self Concept Scale</b>
+<p> All five questions are asked, plus one addition (""Smoking defines me as a person"")</p> 
+<div class=""citation"">
+  <span class=""authors"">Shadel, W. G., &amp; Mermelstein, R.</span>
+  <span class=""year""> (1996).</span>
+  <span class=""title""> Individual differences in self-concept among smokers attempting to quit: Validation and predictive utility of measures of the smoker self-concept and abstainer self-concept.</span>
+  <span class=""journal""> <em>Annals of Behavioral Medicine: A Publication of the Society of Behavioral Medicine</em>,</span>
+  <span class=""volume"">18(3),</span>
+  <span class=""pages"">151–156.</span>
+  <div class=""doi"">
+    <a href=""https://doi.org/10.1007/BF02883391"" target=""_blank"" rel=""noopener noreferrer"">
+      https://doi.org/10.1007/BF02883391
+    </a>
+  </div>
+</div>"
 sscs_1,survey_measures,smoker_self_concept_scale,radio,Please indicate the extent to which you agree with the following statements...Smoking is part of my self-image.,"1, Strongly disagree | 2, Disgree | 3, Somewhat disagree | 4, Neither agree nor disagree | 5, Somewhat agree | 6, Agree | 7, Strongly Agree",,,,,,,,,,,,,,"<b>Smoker Self Concept Scale</b>
 <p> All five questions are asked, plus one addition (""Smoking defines me as a person"")</p> 
 <div class=""citation"">

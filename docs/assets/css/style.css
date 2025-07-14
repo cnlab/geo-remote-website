@@ -552,8 +552,11 @@ body .cta-container {
   gap: 0;
 }
 
-/* Protocol navigation sidebar (next to main sidebar) */
-.protocol-nav {
+/* Unified Navigation Sidebar CSS - Add this to your style.css */
+
+/* Shared navigation sidebar styles */
+.protocol-nav,
+.psychometric-nav {
   background: #f8f9fa;
   padding: 2rem 1.5rem;
   position: sticky;
@@ -563,23 +566,27 @@ body .cta-container {
   border-right: 1px solid var(--border);
 }
 
-.protocol-nav h3 {
+.protocol-nav h3,
+.psychometric-nav h3 {
   margin-top: 0;
   color: var(--primary);
   font-size: 1.1rem;
 }
 
-.protocol-nav ul {
+.protocol-nav ul,
+.psychometric-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.protocol-nav li {
+.protocol-nav li,
+.psychometric-nav li {
   margin-bottom: 0.25rem;
 }
 
-.protocol-nav a {
+.protocol-nav a,
+.psychometric-nav a {
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
@@ -590,21 +597,32 @@ body .cta-container {
   border-left: 3px solid transparent;
 }
 
-.protocol-nav a:hover {
+.protocol-nav a:hover,
+.psychometric-nav a:hover {
   background-color: rgba(44, 108, 177, 0.1);
   color: var(--primary);
   border-left-color: var(--secondary);
 }
 
-.protocol-nav a.active {
+.protocol-nav a.active,
+.psychometric-nav a.active {
   background-color: rgba(44, 108, 177, 0.15);
   color: var(--primary);
   font-weight: 600;
   border-left-color: var(--primary);
 }
 
+/* Layout grid systems */
+.protocol-layout,
+.psychometric-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 220px 1fr;
+  min-height: 100vh;
+}
+
 /* Adjust main content for dual sidebar layout */
-.protocol-layout .main-content {
+.protocol-layout .main-content,
+.psychometric-layout .main-content {
   padding: 2rem;
 }
 
@@ -615,27 +633,32 @@ h2[id], h3[id] {
 
 /* Responsive design */
 @media (max-width: 1200px) {
-  .protocol-layout {
+  .protocol-layout,
+  .psychometric-layout {
     grid-template-columns: var(--sidebar-width-tablet) 220px 1fr;
   }
   
-  .protocol-nav {
+  .protocol-nav,
+  .psychometric-nav {
     padding: 1.5rem 1rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .protocol-layout {
+  .protocol-layout,
+  .psychometric-layout {
     grid-template-columns: var(--sidebar-width-tablet) 1fr;
   }
   
-  .protocol-nav {
+  .protocol-nav,
+  .psychometric-nav {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .protocol-layout {
+  .protocol-layout,
+  .psychometric-layout {
     grid-template-columns: 1fr;
   }
   
@@ -644,4 +667,3 @@ h2[id], h3[id] {
     position: relative;
   }
 }
-

@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/psychometric.css' | relative_url }}">
 </head>
 <body class="psychometric-layout">
+  
+  <!-- Main sidebar (same as other layouts) -->
   {% include sidebar.html %}
   
+  <!-- Psychometric navigation sidebar -->
   <nav class="psychometric-nav">
     <h3>📊 Psychometric Tests</h3>
     <ul>
       <li><a href="#smoker-self-concept" data-section="smoker-self-concept">Smoker Self-Concept Scale</a></li>
-      <li><a href="#fagerstrom" data-section="fagerstrom">Fagerström Test</a></li>
+      <li><a href="#EMA" data-section="EMA">EMA</a></li>
       <li><a href="#perceived-stress" data-section="perceived-stress">Perceived Stress Scale</a></li>
       <li><a href="#cesd" data-section="cesd">CESD Depression Scale</a></li>
       <li><a href="#tcors-beliefs" data-section="tcors-beliefs">TCORS Smoking Beliefs</a></li>
@@ -25,10 +29,13 @@
     </ul>
   </nav>
 
+  <!-- Main content area -->
   <main class="main-content">
     {{ content }}
   </main>
 
+  <!-- Include the JavaScript files -->
+  <script src="{{ '/assets/js/PsychometricTable.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/psychometric-nav.js' | relative_url }}"></script>
 </body>
 </html>
