@@ -82,7 +82,18 @@ q_straightliningcount,survey_measures,,text,# of items in straightlining,,,,,,,,
 q_straightliningpercentage,survey_measures,,text,% of questions straightlined,,,,,,,,,,,,,,,
 q_straightliningquestions,survey_measures,,text,QIDs for the straightlined questions,,,,,,,,,,,,,,,
 q_unansweredquestions,survey_measures,,text,QIDs for unanswered questions,,,,,,,,,,,,,,,
-t1_bhv_filter,survey_measures,Nicotine_and_tobacco_use,radio,What color is the filter of the tobacco cigarettes you smoke most often?,"2, White | 1, Brown | 3, Other (please specify)",,,,,,,,,,,,,,
+t1_bhv_filter,survey_measures,Nicotine_and_tobacco_use,radio,What color is the filter of the tobacco cigarettes you smoke most often?,"2, White | 1, Brown | 3, Other (please specify)",,,,,,,,,,,,,,"<b>Smoking Habits</b>
+<div class=""citation govt-doc"">
+  <span class=""authors"">U.S. Department of Health and Human Services. National Institutes of Health. National Cancer Institute.</span>
+  <span class=""title""> Prostate, Lung, Colorectal and Ovarian (PLCO) Cancer Screening Trial, Supplemental Questionnaire.</span>
+  <div class=""doc-details"">
+    <span class=""version"">Version Date: 1/06,</span>
+    <span class=""pages"">pages 8–9,</span>
+    <span class=""questions"">questions 49–54</span>
+    <span class=""source"">(source for questions 1–6).</span>
+  </div>
+  <div class=""ref-type"">General References</div>
+</div>"
 t1_bhv_filter_3_text,survey_measures,Nicotine_and_tobacco_use,text,"Text entry for t1_bhv_filter=""Other (please specify)""",,,,,,,,,,,,,,,
 t1_lisa_01,survey_measures,Nicotine_and_tobacco_purchase_habits,dropdown,About how many different stores do you purchase cigarettes from in a typical week?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, More than five",,,,,,,,,,,,,,
 t1_lisa_02,survey_measures,Nicotine_and_tobacco_purchase_habits,radio,What type of store do you buy your cigarettes from most of the time?,"1, Convenience store or gas station | 2, Supermarket or grocery store | 3, Pharmacy or drug store | 4, Warehouse club (e.g., Costco, Sams) or discount store (e.g., Walmart, Family Dollar) | 5, Liquor store | 6, Smoke shop, tobacco specialty store, or tobacco outlet store | 7, Duty-free shop or military commissary | 8, Store on an Indian reservation | 9, Or from somewhere else, please specify:",,,,,,,,,,,,,,
@@ -365,24 +376,13 @@ ftsd_03,survey_measures,fagerstrom_test_of_smoking_dependence,radio,Which cigare
 ftsd_04,survey_measures,fagerstrom_test_of_smoking_dependence,radio,How many cigarettes a day do you smoke?,"0, 10 or less | 1, 11-20 | 2, 21-30 | 3, 31 or more",,,,,,,,,,,,,,
 ftsd_05,survey_measures,fagerstrom_test_of_smoking_dependence,radio,Do you smoke more frequently during the first hours after you wake up than during the rest of the day?,"1, Yes | 0, No",,,,,,,,,,,,,,
 ftsd_06,survey_measures,fagerstrom_test_of_smoking_dependence,radio,Do you smoke even if you are sick in bed most of the day?,"1, Yes | 0, No",,,,,,,,,,,,,,
-hbt_01,survey_measures,Nicotine and tobacco use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Do you live by yourself?</span></p></div>","1, Yes | 2, No",,,,,,,,,,,,,,"<b>Smoking Habits</b>
-<div class=""citation govt-doc"">
-  <span class=""authors"">U.S. Department of Health and Human Services. National Institutes of Health. National Cancer Institute.</span>
-  <span class=""title""> Prostate, Lung, Colorectal and Ovarian (PLCO) Cancer Screening Trial, Supplemental Questionnaire.</span>
-  <div class=""doc-details"">
-    <span class=""version"">Version Date: 1/06,</span>
-    <span class=""pages"">pages 8–9,</span>
-    <span class=""questions"">questions 49–54</span>
-    <span class=""source"">(source for questions 1–6).</span>
-  </div>
-  <div class=""ref-type"">General References</div>
-</div>"
-hbt_02,survey_measures,Nicotine and tobacco use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Is smoking </span>tobacco cigarettes<span style=""font-weight: normal;""> allowed inside your home?</span></p></div>","1, Yes | 2, No | 3, Sometimes or in some places",,,,,,,,,,,,,,
-hbt_03,survey_measures,Nicotine and tobacco use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Is </span>vaping or e-cigarette use<span style=""font-weight: normal;""> allowed inside your home?</span></p></div>","1, Yes | 2, No | 3, Sometimes or in some places",,,,,,,,,,,,,,
-hbt_04_1,survey_measures,Nicotine and tobacco use,radio,You smoke inside of your home.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
-hbt_04_2,survey_measures,Nicotine and tobacco use,radio,Anyone other than you smokes inside your home.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
-hbt_04_3,survey_measures,Nicotine and tobacco use,radio,You smoke in indoor areas where you work.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
-hbt_04_4,survey_measures,Nicotine and tobacco use,radio,Anyone other than you smokes in indoor areas where you work.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
+hbt_01,survey_measures,Nicotine_and_tobacco_use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Do you live by yourself?</span></p></div>","1, Yes | 2, No",,,,,,,,,,,,,,
+hbt_02,survey_measures,Nicotine_and_tobacco_use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Is smoking </span>tobacco cigarettes<span style=""font-weight: normal;""> allowed inside your home?</span></p></div>","1, Yes | 2, No | 3, Sometimes or in some places",,,,,,,,,,,,,,
+hbt_03,survey_measures,Nicotine_and_tobacco_use,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">Is </span>vaping or e-cigarette use<span style=""font-weight: normal;""> allowed inside your home?</span></p></div>","1, Yes | 2, No | 3, Sometimes or in some places",,,,,,,,,,,,,,
+hbt_04_1,survey_measures,Nicotine_and_tobacco_use,radio,You smoke inside of your home.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
+hbt_04_2,survey_measures,Nicotine_and_tobacco_use,radio,Anyone other than you smokes inside your home.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
+hbt_04_3,survey_measures,Nicotine_and_tobacco_use,radio,You smoke in indoor areas where you work.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
+hbt_04_4,survey_measures,Nicotine_and_tobacco_use,radio,Anyone other than you smokes in indoor areas where you work.,"1, Never | 2, Less than monthly | 3, Monthly | 4, Weekly | 5, Daily",,,,,,,,,,hbt_04,,,,
 marijuana_use,survey_measures,Drug_use_and_psychiatric_history,radio,Have you used marijuana (edible/consumable or combustible) on a regular basis (i.e. once a month or more) in the past year?,"1, Yes | 2, No",,,,,,,,,,,,,,Qualtitative data on drug use and psych diagnoses. These questions have not been psychometrically validated
 marijuana_freq,survey_measures,Drug_use_and_psychiatric_history,radio,How often do you use marijuana?,"1, Every day | 2, Most days | 3, Some Days",,,,,,,,,,,,,,
 sud_dx,survey_measures,Drug_use_and_psychiatric_history,radio,"Apart from nicotine products like cigarettes, have you ever received a diagnosis of substance abuse (e.g., alcohol, opioids including heroin, cocaine, marijuana, or stimulants)?","1, Yes | 2, No",,,,,,,,,,,,,,
@@ -665,43 +665,43 @@ In the last two weeks, how often have you...been angered because of things that 
 pss_10,survey_measures,perceived_stress_scale,radio,"The questions in this scale ask you about your feelings and thoughts during the last two weeks. In each case, please indicate your response representing HOW OFTEN you felt or thought a certain way.
 
 In the last two weeks, how often have you...felt difficulties were piling up so high you could not overcome them?","1, Never | 2, Almost never | 6, Sometimes | 7, Fairly often | 8, Very often",,,,,,,,,,,,,,
-cosw_1,survey_measures,codeswitching_measure_from_qualtrics,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
+cosw_1,survey_measures,code_switching,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
 
 For example, some Black Americans might switch between speaking Standard English and other forms of English like African American Vernacular English (also sometimes called: ""Black English"", or ""Ebonics"") throughout their day depending on who they are talking to. This kind of switching between types of English is not limited to Black Americans. People with other racial backgrounds, heritages, and ethnic origins might also change the way that they speak English depending on different aspects of their identity. 
 
 For the items below, consider the different ways you may or may not change the way you speak English or act depending on the people you're interacting with. Please choose a response ranging from Strongly disagree to Strongly agree.
 
 I speak differently at school (or work) than I do at home","1, Strongly Disagree | 2, Disagree | 3, Slightly Disagree | 4, Slightly Agree | 5, Agree | 6, Strongly Agree",,,,,,,,,,,,,,
-cosw_2,survey_measures,codeswitching_measure_from_qualtrics,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
+cosw_2,survey_measures,code_switching,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
 
 For example, some Black Americans might switch between speaking Standard English and other forms of English like African American Vernacular English (also sometimes called: ""Black English"", or ""Ebonics"") throughout their day depending on who they are talking to. This kind of switching between types of English is not limited to Black Americans. People with other racial backgrounds, heritages, and ethnic origins might also change the way that they speak English depending on different aspects of their identity. 
 
 For the items below, consider the different ways you may or may not change the way you speak English or act depending on the people you're interacting with. Please choose a response ranging from Strongly disagree to Strongly agree.
 
 I consciously change the tone of my voice when in the presence of people who do not match my background or upbringing","1, Strongly Disagree | 2, Disagree | 3, Slightly Disagree | 4, Slightly Agree | 5, Agree | 6, Strongly Agree",,,,,,,,,,,,,,
-cosw_3,survey_measures,codeswitching_measure_from_qualtrics,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
+cosw_3,survey_measures,code_switching,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
 
 For example, some Black Americans might switch between speaking Standard English and other forms of English like African American Vernacular English (also sometimes called: ""Black English"", or ""Ebonics"") throughout their day depending on who they are talking to. This kind of switching between types of English is not limited to Black Americans. People with other racial backgrounds, heritages, and ethnic origins might also change the way that they speak English depending on different aspects of their identity. 
 
 For the items below, consider the different ways you may or may not change the way you speak English or act depending on the people you're interacting with. Please choose a response ranging from Strongly disagree to Strongly agree.
 
 I have not needed to change how I speak when I am in different contexts","1, Strongly Disagree | 2, Disagree | 3, Slightly Disagree | 4, Slightly Agree | 5, Agree | 6, Strongly Agree",,,,,,,,,,,,,,
-cosw_4,survey_measures,codeswitching_measure_from_qualtrics,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
+cosw_4,survey_measures,code_switching,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
 
 For example, some Black Americans might switch between speaking Standard English and other forms of English like African American Vernacular English (also sometimes called: ""Black English"", or ""Ebonics"") throughout their day depending on who they are talking to. This kind of switching between types of English is not limited to Black Americans. People with other racial backgrounds, heritages, and ethnic origins might also change the way that they speak English depending on different aspects of their identity. 
 
 For the items below, consider the different ways you may or may not change the way you speak English or act depending on the people you're interacting with. Please choose a response ranging from Strongly disagree to Strongly agree.
 
 There is a way to act at home and a different way when I am away from home","1, Strongly Disagree | 2, Disagree | 3, Slightly Disagree | 4, Slightly Agree | 5, Agree | 6, Strongly Agree",,,,,,,,,,,,,,
-cosw_5,survey_measures,codeswitching_measure_from_qualtrics,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
+cosw_5,survey_measures,code_switching,radio,"Some people change the way they speak English or act when they are in similar company (i.e. with people from the same background), versus when they are in mixed company (i.e. with people from different backgrounds) 
 
 For example, some Black Americans might switch between speaking Standard English and other forms of English like African American Vernacular English (also sometimes called: ""Black English"", or ""Ebonics"") throughout their day depending on who they are talking to. This kind of switching between types of English is not limited to Black Americans. People with other racial backgrounds, heritages, and ethnic origins might also change the way that they speak English depending on different aspects of their identity. 
 
 For the items below, consider the different ways you may or may not change the way you speak English or act depending on the people you're interacting with. Please choose a response ranging from Strongly disagree to Strongly agree.
 
 It is difficult to shift between the different sides of me","1, Strongly Disagree | 2, Disagree | 3, Slightly Disagree | 4, Slightly Agree | 5, Agree | 6, Strongly Agree",,,,,,,,,,,,,,
-q272,survey_measures,codeswitching_measure_from_qualtrics,text,"Do you speak any other language(s) besides English? If so, which other languages do you speak?",,,,,,,,,,,,,,,
-q273,survey_measures,codeswitching_measure_from_qualtrics,radio,"Do you consider yourself to be bilingual (i.e., speak/understand two or more languages)? ","1, Yes | 2, No | 3, I don't know",,,,,,,,,,,,,,
+q272,survey_measures,code_switching,text,"Do you speak any other language(s) besides English? If so, which other languages do you speak?",,,,,,,,,,,,,,,
+q273,survey_measures,code_switching,radio,"Do you consider yourself to be bilingual (i.e., speak/understand two or more languages)? ","1, Yes | 2, No | 3, I don't know",,,,,,,,,,,,,,
 pm_self,survey_measures,perceived_microagressions_from_qualtrics,radio,"In the past week, how often do you recall feeling like you felt unkind toward yourself because of your gender, age, race, weight, sexual orientation, income/education level, or any other similar personal attributes? ","1, Not at all | 2, Some days | 3, Most days | 4, Every day",,,,,,,,,,,,,,"<b>Perceived Microaggressions</b>
 <p>A single-item adaption of the Everyday Discrimination Scale. Not validated?</p>
 <div class=""citation"">
@@ -989,24 +989,3 @@ bis_27,survey_measures,Barrett_Impulsiveness_Scale,radio,I am more interested in
 bis_28,survey_measures,Barrett_Impulsiveness_Scale,radio,I am restless at the theater or lectures.,"1, Rarely/Never | 2, Occasionally | 3, Often | 4, Almost Always",,,,,,,,,,,,,,
 bis_29,survey_measures,Barrett_Impulsiveness_Scale,radio,I like puzzles.,"1, Rarely/Never | 2, Occasionally | 3, Often | 4, Almost Always",,,,,,,,,,,,,,
 bis_30,survey_measures,Barrett_Impulsiveness_Scale,radio,I am future oriented.,"1, Rarely/Never | 2, Occasionally | 3, Often | 4, Almost Always",,,,,,,,,,,,,,
-receipt_text_date,receipts,,text,wwww,,,,,,,,,,,,," @DEFAULT=""What was the date and time of the purchase?""",,
-receipt_dt_1,receipts,,text,Receipt 1: [receipt_text_date],,,,,,,,,,,,,,,
-receipt1_dt,receipts,,text,tt,,,datetime_mdy,,,,,,,,,,,,
-address_extra,address,,text,Please enter your address,,,,,,y,,y,,,,,,,
-days (not a var),survey_measures,weekly_survey,,"Thinking back across the last 7 days, how often did you...",,,,,,,,,,,,,,,
-days_01,survey_measures,weekly_survey,radio,resist the urge to smoke even though you felt a strong craving?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_02,survey_measures,weekly_survey,radio,"see smoking-related advertising in the media (for instance, online, in a magazine or on TV)?","0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_03,survey_measures,weekly_survey,radio,see smoking-related ads (like a poster or retail price) in a store that sells tobacco cigarettes?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_04,survey_measures,weekly_survey,radio,"buy cigarettes on impulse, when you were not originally planning to do so?","0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_05,survey_measures,weekly_survey,radio,smoke at least one cigarette while you were on your own?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_06,survey_measures,weekly_survey,radio,smoke at least one cigarette while you were with someone else who was smoking?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_07,survey_measures,weekly_survey,radio,smoke at least one cigarette while you were with someone else who was not smoking?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_social (not a var),survey_measures,weekly_survey,radio,"Thinking back across the last 7 days, how often did you...",,,,,,,,,,,,,,,
-days_01,survey_measures,weekly_survey,radio,feel lonely?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_02,survey_measures,weekly_survey,radio,actively contribute to the happiness and well-being of others?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_03,survey_measures,weekly_survey,radio,have a supportive and rewarding social interaction?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_social_40,survey_measures,weekly_survey,radio,give help or emotional support to others?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-days_social_41,survey_measures,weekly_survey,radio,receive help or emotional support from others?,"0, Not at all | 1, Some days | 2, Most days | 3, Every day",,,,,,,,,,,,,,
-week_01,survey_measures,weekly_survey,radio,Please indicate who you interacted with during the last 7 days.,"1, Only smokers | 2, Mostly smokers | 3, Half smokers, half nonsmokers | 4, Mostly nonsmokers | 5, Only nonsmokers | 6, Don't know",,,,,,,,,,,,,,
-week_02,survey_measures,weekly_survey,radio,"Think about everything you’ve heard or seen about tobacco in the past 7 days. Was it mostly positive about tobacco, mostly negative, or a mix of positive and negative?","1, Mostly positive | 2, Positive and negative | 3, Mostly negative | 4, I didn't hear or see anything about tobacco in the last 7 days.",,,,,,,,,,,,,,
-week_03,survey_measures,weekly_survey,radio,"In the last 7 days, how much did you crave cigarettes?","1, 0 |2, 10 | ",,,,,,,,,,,,,,

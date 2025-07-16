@@ -627,6 +627,8 @@ class PsychometricTable {
                 placeholder = 'Enter phone number...';
             } else if (validationType.toLowerCase().includes('date')) {
                 placeholder = 'Enter date...';
+            } else if (validationType.toLowerCase().includes('time')) {
+                placeholder = 'Enter date...';
             }
         }
         
@@ -634,8 +636,8 @@ class PsychometricTable {
         if (minLength || maxLength || validationType) {
             const validationParts = [];
             if (validationType) validationParts.push(`Type: ${validationType}`);
-            if (minLength) validationParts.push(`Min: ${minLength} chars`);
-            if (maxLength) validationParts.push(`Max: ${maxLength} chars`);
+            if (minLength) validationParts.push(`Min: ${minLength}`);
+            if (maxLength) validationParts.push(`Max: ${maxLength}`);
             
             validationInfo = `
                 <div class="text-validation-info">

@@ -19,8 +19,6 @@ Cigarette smoking accounts for **1 in 5 deaths** annually in the U.S. While toba
 2. Establish causal effects of tobacco retail exposure through a randomized controlled trial
 3. Investigate neural cue reactivity as a mechanism for real-world tobacco retail effects
 
-[See detailed study aims](/objectives){: .btn .btn-outline}
-
 ## Methods
 
 We enrolled 310 participants in this multi-phase study:
@@ -53,7 +51,7 @@ We enrolled 310 participants in this multi-phase study:
 
 </div>
 
-[View detailed methodology](/methods){: .btn .btn-outline}
+[View our detailed protocol](/protocol){: .btn .btn-outline}
 
 <footer class="study-footer" markdown="1">
 

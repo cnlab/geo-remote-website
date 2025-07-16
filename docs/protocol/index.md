@@ -603,7 +603,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 </div>
 </div>
 
-### fMRI Image Rating Task
+### fMRI Image Rating Task {#fmri-task}
 
 <div class="method-card">
 <h4>🖼️ Neuroimaging Task Parameters</h4>
