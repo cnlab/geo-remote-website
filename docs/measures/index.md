@@ -268,11 +268,11 @@ title: "Psychometric Measures"
 ## Interactive Data Codebook
 
 <div class="cta-container">
-<a href="#psychometric-measures" class="btn btn-primary">
-📊 Explore Variable Codebook
+<a href="#" class="btn btn-outline btn-disabled">
+📊 Request Data Sharing (coming soon)
 </a>
-<a href="#" class="btn btn-outline">
-📁 Download Data Dictionary
+<a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline">
+📁 Explore Interactive codebook
 </a>
 </div>
 

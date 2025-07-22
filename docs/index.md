@@ -51,7 +51,7 @@ We enrolled 310 participants in this multi-phase study:
 
 </div>
 
-[View our detailed protocol](/protocol){: .btn .btn-outline}
+[View our detailed protocol]({{ site.baseurl }}/protocol/){: .btn .btn-outline}
 
 <footer class="study-footer" markdown="1">
 

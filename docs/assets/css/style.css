@@ -365,6 +365,15 @@ li {
   color: white;
 }
 
+.btn-disabled {
+    background: #f8f9fa !important;
+    color: #6c757d !important;
+    border-color: #dee2e6 !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
 /* ===== FOOTER ===== */
 .study-footer {
   margin-top: 4rem;
