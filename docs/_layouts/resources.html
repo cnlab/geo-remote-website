@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/resources.css' | relative_url }}">
+</head>
+<body class="resources-layout">
+  
+  <!-- Main sidebar (same as other layouts) -->
+  {% include sidebar.html %}
+  
+  <!-- Resources navigation sidebar -->
+  <nav class="resources-nav">
+    <h3>🛠️ Research Resources</h3>
+    <ul>
+      <!-- Section links for main resources page -->
+      <li><a href="#project-management" data-section="project-management">Project Management</a></li>
+      <li><a href="#analysis-tools" data-section="analysis-tools">Analysis Tools</a></li>
+      <li><a href="#documentation" data-section="documentation">Documentation</a></li>
+      <li><a href="#protocols" data-section="protocols">Protocols</a></li>
+      <li><a href="#collaboration" data-section="collaboration">Collaboration</a></li>
+      <li><a href="#support" data-section="support">Support</a></li>
+      
+      <!-- Sub-page links section -->
+      <li class="nav-divider"></li>
+      <li class="nav-section-title">📚 Resource Tools</li>
+      
+      <li><a href="{{ '/resources/study-log' | relative_url }}" class="nav-subpage-link">
+        <span class="nav-icon">📋</span>
+        <span class="nav-text">Study Log</span>
+        <span class="nav-arrow">→</span>
+      </a></li>
+      
+      <li><a href="{{ '/resources/lifedata' | relative_url }}" class="nav-subpage-link">
+        <span class="nav-icon">📊</span>
+        <span class="nav-text">Lifedata</span>
+        <span class="nav-arrow">→</span>
+      </a></li>
+      
+      <li><a href="{{ '/resources/redcap' | relative_url }}" class="nav-subpage-link">
+        <span class="nav-icon">🗃️</span>
+        <span class="nav-text">RedCap</span>
+        <span class="nav-arrow">→</span>
+      </a></li>
+      
+      <li><a href="{{ '/resources/codebase' | relative_url }}" class="nav-subpage-link">
+        <span class="nav-icon">💻</span>
+        <span class="nav-text">Codebase</span>
+        <span class="nav-arrow">→</span>
+      </a></li>
+      
+      <!-- External links -->
+      <li class="nav-divider"></li>
+      <li class="nav-section-title">🔗 External Links</li>
+      
+      <li><a href="{{ '/measures' | relative_url }}" class="nav-external-link">
+        <span class="nav-icon">📊</span>
+        <span class="nav-text">Psychometric Measures</span>
+        <span class="nav-arrow">↗</span>
+      </a></li>
+      
+      <li><a href="{{ '/protocol' | relative_url }}" class="nav-external-link">
+        <span class="nav-icon">📖</span>
+        <span class="nav-text">Study Protocol</span>
+        <span class="nav-arrow">↗</span>
+      </a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content area -->
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <!-- Include JavaScript files -->
+  <script src="{{ '/assets/js/resources-nav.js' | relative_url }}"></script>
+</body>
+</html>

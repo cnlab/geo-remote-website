@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/resources.css' | relative_url }}">
+</head>
+<body class="resources-layout">
+  
+  <!-- Main sidebar (same as other layouts) -->
+  {% include sidebar.html %}
+  
+  <!-- Resources navigation sidebar with back button -->
+  <nav class="resources-nav resources-nav-subpage">
+    
+    <!-- Back button section -->
+    <div class="nav-back-section">
+      <a href="{{ page.parent_page | default: '/resources' | relative_url }}" class="nav-back-btn">
+        <span class="back-arrow">←</span>
+        <span class="back-text">Back to {{ page.parent_name | default: 'Resources' }}</span>
+      </a>
+      <h3>{{ page.nav_title | default: page.title }}</h3>
+    </div>
+    
+    <!-- Same navigation as parent page -->
+    <ul>
+      <!-- Section links (point back to parent page) -->
+      <li><a href="{{ '/resources#data-management' | relative_url }}" data-section="data-management">Data Management</a></li>
+      <li><a href="{{ '/resources#analysis-tools' | relative_url }}" data-section="analysis-tools">Analysis Tools</a></li>
+      <li><a href="{{ '/resources#documentation' | relative_url }}" data-section="documentation">Documentation</a></li>
+      <li><a href="{{ '/resources#protocols' | relative_url }}" data-section="protocols">Protocols</a></li>
+      <li><a href="{{ '/resources#collaboration' | relative_url }}" data-section="collaboration">Collaboration</a></li>
+      <li><a href="{{ '/resources#support' | relative_url }}" data-section="support">Support</a></li>
+      
+      <!-- Sub-page links with current page indicator -->
+      <li class="nav-divider"></li>
+      <li class="nav-section-title">📚 Resource Tools</li>
+      
+      <li><a href="{{ '/resources/study-log' | relative_url }}" class="nav-subpage-link {% if page.url contains '/study-log' %}nav-current{% endif %}">
+        <span class="nav-icon">📋</span>
+        <span class="nav-text">Study Log</span>
+        {% if page.url contains '/study-log' %}
+          <span class="nav-current-indicator">●</span>
+        {% else %}
+          <span class="nav-arrow">→</span>
+        {% endif %}
+      </a></li>
+      
+      <li><a href="{{ '/resources/lifedata' | relative_url }}" class="nav-subpage-link {% if page.url contains '/lifedata' %}nav-current{% endif %}">
+        <span class="nav-icon">📊</span>
+        <span class="nav-text">Lifedata</span>
+        {% if page.url contains '/lifedata' %}
+          <span class="nav-current-indicator">●</span>
+        {% else %}
+          <span class="nav-arrow">→</span>
+        {% endif %}
+      </a></li>
+      
+      <li><a href="{{ '/resources/redcap' | relative_url }}" class="nav-subpage-link {% if page.url contains '/redcap' %}nav-current{% endif %}">
+        <span class="nav-icon">🗃️</span>
+        <span class="nav-text">RedCap</span>
+        {% if page.url contains '/redcap' %}
+          <span class="nav-current-indicator">●</span>
+        {% else %}
+          <span class="nav-arrow">→</span>
+        {% endif %}
+      </a></li>
+      
+      <li><a href="{{ '/resources/codebase' | relative_url }}" class="nav-subpage-link {% if page.url contains '/codebase' %}nav-current{% endif %}">
+        <span class="nav-icon">💻</span>
+        <span class="nav-text">Codebase</span>
+        {% if page.url contains '/codebase' %}
+          <span class="nav-current-indicator">●</span>
+        {% else %}
+          <span class="nav-arrow">→</span>
+        {% endif %}
+      </a></li>
+      
+      <!-- External links -->
+      <li class="nav-divider"></li>
+      <li class="nav-section-title">🔗 External Links</li>
+      
+      <li><a href="{{ '/measures' | relative_url }}" class="nav-external-link">
+        <span class="nav-icon">📊</span>
+        <span class="nav-text">Psychometric Measures</span>
+        <span class="nav-arrow">↗</span>
+      </a></li>
+      
+      <li><a href="{{ '/protocol' | relative_url }}" class="nav-external-link">
+        <span class="nav-icon">📖</span>
+        <span class="nav-text">Study Protocol</span>
+        <span class="nav-arrow">↗</span>
+      </a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content area -->
+  <main class="main-content">
+    <!-- Optional breadcrumb -->
+    {% if page.show_breadcrumb %}
+    <div class="nav-breadcrumb">
+      <a href="{{ page.parent_page | default: '/resources' | relative_url }}">{{ page.parent_name | default: 'Resources' }}</a>
+      <span class="nav-breadcrumb-separator">›</span>
+      <span>{{ page.title }}</span>
+    </div>
+    {% endif %}
+    
+    {{ content }}
+  </main>
+
+  <!-- Include JavaScript files -->
+  <script src="{{ '/assets/js/resources-nav.js' | relative_url }}"></script>
+</body>
+</html>
