@@ -51,7 +51,7 @@ We used RedCap as the central hub for managing our screening data and participan
     </div>
 </div>
 
-### Automation Scale
+<h4>Automation Scale</h4>
 
 <div class="key-statistic">
     <span class="statistic-number">90+</span>
@@ -68,8 +68,10 @@ We used RedCap as the central hub for managing our screening data and participan
 
 </div>
 
-*[Image Placeholder: Screenshot of RedCap alert configuration showing automated text message setup]*
-
+<div class="image-feature">
+    <img src="{{ '/assets/images/resources/redcap/alert.png' | relative_url }}" alt="Redcap alert notification" class="img-responsive center-block">
+    <div class="image-caption">A Redcap alert used to send a text reminder to complete online session 2. This was scheduled to send every 3 days until the session was completed.</div>
+</div>
 ---
 
 ## 💬 Slack Integration for Team Coordination
@@ -85,7 +87,7 @@ We used RedCap as the central hub for managing our screening data and participan
 <li><strong>Team coordination</strong> through emoji reactions, pinned messages, and threaded discussions</li>
 </ol>
 
-### Team Management Features
+<h4>Team Management Features</h4>
 
 <div class="resource-grid">
     <div class="resource-item">
@@ -111,7 +113,10 @@ We used RedCap as the central hub for managing our screening data and participan
 
 </div>
 
-*[Image Placeholder: Screenshot of Slack channel showing RedCap alerts converted to tasks with emoji reactions and thread discussions]*
+<div class="image-feature">
+    <img src="{{ '/assets/images/resources/redcap/slack_notification.png' | relative_url }}" alt="Slack channel with RedCap alerts" class="img-responsive center-block">
+    <div class="image-caption">Redcap would send an alert to our email, which would then alert us with a slack message when an online session was completed. We used emojis to mark when a participant was paid and research tasks were completed.</div>
+</div>
 
 ---
 
@@ -157,7 +162,10 @@ We used RedCap as the central hub for managing our screening data and participan
 
 </div>
 
-*[Image Placeholder: Screenshots of RedCap reports showing enrollment statistics, demographic charts, and custom filtered participant lists]*
+<div class="image-feature">
+    <img src="{{ '/assets/images/resources/redcap/reports.png' | relative_url }}" alt="A list of a few of our redcap reports" class="img-responsive center-block">
+    <div class="image-caption">RedCap lets you easily make reports and organize them into groups for easy access</div>
+</div>
 
 ---
 
@@ -202,8 +210,6 @@ We used RedCap as the central hub for managing our screening data and participan
 
 </div>
 
-*[Image Placeholder: Diagram showing API connections between RedCap, Qualtrics, and other platforms with data flow arrows]*
-
 ---
 
 ## 🔄 Longitudinal Study Features
@@ -245,8 +251,6 @@ We used RedCap as the central hub for managing our screening data and participan
 </ul>
 
 </div>
-
-*[Image Placeholder: Screenshot of RedCap form designer showing repeated measures configuration and conditional logic setup]*
 
 ---
 
@@ -291,7 +295,10 @@ We used RedCap as the central hub for managing our screening data and participan
 
 </div>
 
-*[Image Placeholder: Screenshots of RedCap user management interface showing role assignments and logging history]*
+<div class="image-feature">
+    <img src="{{ '/assets/images/resources/redcap/usermanagement.png' | relative_url }}" alt="an example of the different types of access you can allow for different groups of users" class="img-responsive center-block">
+    <div class="image-caption">You can create different rules for access for different types of users. We had different rules for roles such as undergraduate research assistants, post-docs, graduate students, and research coordinators</div>
+</div>
 
 ---
 
@@ -299,7 +306,7 @@ We used RedCap as the central hub for managing our screening data and participan
 
 <div class="research-grid">
     <div class="research-item">
-        <h4>⚡ Automation Excellence</h4>
+        <h4>⚡ Automation</h4>
         <p>90+ automated alerts eliminated manual communication tasks and ensured consistent participant engagement</p>
     </div>
     
@@ -350,5 +357,3 @@ We used RedCap as the central hub for managing our screening data and participan
 📋 View Our Study Log System
 </a>
 </div>
-
-*Explore RedCap's official documentation and see how our study log system complemented our RedCap implementation for comprehensive research management.*

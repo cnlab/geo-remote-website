@@ -97,6 +97,7 @@ title: "Psychometric Measures"
 
 ![Questions asked during ema](/geo-remote-website/assets/images/measures/lifedata_survey_timeline.png "Table of questions asked in ema"){: .img-feature .img-responsive .center-block width="800px" }
 
+<a id="interactive_ema_codebook"></a>
 <div id="lifedata-measures"></div>
 
 ## Geolocation Data {#geolocation}
