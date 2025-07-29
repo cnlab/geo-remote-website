@@ -199,7 +199,7 @@ We used RedCap as the central hub for managing our screening data and participan
     </div>
 </div>
 
-<h4>Benefits Achieved</h4>
+<h4>Benefits</h4>
 
 <ul>
 <li><strong>Eliminated manual data entry</strong> between platforms</li>
@@ -218,27 +218,24 @@ We used RedCap as the central hub for managing our screening data and participan
 <h3>📅 Repeated Measures & Adaptability</h3>
 <p>RedCap's longitudinal capabilities made it ideal for our complex multi-phase study design.</p>
 
-<h4>Longitudinal Advantages</h4>
+<h4>Advantages</h4>
 
 <div class="resource-grid">
     <div class="resource-item">
         <h4>🔁 Repeated Measures</h4>
-        <p>Forms configured for multiple time points with automatic scheduling and reminder systems.</p>
+        <p>Forms could be configured for multiple time points with automatic scheduling and reminder systems.</p>
     </div>
-    
     <div class="resource-item">
         <h4>📈 Dynamic Development</h4>
-        <p>Ability to create new forms and modify logic as study requirements evolved over time.</p>
+        <p>Ability to create new forms and modify logic as our study requirements evolved over time.</p>
     </div>
-    
     <div class="resource-item">
         <h4>⏱️ Timeline Management</h4>
-        <p>Built-in scheduling tools for managing complex participant timelines and follow-up periods.</p>
+        <p>Built-in scheduling tools helped manage complex participant timelines and follow-up periods.</p>
     </div>
-    
     <div class="resource-item">
         <h4>🎯 Conditional Logic</h4>
-        <p>Advanced branching logic adapting data collection based on participant responses and study phase.</p>
+        <p>Advanced branching logic helped send alerts and control participant flow through the study.</p>
     </div>
 </div>
 
@@ -309,40 +306,14 @@ We used RedCap as the central hub for managing our screening data and participan
         <h4>⚡ Automation</h4>
         <p>90+ automated alerts eliminated manual communication tasks and ensured consistent participant engagement</p>
     </div>
-    
     <div class="research-item">
         <h4>🔗 Platform Integration</h4>
         <p>Seamless data flow between RedCap, Qualtrics, Slack, and other research tools</p>
     </div>
-    
     <div class="research-item">
         <h4>📊 Comprehensive Reporting</h4>
         <p>Real-time insights into study progress, enrollment, and participant management</p>
     </div>
-</div>
-
----
-
-## Recommendations for Implementation
-
-<div class="method-card">
-    <h4>🏗️ Plan Your Automation Strategy</h4>
-    <p>Start with simple alerts and gradually build complexity. Document your alert logic for team training and future modifications.</p>
-</div>
-
-<div class="method-card">
-    <h4>🔗 Design Integration Early</h4>
-    <p>Plan your platform integrations from the beginning. API connections work best when designed into your initial workflow rather than added later.</p>
-</div>
-
-<div class="method-card">
-    <h4>👥 Train Your Team Thoroughly</h4>
-    <p>Invest time in comprehensive team training on RedCap features. The more your team understands the system, the more effectively they can use its capabilities.</p>
-</div>
-
-<div class="method-card">
-    <h4>🔄 Iterate and Improve</h4>
-    <p>RedCap's flexibility allows for continuous improvement. Regularly review and refine your workflows based on real-world usage patterns.</p>
 </div>
 
 ---
