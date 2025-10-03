@@ -74,14 +74,10 @@ Participants were randomly assigned to enter a tobacco retail store or a non-tob
 
 <div class="method-card">
 <h4>📊 Participation Requirements</h4>
-<p>Participants needed to respond to <strong>≥75% of EMA prompts</strong> during the baseline period to continue to the intervention phase.</p>
+<p>Participants needed to respond to <strong>≥75% of EMA prompts</strong> during the baseline period to continue to the intervention phase, and be willing to complete store visits.</p>
 </div>
 
-Beginning on **October 6, 2023**, participants were asked at completion of the baseline period if they would still be able to complete store visits. This was asked before participants knew their assigned condition. If the participant indicated that they were no longer able to complete the store visits, they were excluded from further participation.
-
-<div class="highlight-box">
-<p><strong>Study Protocol Evolution:</strong> From study start until October 13, 2022, participants were excluded during the intervention period for non-compliance. On October 13, 2022, the study team moved to an intent-to-treat approach and did not exclude participants due to non-compliance once they began the intervention period.</p>
-</div>
+Study Protocol Evolution:</strong> From study start until October 13, 2022, participants were excluded during the intervention period for non-compliance. On October 13, 2022, the study team moved to an intent-to-treat approach and did not exclude participants due to non-compliance once they began the intervention period.
 
 ### fMRI Component
 
@@ -307,7 +303,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 - Study payment information collection
 
 **Assessments:**
-- Self-report measures completion (see Table 1)
+- Self-report measures completion
 - Physiological measurements (urine cotinine) to confirm smoking status
 
 **EMA Training:**
@@ -360,7 +356,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 **Duration:** 14 days starting 2 days after Online Session 1
 
 **Data Collection:**
-- EMA surveys (see Table 2)
+- EMA surveys
 - Continuous geolocation tracking for tobacco retail exposure assessment
 
 ### Quality Assurance
@@ -391,7 +387,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 
 <div class="method-card">
 <h3>🖥️ Pre-Intervention Session</h3>
-<p>Participants completed Online Session 2 after the baseline period, with encouragement to complete within 1 week of invitation. Three participants received exceptions for longer delays.</p>
+<p>Participants completed Online Session 2 after the baseline period, with encouragement to complete within 1 week of invitation.</p>
 </div>
 
 ### Session Components
@@ -399,7 +395,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 **Duration:** 30-60 minutes via Qualtrics
 
 **Tasks Completed:**
-- Self-report measures (see Table 1)
+- Self-report measures 
 - Image rating task
 - Geolocation data export and upload
 - EMA setup and practice
@@ -500,7 +496,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 **Duration:** 4 weeks
 
 **Required Activities:**
-- EMA surveys (see Table 2)
+- EMA surveys 
 - Continuous location tracking
 - Weekly surveys
 
@@ -536,7 +532,7 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 ### Session Components
 
 **Tasks Completed:**
-- Self-report surveys (see Table 1)
+- Self-report surveys 
 - Image rating task (repeat administration)
 - Geolocation data export and upload
 
@@ -651,11 +647,6 @@ All recruitment materials included links (e.g., URLs, QR codes) directing potent
 </div>
 
 ### Session Summary
-
-<div class="key-statistic">
-<span class="statistic-number">23 Participants</span>
-<span class="statistic-description">completed the scanner task</span>
-</div>
 
 **Session Breakdown:**
 - **Pre-scan procedures:** COVID screening, consent, eligibility verification
