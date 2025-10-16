@@ -38,6 +38,8 @@ title: "Psychometric Measures"
 </div>
 </div>
 
+---
+
 ## Data Collection Timeline
 
 <div class="research-timeline">
@@ -59,6 +61,8 @@ title: "Psychometric Measures"
 <p>Optional Neuro-imaging study with additional survey measures</p>
 </div>
 </div>
+
+---
 
 ## Interactive Data Codebook
 
@@ -109,12 +113,12 @@ title: "Psychometric Measures"
 
 ---
 
-## Survey Measures {#surveymeasures}
-
 <div class="method-card">
 <h3>📊 Psychometric Assessments</h3>
 <p>Validated survey instruments administered at multiple timepoints to assess smoking-related behaviors, cognitions, and individual differences.</p>
 </div>
+
+## Survey Measures {#surveymeasures}
 
 **Instrument Categories:**
 - Smoking dependence and motivation
