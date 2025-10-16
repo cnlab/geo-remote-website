@@ -156,7 +156,6 @@ title: "Psychometric Measures"
             </div>
         </div>
     </div>
-
     <div class="acquisition-section">
         <h4>BOLD Sequence Parameters</h4>
         <div class="param-list">
@@ -182,7 +181,6 @@ title: "Psychometric Measures"
             </div>
         </div>
     </div>
-
     <div class="acquisition-section">
         <h4>Spatial Resolution</h4>
         <div class="param-list">
@@ -269,8 +267,8 @@ title: "Psychometric Measures"
 ## Interactive Data Codebook
 
 <div class="cta-container">
-<a href="#" class="btn btn-outline btn-disabled">
-📊 Request Data Sharing (coming soon)
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScs7wR7DZsrq6eC7bXC6N2KmwKU2I5fixr97h4kSfoHvTJpiQ/viewform?usp=dialog" class="btn btn-outline">
+📊 Request Data Sharing
 </a>
 <a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline">
 📁 Explore Interactive codebook
