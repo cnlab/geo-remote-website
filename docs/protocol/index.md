@@ -77,7 +77,7 @@ Participants were randomly assigned to enter a tobacco retail store or a non-tob
 <p>Participants needed to respond to <strong>≥75% of EMA prompts</strong> during the baseline period to continue to the intervention phase, and be willing to complete store visits.</p>
 </div>
 
-Study Protocol Evolution:</strong> From study start until October 13, 2022, participants were excluded during the intervention period for non-compliance. On October 13, 2022, the study team moved to an intent-to-treat approach and did not exclude participants due to non-compliance once they began the intervention period.
+Study Protocol Evolution: From study start until October 13, 2022, participants were excluded during the intervention period for non-compliance. On October 13, 2022, the study team moved to an intent-to-treat approach and did not exclude participants due to non-compliance once they began the intervention period.
 
 ### fMRI Component
 
