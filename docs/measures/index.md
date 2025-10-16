@@ -3,10 +3,10 @@ layout: psychometric
 title: "Psychometric Measures"
 ---
 
-# Data
+# Measures
 
 <div class="highlight-box">
-<p><strong>The GeoSmoking Study</strong> collected comprehensive data across multiple domains to understand the relationship between tobacco retail environments and smoking behavior.</p>
+<p><strong>The GeoSmoking Study</strong> collected data across multiple domains to understand the relationship between tobacco retail environments and smoking behavior.</p>
 </div>
 
 ## Data Overview
@@ -22,7 +22,7 @@ title: "Psychometric Measures"
 </div>
 <div class="research-item">
 <h4>📍 Geospatial Data</h4>
-<p>GPS coordinates, retail environment mapping, and tobacco outlet exposure measures collected continuously throughout the study.</p>
+<p>GPS coordinates, retail environment mapping, and tobacco outlet exposure measures collected continuously throughout the 6-week study.</p>
 <div class="key-statistic">
 <span class="statistic-number">3.1M+</span>
 <span class="statistic-description">GPS coordinates collected</span>
@@ -30,7 +30,7 @@ title: "Psychometric Measures"
 </div>
 <div class="research-item">
 <h4>📱 EMA Data</h4>
-<p>Real-time ecological momentary assessments of craving, mood, and smoking behavior via smartphone app.</p>
+<p>Real-time ecological momentary assessments of craving, mood, and smoking behavior via smartphone app. Surveys were sent 4 times a day throughout the entire study period</p>
 <div class="key-statistic">
 <span class="statistic-number">67,000+</span>
 <span class="statistic-description">EMA responses collected</span>
@@ -43,18 +43,54 @@ title: "Psychometric Measures"
 <div class="research-timeline">
 <div class="timeline-item">
 <span class="timeline-marker">Baseline</span>
-<h4>Initial Assessment</h4>
+<h4>2 Weeks</h4>
+<p>Initial Assessment -> Online Session 1 -> 2 Week Data Collection Period</p>
 <p>Demographics, smoking history, psychometric measures, location tracking setup</p>
 </div>
 <div class="timeline-item">
-<span class="timeline-marker">Continuous</span>
-<h4>Real-Time Data</h4>
-<p>EMA surveys, GPS tracking, image rating tasks throughout study period</p>
+<span class="timeline-marker">Intervention</span>
+<h4>4 Weeks</h4>
+<p>3 Conditions: Control, Tobacco Store Visits, Non-Tobacco Store Visits</p>
+<p>EMA surveys, GPS tracking, and image rating tasks throughout study period</p>
 </div>
 <div class="timeline-item">
 <span class="timeline-marker">Follow-up</span>
 <h4>Post-Intervention</h4>
-<p>Repeated measures, fMRI data, study completion assessments</p>
+<p>Optional Neuro-imaging study with additional survey measures</p>
+</div>
+</div>
+
+## Interactive Data Codebook
+
+<div class="cta-container">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScs7wR7DZsrq6eC7bXC6N2KmwKU2I5fixr97h4kSfoHvTJpiQ/viewform?usp=dialog" class="btn btn-outline">
+📊 Request Data Sharing
+</a>
+<a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline">
+📁 Explore Interactive codebook
+</a>
+</div>
+
+## Data Access & Documentation
+
+<div class="side-by-side">
+<div>
+<h4>📄 Documentation</h4>
+<ul>
+<li>Complete variable codebook with descriptions</li>
+<li>Data collection protocols and procedures</li>
+<li>Quality control and validation methods</li>
+<li>Missing data patterns and handling</li>
+</ul>
+</div>
+<div>
+<h4>🔒 Data Access</h4>
+<ul>
+<li>De-identified datasets available for research</li>
+<li>Data use agreements required</li>
+<li>Secure data sharing protocols</li>
+<li>Collaborative analysis opportunities</li>
+</ul>
 </div>
 </div>
 
@@ -70,6 +106,38 @@ title: "Psychometric Measures"
 - Smoking history and current patterns
 - Geographic location and mobility
 - COVID-19 vaccination status
+
+---
+
+## Survey Measures {#surveymeasures}
+
+<div class="method-card">
+<h3>📊 Psychometric Assessments</h3>
+<p>Validated survey instruments administered at multiple timepoints to assess smoking-related behaviors, cognitions, and individual differences.</p>
+</div>
+
+**Instrument Categories:**
+- Smoking dependence and motivation
+- Stress and coping measures
+- Personality and individual differences
+- Social and environmental factors
+- Cessation intentions and self-efficacy
+
+<div class="highlight-box">
+<p>Survey measures were collected over Qualtrics during each Online Study Session and during the optional fMRI study session.</p>
+<ul>
+<li>Session 1 was completed 2 days before starting the Baseline period of the study</li>
+<li> Session 2 was meant to be completed within 1 week of completing the Baseline period, and two days before starting the Intervention period.</li>
+<li> Session 3 was completed after the Intervention period. Participants were meant to complete Session 3 within one week, but their data was not excluded if it was completed later.</li>
+<li> Participants were invited to schedule an option fMRI visit if they met the study criteria. Participants completed surveys before and after their scan.</li>
+</ul>
+</div>
+
+![Questions asked during online sessions](/geo-remote-website/assets/images/measures/survey_timeline.png "Table of questions asked in sessions"){: .img-feature .img-responsive .center-block width="800px" }
+
+<div id="psychometric-measures"></div>
+
+---
 
 ## Ecological Momentary Assessment (EMA) through LifeData {#EMA}
 <div class="method-card">
@@ -252,69 +320,7 @@ title: "Psychometric Measures"
 - T2-weighted structural scans
 - Fieldmap scans for distortion correction
 
-<div class="method-card">
-<h3>📊 Psychometric Assessments</h3>
-<p>Validated survey instruments administered at multiple timepoints to assess smoking-related behaviors, cognitions, and individual differences.</p>
-</div>
-
-**Instrument Categories:**
-- Smoking dependence and motivation
-- Stress and coping measures
-- Personality and individual differences
-- Social and environmental factors
-- Cessation intentions and self-efficacy
-
-## Interactive Data Codebook
-
-<div class="cta-container">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScs7wR7DZsrq6eC7bXC6N2KmwKU2I5fixr97h4kSfoHvTJpiQ/viewform?usp=dialog" class="btn btn-outline">
-📊 Request Data Sharing
-</a>
-<a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline">
-📁 Explore Interactive codebook
-</a>
-</div>
-
-## Data Access & Documentation
-
-<div class="side-by-side">
-<div>
-<h4>📄 Documentation</h4>
-<ul>
-<li>Complete variable codebook with descriptions</li>
-<li>Data collection protocols and procedures</li>
-<li>Quality control and validation methods</li>
-<li>Missing data patterns and handling</li>
-</ul>
-</div>
-<div>
-<h4>🔒 Data Access</h4>
-<ul>
-<li>De-identified datasets available for research</li>
-<li>Data use agreements required</li>
-<li>Secure data sharing protocols</li>
-<li>Collaborative analysis opportunities</li>
-</ul>
-</div>
-</div>
-
 ---
-
-## Survey Measures {#surveymeasures}
-
-<div class="highlight-box">
-<p>Survey measures were collected over Qualtrics during each Online Study Session and during the optional fMRI study session.</p>
-<ul>
-<li>Session 1 was completed 2 days before starting the Baseline period of the study</li>
-<li> Session 2 was meant to be completed within 1 week of completing the Baseline period, and two days before starting the Intervention period.</li>
-<li> Session 3 was completed after the Intervention period. Participants were meant to complete Session 3 within one week, but their data was not excluded if it was completed later.</li>
-<li> Participants were invited to schedule an option fMRI visit if they met the study criteria. Participants completed surveys before and after their scan.</li>
-</ul>
-</div>
-
-![Questions asked during online sessions](/geo-remote-website/assets/images/measures/survey_timeline.png "Table of questions asked in sessions"){: .img-feature .img-responsive .center-block width="800px" }
-
-<div id="psychometric-measures"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
