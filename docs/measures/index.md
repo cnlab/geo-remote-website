@@ -166,9 +166,9 @@ title: "Psychometric Measures"
         </div>
     </div>
     <div class="citation">
-        <span class="authors">Muzekari, et al</span>
+        <span class="authors">Adapted from Muzekari, et al</span>
         <span class="year"> (2025).</span>
-        <span class="title"> The Fagerström Test for Nicotine Dependence: A revision of the Fagerström Tolerance Questionnaire.</span>
+        <span class="title"> Naturalistic Tobacco Retail Exposure and Smoking Outcomes in Adults Who Smoke Cigarettes Daily</span>
         <span class="journal"> <em>JAMA Network Open</em>,</span>
         <span class="volume">https://doi.org/10.1001/jamanetworkopen.2025.30132</span>
     </div>
