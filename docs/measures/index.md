@@ -9,6 +9,40 @@ title: "Psychometric Measures"
 <p><strong>The GeoSmoking Study</strong> collected data across multiple domains to understand the relationship between tobacco retail environments and smoking behavior.</p>
 </div>
 
+<div class="cta-container">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScs7wR7DZsrq6eC7bXC6N2KmwKU2I5fixr97h4kSfoHvTJpiQ/viewform?usp=dialog" class="btn btn-outline">
+📊 Request Data Sharing
+</a>
+<a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline">
+📁 Explore Interactive codebook
+</a>
+</div>
+
+## Data Access & Documentation
+
+<div class="side-by-side">
+<div>
+<h4>🔒 Data Access</h4>
+<ul>
+<li>De-identified datasets available for research</li>
+<li>Data use agreements required</li>
+<li>Secure data sharing protocols</li>
+<li>Collaborative analysis opportunities</li>
+</ul>
+</div>
+<div>
+<h4>📄 Documentation</h4>
+<ul>
+<li>Complete variable codebook with descriptions</li>
+<li>Data collection protocols and procedures</li>
+<li>Quality control and validation methods</li>
+<li>Missing data patterns and handling</li>
+</ul>
+</div>
+</div>
+
+---
+
 ## Data Overview
 
 <div class="research-grid">
@@ -46,7 +80,7 @@ title: "Psychometric Measures"
 <div class="timeline-item">
 <span class="timeline-marker">Baseline</span>
 <h4>2 Weeks</h4>
-<p>Initial Assessment -> Online Session 1 -> 2 Week Data Collection Period</p>
+<p>Initial Assessment -> 2 Week Data Collection Period</p>
 <p>Demographics, smoking history, psychometric measures, location tracking setup</p>
 </div>
 <div class="timeline-item">
@@ -63,40 +97,6 @@ title: "Psychometric Measures"
 </div>
 
 ---
-
-## Interactive Data Codebook
-
-<div class="cta-container">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScs7wR7DZsrq6eC7bXC6N2KmwKU2I5fixr97h4kSfoHvTJpiQ/viewform?usp=dialog" class="btn btn-outline">
-📊 Request Data Sharing
-</a>
-<a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline">
-📁 Explore Interactive codebook
-</a>
-</div>
-
-## Data Access & Documentation
-
-<div class="side-by-side">
-<div>
-<h4>📄 Documentation</h4>
-<ul>
-<li>Complete variable codebook with descriptions</li>
-<li>Data collection protocols and procedures</li>
-<li>Quality control and validation methods</li>
-<li>Missing data patterns and handling</li>
-</ul>
-</div>
-<div>
-<h4>🔒 Data Access</h4>
-<ul>
-<li>De-identified datasets available for research</li>
-<li>Data use agreements required</li>
-<li>Secure data sharing protocols</li>
-<li>Collaborative analysis opportunities</li>
-</ul>
-</div>
-</div>
 
 ## Data Categories
 
@@ -164,6 +164,13 @@ title: "Psychometric Measures"
             <img src="{{ '/assets/images/measures/Capstone_EMA_10AM.png' | relative_url }}" alt="10am start time schedule">
             <div class="image-individual-caption">B) 10am start time</div>
         </div>
+    </div>
+    <div class="citation">
+        <span class="authors">Muzekari, et al</span>
+        <span class="year"> (2025).</span>
+        <span class="title"> The Fagerström Test for Nicotine Dependence: A revision of the Fagerström Tolerance Questionnaire.</span>
+        <span class="journal"> <em>JAMA Network Open</em>,</span>
+        <span class="volume">https://doi.org/10.1001/jamanetworkopen.2025.30132</span>
     </div>
 </div>
 
