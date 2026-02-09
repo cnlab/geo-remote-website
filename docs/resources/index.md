@@ -61,30 +61,14 @@ title: "Research Resources"
 
 <div class="resource-card">
 <h3>💻 Code & Analysis</h3>
-<p>Development tools, analysis scripts, and computational resources for data processing.</p>
+<p>Many of our scripts written for cleaning, processing, and analyzing our data were written in R. These will be available on github to be used with our data that you can request.</p>
 
 <div class="resource-grid">
     <div class="resource-item">
         <h4>Code Repository <span class="status-badge status-development">●&nbsp;Development</span></h4>
         <p>GitHub repository with analysis scripts, data processing pipelines, and documentation.</p>
-        <a href="{{ '/resources/codebase' | relative_url }}" class="resource-link">
+        <a href="https://github.com/cnlab/Geoscan-public" class="resource-link">
             Browse Code <span class="arrow">→</span>
-        </a>
-    </div>
-    
-    <div class="resource-item">
-        <h4>R Analysis Scripts</h4>
-        <p>Statistical analysis code for psychometric measures, GPS data, and fMRI processing.</p>
-        <a href="{{ '/resources/codebase#r-scripts' | relative_url }}" class="resource-link">
-            R Scripts <span class="arrow">→</span>
-        </a>
-    </div>
-    
-    <div class="resource-item">
-        <h4>Python Tools</h4>
-        <p>Data processing utilities, visualization tools, and machine learning pipelines.</p>
-        <a href="{{ '/resources/codebase#python-tools' | relative_url }}" class="resource-link">
-            Python Code <span class="arrow">→</span>
         </a>
     </div>
 </div>
