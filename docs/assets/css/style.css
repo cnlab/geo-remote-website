@@ -32,6 +32,9 @@ body {
 }
 
 .main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
   padding-right: 2rem;
 }
 
@@ -58,6 +61,118 @@ p {
 .site-nav a {
   margin-right: 1rem;
 }
+
+/* Hero statement */
+.hero-statement {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 3px solid #0066cc;
+  margin-bottom: 2rem;
+}
+
+.hero-statement h2 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.hero-statement p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.landing-text {
+  color:rgb(214, 20, 4);
+  display: block;
+  font-family: montserrat-ExtraBold, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+/* Landing cards - side by side */
+.landing-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.info-card {
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  border-color: #0066cc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-card h3 {
+  color: #0066cc;
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-card .btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+/* Page Navigation Grid */
+.page-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.nav-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.nav-card:hover {
+  border-color: #0066cc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.nav-card h3 {
+  margin-top: 0;
+  color: #0066cc;
+}
+
+.nav-card .btn {
+  margin-top: 1rem;
+}
+
+/* External Links */
+.external-links {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #0066cc;
+}
+
+.external-links ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.external-links li {
+  margin: 0.5rem 0;
+}
+
 
 /* ===== Sidebar ===== */
 .sidebar {
@@ -175,9 +290,9 @@ p {
 
 /* ===== PAGE CONTENT ===== */
 .page-content {
-  max-width: var(--max-content-width);
-  margin: 3rem auto;
-  padding: 0 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
 }
 
 .study-section {
