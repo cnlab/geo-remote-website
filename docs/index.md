@@ -77,13 +77,58 @@ Access study materials including Study Log, Lifedata documentation, and REDCap i
 
 </div>
 
-### External Resources
-
-<div class="external-links" markdown="1">
-- [Data Request Form](link-here) - Request access to study data
-- [Codebase](link-here) - View our analysis code and scripts
-- [Study Template](link-here) - Example study materials
-- [Interactive Codebook](link-here) - Explore variable definitions
+<div class="resources-section">
+  <h3>External Resources</h3>
+  <div class="resource-pills">
+    <a href="https://tinyurl.com/geoscan-data-request" class="resource-pill" target="_blank" rel="noopener noreferrer">
+      <span class="pill-icon">📋</span>
+      <span class="pill-content">
+        <span class="pill-title">Data Request Form</span>
+        <span class="pill-desc">Request access to study data</span>
+      </span>
+      <span class="pill-arrow">↗</span>
+    </a>
+    <a href="https://github.com/cnlab/Geoscan-public" class="resource-pill" target="_blank" rel="noopener noreferrer">
+      <span class="pill-icon">💻</span>
+      <span class="pill-content">
+        <span class="pill-title">Codebase</span>
+        <span class="pill-desc">View our analysis code and scripts</span>
+      </span>
+      <span class="pill-arrow">↗</span>
+    </a>
+    <a href="https://docs.google.com/spreadsheets/d/1xHG7JoQIX8UYdx0TY3c07xAxCr5FMvZcfxCuzjJqJmo/edit?usp=sharing" class="resource-pill" target="_blank" rel="noopener noreferrer">
+      <span class="pill-icon">📄</span>
+      <span class="pill-content">
+        <span class="pill-title">Study Template</span>
+        <span class="pill-desc">Example study materials</span>
+      </span>
+      <span class="pill-arrow">↗</span>
+    </a>
+    <a href="https://cnlab.shinyapps.io/geocodebook/" class="resource-pill" target="_blank" rel="noopener noreferrer">
+      <span class="pill-icon">📖</span>
+      <span class="pill-content">
+        <span class="pill-title">Interactive Codebook</span>
+        <span class="pill-desc">Explore variable definitions</span>
+      </span>
+      <span class="pill-arrow">↗</span>
+    </a>
+    <a href="https://www.asc.upenn.edu/research/centers/communication-neuroscience-lab/research/health-wellbeing/geoscan-smoking-study" class="resource-pill" target="_blank" rel="noopener noreferrer">
+  <span class="pill-icon">📰</span>
+  <span class="pill-content">
+    <span class="pill-title">Publications</span>
+    <span class="pill-desc">Study findings and papers</span>
+  </span>
+  <span class="pill-arrow">↗</span>
+</a>
+<a href="https://clinicaltrials.gov/study/NCT04279483" class="resource-pill" target="_blank" rel="noopener noreferrer">
+  <span class="pill-icon">🔬</span>
+  <span class="pill-content">
+    <span class="pill-title">Clinical Trial Registration</span>
+    <span class="pill-desc">NCT04279483 on ClinicalTrials.gov</span>
+  </span>
+  <span class="pill-arrow">↗</span>
+</a>
+  </div>
 </div>
 
 ---
