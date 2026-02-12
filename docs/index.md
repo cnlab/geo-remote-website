@@ -87,21 +87,26 @@ Access study materials including Study Log, Lifedata documentation, and REDCap i
 </div>
 
 ---
-## Contact Us
+<div class="contact-header">
+    Contact Us
+</div>
 
-<div class="contact-section" markdown="1">
+<div class="contact-section">
+  <div class="contact-affiliation">
+    <strong>Communication Neuroscience Lab</strong><br>
+    University of Pennsylvania<br>
+    Annenberg School for Communication &amp; Annenberg Public Policy Center
+  </div>
 
-**Communication Neuroscience Lab**  
-Annenberg School of Communication
-Annenberg Public Policy Center
-
-University of Pennsylvania
-
-**Email:** youremail@upenn.edu  
-**Phone:** (XXX) XXX-XXXX
-
-For study inquiries or data requests, please contact us via email or submit a [Data Request Form](link-here).
-
+  <div class="contact-actions">
+    <a href="mailto:geoscan@falklab.org" class="contact-btn contact-btn-email">
+      <span class="btn-icon">✉</span>
+      <span>geoscan@falklab.org</span>
+    </a>
+    <a href="https://tinyurl.com/geoscan-data-request" class="contact-btn contact-btn-data" target="_blank" rel="noopener noreferrer">
+      Data Request Form ↗
+    </a>
+  </div>
 </div>
 
 <footer class="study-footer" markdown="1">
