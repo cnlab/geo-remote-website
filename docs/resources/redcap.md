@@ -17,7 +17,7 @@ show_breadcrumb: true
 
 **RedCap (Research Electronic Data Capture)** is a secure web application for building and managing online surveys and databases. Originally developed at Vanderbilt University, RedCap provides researchers with an intuitive interface for creating data collection instruments and managing complex research workflows.
 
-[Learn more about RedCap →](https://projectredcap.org/about/)
+<a href="https://projectredcap.org/about/" target="_blank" rel="noopener noreferrer">Learn more about RedCap →</a>
 
 We used RedCap as the central hub for managing our screening data and participant flow through our study, taking advantage of its automation capabilities, security features, and integration options.
 

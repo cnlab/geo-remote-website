@@ -10,11 +10,14 @@ title: "Psychometric Measures"
 </div>
 
 <div class="cta-container">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScs7wR7DZsrq6eC7bXC6N2KmwKU2I5fixr97h4kSfoHvTJpiQ/viewform?usp=dialog" class="btn btn-outline">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScs7wR7DZsrq6eC7bXC6N2KmwKU2I5fixr97h4kSfoHvTJpiQ/viewform?usp=dialog" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
 📊 Request Data Sharing
 </a>
-<a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline">
+<a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
 📁 Explore Interactive codebook
+</a>
+<a href="https://github.com/cnlab/Geoscan-public/tree/main/Data/Retailers" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+🗺️ View Retailer Database
 </a>
 </div>
 
@@ -193,6 +196,12 @@ title: "Psychometric Measures"
 
 <p> In total, the custom database contained 36,580 retailers, including 23,293 in PA, 11,843 in NJ, and 1,444 in DE. In cases where the retailer location was incorrectly provided, but recovering the correct location was feasible, we manually obtained the corrected geolocation via Google Maps and updated the database. Examples of cases that prompted further investigation include a missing address, an address outside of the three states, a non-existent address, or many retailers with the same address. 
 </p>
+</div>
+
+<div style="text-align: center; margin-top: 1rem;">
+  <a href="https://github.com/cnlab/Geoscan-public/tree/main/Data/Retailers" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+    🗺️ View Retailer Database
+  </a>
 </div>
 
 ![Map of tobacco retailers](/geo-remote-website/assets/images/measures/tobacco_retailers.png "Map of tobacco retailers"){: .img-feature .img-responsive .center-block width="800px" }

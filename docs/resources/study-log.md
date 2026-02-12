@@ -19,7 +19,7 @@ show_breadcrumb: true
 </div>
 
 <div class="cta-container">
-<a href="https://docs.google.com/spreadsheets/d/1xHG7JoQIX8UYdx0TY3c07xAxCr5FMvZcfxCuzjJqJmo/edit?usp=sharing" class="btn btn-outline">
+<a href="https://docs.google.com/spreadsheets/d/1xHG7JoQIX8UYdx0TY3c07xAxCr5FMvZcfxCuzjJqJmo/edit?usp=sharing" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
 📋 Access Study Log Template
 </a>
 </div>
