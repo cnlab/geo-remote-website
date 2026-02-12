@@ -1,24 +1,60 @@
-/* ===== CSS VARIABLES ===== */
+/* ==========================================================================
+   GEOSCAN STUDY SITE — UNIFIED STYLESHEET
+   Combines: style.css + resources.css
+   Last updated: 2026-02
+   ========================================================================== */
+
+/* ==========================================================================
+   1. CSS VARIABLES
+   ========================================================================== */
 :root {
-  --primary: #2c6cb1;
-  --primary-dark: #1a4f8b;
-  --secondary: #1AA9EA;
+  /* ── Penn Brand ─────────────────────────────────────────────────────────── */
+  --penn-blue: #011F5B;        /* Navy — sidebar, contact section dark anchor  */
+  --penn-red: #990000;         /* Red  — accent, hover states, CTAs            */
+
+  /* ── Primary UI Blue (softer academic feel) ─────────────────────────────── */
+  --primary: #2c6cb1;          /* Main buttons, headings, cards                */
+  --primary-dark: #1a4f8b;     /* Hover darken for primary                     */
+  --primary-bg: rgba(44, 108, 177, 0.08); /* Subtle tint for highlight boxes   */
+
+  /* ── Secondary Accent (muted sky blue — ties primary ↔ teal) ────────────── */
+  --secondary: #4BA3C7;        /* Links, method card borders, nav hover lines  */
+                               /* (softened from #1AA9EA — less electric)      */
+
+  /* ── Resources Accent ───────────────────────────────────────────────────── */
+  --teal: #17a2b8;             /* Resources page only                          */
+  --teal-dark: #138496;        /* Resources hover                              */
+  --teal-bg: rgba(23, 162, 184, 0.08); /* Subtle tint for resources highlights */
+
+  /* ── Text ───────────────────────────────────────────────────────────────── */
   --text-color: #333;
   --text-light: #555;
   --text-muted: #666;
+
+  /* ── Backgrounds & Borders ──────────────────────────────────────────────── */
   --light-bg: #f8f9fa;
   --border: #eee;
   --border-dark: #ddd;
-  --border-hover: #1AA9EA;
-  --sidebar-bg: #2c3e50;
+  --border-hover: var(--secondary);
+
+  /* ── Layout ─────────────────────────────────────────────────────────────── */
   --sidebar-width: 280px;
   --sidebar-width-tablet: 240px;
-  --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+  /* ── Misc ───────────────────────────────────────────────────────────────── */
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   --cofirst-color: #d4af37;
   --max-content-width: none;
 }
 
-/* ===== BASE LAYOUT ===== */
+
+/* ==========================================================================
+   2. BASE & RESET
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
@@ -31,19 +67,10 @@ body {
   gap: 2rem;
 }
 
-.main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-  padding-right: 2rem;
-}
 
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
-}
-
-/* ===== TYPOGRAPHY ===== */
+/* ==========================================================================
+   3. TYPOGRAPHY
+   ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -53,299 +80,78 @@ p {
   margin-bottom: 1rem;
 }
 
-/* ===== NAVIGATION ===== */
-.site-nav {
-  margin-bottom: 2rem;
+/* Offset anchor links so headings aren't hidden under sticky nav */
+h2[id], h3[id] {
+  scroll-margin-top: 2rem;
 }
 
-.site-nav a {
-  margin-right: 1rem;
+
+/* ==========================================================================
+   4. LAYOUT — MAIN CONTENT
+   ========================================================================== */
+.main-content {
+  grid-column: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 2rem 2rem;
 }
 
-/* Hero statement */
-.hero-statement {
-  text-align: center;
-  padding: 2rem 0;
-  border-bottom: 3px solid #0066cc;
-  margin-bottom: 2rem;
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
 }
 
-.hero-statement h2 {
-  color: #0066cc;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+.study-section {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
 }
 
-.hero-statement p {
-  font-size: 1.1rem;
+.study-section:last-child {
+  border-bottom: none;
+}
+
+
+/* ==========================================================================
+   5. LAYOUT — DUAL SIDEBAR (replaces protocol-layout, psychometric-layout,
+      resources-layout — update body class in HTML)
+   ========================================================================== */
+.dual-sidebar-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 220px 1fr;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
   line-height: 1.6;
-  color: #555;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  gap: 0;
 }
 
-.landing-text {
-  color:rgb(214, 20, 4);
-  display: block;
-  font-family: montserrat-ExtraBold, sans-serif;
-  font-weight: 800;
-  font-size: 24px;
+.dual-sidebar-layout .secondary-nav {
+  grid-column: 2;
 }
 
-/* Landing cards - side by side */
-.landing-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.info-card {
-  background: #f8f9fa;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
+.dual-sidebar-layout .main-content {
+  grid-column: 3;
   padding: 2rem;
-  transition: all 0.3s ease;
-}
-
-.info-card:hover {
-  border-color: #0066cc;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.info-card h3 {
-  color: #0066cc;
-  margin-top: 0;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #0066cc;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.info-card .btn {
-  margin-top: 1.5rem;
-  display: inline-block;
-}
-
-/* Page Navigation Grid */
-.page-nav-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.nav-card {
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  background: #fafafa;
-}
-
-.nav-card:hover {
-  border-color: #0066cc;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-2px);
-}
-
-.nav-card h3 {
-  margin-top: 0;
-  color: #0066cc;
-}
-
-.nav-card .btn {
-  margin-top: 1rem;
-}
-
-.resources-section {
-  margin: 2rem 0;
-}
-
-.resources-section h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #011F5B;
-  margin-bottom: 1rem;
-}
-
-.resource-pills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;    /* Two equal columns */
-  gap: 0.65rem;
-}
-
-.resource-pill {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.85rem 1.25rem;
-  background: #f5f7fa;
-  border: 1px solid #dde2ec;
-  border-left: 4px solid #011F5B;   /* Penn blue accent stripe */
-  border-radius: 8px;
-  text-decoration: none;
-  color: #1a1a1a;
-  transition: all 0.2s ease;
-}
-
-.resource-pill:hover {
-  background: #eaf0ff;
-  border-color: #011F5B;
-  border-left-color: #990000;       /* Switches to Penn red on hover */
-  box-shadow: 0 3px 10px rgba(1, 31, 91, 0.12);
-  transform: translateX(3px);       /* Subtle slide right on hover */
-}
-
-.pill-icon {
-  font-size: 1.3rem;
-  flex-shrink: 0;
-}
-
-.pill-content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.pill-title {
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #011F5B;
-}
-
-.pill-desc {
-  font-size: 0.82rem;
-  color: #666;
-  margin-top: 0.1rem;
-}
-
-.pill-arrow {
-  font-size: 1rem;
-  color: #999;
-  flex-shrink: 0;
-  transition: color 0.2s ease;
-}
-
-.resource-pill:hover .pill-arrow {
-  color: #990000;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .resource-pills {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Contact Section */
-.contact-section {
-  background: #011F5B;       /* Penn blue */
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-  padding: 2rem 2.5rem;
-  margin: 2rem auto;
-  text-align: center;
-  max-width: 600px;
-}
-
-.contact-header {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.contact-affiliation {
-  color: #e8edf7;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-bottom: 1.25rem;
-}
-
-.contact-affiliation strong {
-  font-size: 1.1rem;
-  color: #e8edf7;
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.contact-affiliation ul {
-  list-style: disc;
-  display: inline-block;    /* Centers the bullet list within the card */
-  text-align: left;
-  margin: 0;
-  padding-left: 1.25rem;
-}
-
-.contact-affiliation li {
-  margin: 0.2rem 0;
-}
-
-.contact-actions {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.contact-btn {
-  display: inline-flex;      
-  align-items: center;
-  gap: 0.4rem;               
-  padding: 0.5rem 1.1rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.btn-icon {
-  font-size: 1.1rem;         /* Make the icon slightly larger than the text */
-  line-height: 1;
-}
-
-.contact-btn-email {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.contact-btn-email:hover {
-  background: rgba(255, 255, 255, 0.25);
-  color: #ffffff;
-}
-
-.contact-btn-data {
-  background: #990000;       /* Penn red as accent */
-  color: #ffffff;
-  border: 1px solid #990000;
-}
-
-.contact-btn-data:hover {
-  background: #7a0000;
-  color: #ffffff;
-}
-
-/* Dividers */
-hr {
-  border: none;
-  border-top: 2px solid #e0e0e0;
-  margin: 3rem 0;
 }
 
 
-/* ===== Sidebar ===== */
+/* ==========================================================================
+   6. SIDEBAR (primary/left)
+   ========================================================================== */
 .sidebar {
-  background: #2c3e50; /* Dark blue */
+  background: var(--penn-blue);
   color: #fff;
   padding: 2rem 1.5rem;
-  position: sticky;
+  position: fixed;
+  width: var(--sidebar-width);
   top: 0;
+  left: 0;
   height: 100vh;
   overflow-y: auto;
-}
-
-.sidebar-nav {
-  margin-top: 2rem;
 }
 
 .sidebar ul {
@@ -369,49 +175,138 @@ hr {
 
 .sidebar li a:hover {
   background-color: #f5f5f5;
-  border-left-color: #ddd;
+  border-left-color: var(--border-dark);
   color: #333;
 }
 
 .sidebar li.active a {
   background-color: #f0f0f0;
-  border-left-color: #0366d6; /* GitHub blue color */
+  border-left-color: var(--primary);
   color: #333;
   font-weight: bold;
 }
 
-/* ===== IMAGES & FIGURES ===== */
-.img-responsive {
+/* Divider between main nav and external links */
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 1.25rem 0;
+}
+
+/* "External Resources" label */
+.sidebar-section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 15px;
+  margin: 0 0 0.5rem 0;
+}
+
+/* External links sub-list */
+.sidebar-external li a {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar-external li a:hover {
+  background-color: #f5f5f5;
+  border-left-color: var(--border-dark);
+  color: #333;
+}
+
+
+/* ==========================================================================
+   7. SECONDARY NAV (replaces protocol-nav, psychometric-nav, resources-nav —
+      update class in each layout HTML template)
+   ========================================================================== */
+.secondary-nav {
+  background: var(--light-bg);
+  padding: 2rem 1.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+}
+
+.secondary-nav h3 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.secondary-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.secondary-nav li {
+  margin-bottom: 0.25rem;
+}
+
+.secondary-nav a {
   display: block;
-  max-width: 70%;
-  height: auto;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  border-left: 3px solid transparent;
 }
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.secondary-nav a:hover {
+  background-color: var(--primary-bg);
+  color: var(--primary);
+  border-left-color: var(--secondary);
 }
 
-.image-caption {
-  text-align: center;
-  font-style: italic;
-  margin-top: 8px;
-  margin-bottom: 20px;
-  color: var(--text-muted);
-  font-size: 0.9em;
+.secondary-nav a.active {
+  background-color: rgba(44, 108, 177, 0.15);
+  color: var(--primary);
+  font-weight: 600;
+  border-left-color: var(--primary);
 }
 
-.figure {
-  text-align: center;
-  margin: 2em 0;
+/* Resources-specific secondary nav overrides (keep .resources-nav class on
+   the element alongside .secondary-nav for these to apply) */
+.resources-nav h3 {
+  color: var(--teal);
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.caption {
-  font-style: italic;
+.resources-nav a:hover {
+  background: var(--teal-bg);
+  border-left-color: var(--teal);
+  color: var(--teal);
 }
 
-/* ===== LANDING PAGE ===== */
+.resources-nav a.active {
+  background: var(--teal-bg);
+  border-left-color: var(--teal);
+  color: var(--teal);
+}
+
+.resources-nav .nav-back-btn {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.resources-nav .nav-back-btn:hover {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: white;
+}
+
+
+/* ==========================================================================
+   8. LANDING PAGE
+   ========================================================================== */
 .landing-header {
   background-size: cover;
   background-position: center;
@@ -424,11 +319,8 @@ hr {
 .landing-header::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.6);
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .header-content {
@@ -447,24 +339,306 @@ hr {
   opacity: 0.9;
 }
 
-/* ===== PAGE CONTENT ===== */
-.page-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
+/* Hero statement */
+.hero-statement {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 3px solid var(--primary);
+  margin-bottom: 2rem;
 }
 
-.study-section {
-  margin-bottom: 4rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
+.hero-statement h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
-.study-section:last-child {
-  border-bottom: none;
+.hero-statement p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-light);
 }
 
-/* ===== TEAM GRID ===== */
+/* Landing cards — side by side */
+.landing-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.info-card {
+  background: var(--light-bg);
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+  color: var(--primary);
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-card .btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+/* Used in landing page text */
+.landing-text {
+  color: var(--penn-red);
+  display: block;
+  font-family: montserrat-ExtraBold, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+
+/* ==========================================================================
+   9. PAGE NAVIGATION GRID
+   ========================================================================== */
+.page-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.nav-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.nav-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-card h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.nav-card .btn {
+  margin-top: 1rem;
+}
+
+
+/* ==========================================================================
+   10. RESOURCE PILLS
+   ========================================================================== */
+.resources-section {
+  margin: 2rem 0;
+}
+
+.resources-section h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--penn-blue);
+  margin-bottom: 1rem;
+}
+
+.resource-pills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.resource-pill {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  background: #f5f7fa;
+  border: 1px solid #dde2ec;
+  border-left: 4px solid var(--penn-blue);
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 0.2s ease;
+}
+
+.resource-pill:hover {
+  background: #eaf0ff;
+  border-color: var(--penn-blue);
+  border-left-color: var(--penn-red);
+  box-shadow: 0 3px 10px rgba(1, 31, 91, 0.12);
+  transform: translateX(3px);
+}
+
+.pill-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.pill-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pill-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--penn-blue);
+}
+
+.pill-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
+.pill-arrow {
+  font-size: 1rem;
+  color: #999;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.resource-pill:hover .pill-arrow {
+  color: var(--penn-red);
+}
+
+
+/* ==========================================================================
+   11. CONTACT SECTION
+   ========================================================================== */
+.contact-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-section {
+  background: var(--penn-blue);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 2rem 2.5rem;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+.contact-affiliation {
+  color: #e8edf7;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.contact-affiliation strong {
+  font-size: 1.1rem;
+  color: #e8edf7;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.contact-affiliation ul {
+  list-style: disc;
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.contact-affiliation li {
+  margin: 0.2rem 0;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.contact-btn-email {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.contact-btn-email:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.contact-btn-data {
+  background: var(--penn-red);
+  color: #ffffff;
+  border: 1px solid var(--penn-red);
+}
+
+.contact-btn-data:hover {
+  background: #7a0000;
+  color: #ffffff;
+}
+
+
+/* ==========================================================================
+   12. METHOD CARDS (merged single definition)
+   ========================================================================== */
+.method-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid var(--secondary);
+  transition: all 0.2s ease;
+}
+
+.method-card:hover {
+  transform: translateY(-3px);
+}
+
+.method-card h3,
+.method-card h4 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+
+/* ==========================================================================
+   13. TEAM GRID
+   ========================================================================== */
 .authors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -536,34 +710,10 @@ hr {
   margin-left: 0.3em;
 }
 
-/* ===== METHOD CARDS ===== */
-.method-column {
-  max-width: 800px;
-  margin: 2rem auto;
-}
 
-.method-card {
-  background: white;
-  border-radius: 8px;
-  padding: 1.8rem;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-  border-top: 4px solid var(--primary);
-  transition: all 0.2s ease;
-}
-
-.method-card:hover {
-  transform: translateY(-3px);
-}
-
-.method-card h3 {
-  margin-top: 0;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-/* ===== TABLES ===== */
+/* ==========================================================================
+   14. TABLES
+   ========================================================================== */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -575,18 +725,12 @@ th, td {
   padding: 8px;
 }
 
-.protocol table {
-  border-collapse: collapse;
-  width: 100%;
-}
+/* Protocol-specific table styles are identical to base — no override needed */
 
-.protocol th, 
-.protocol td {
-  border: 1px solid var(--border-dark);
-  padding: 8px;
-}
 
-/* ===== LISTS ===== */
+/* ==========================================================================
+   15. LISTS
+   ========================================================================== */
 ul, ol {
   padding-left: 1.2rem;
 }
@@ -595,7 +739,10 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* ===== LINKS & BUTTONS ===== */
+
+/* ==========================================================================
+   16. LINKS & BUTTONS
+   ========================================================================== */
 .section-link {
   display: inline-block;
   margin-top: 1rem;
@@ -640,55 +787,199 @@ li {
 }
 
 .btn-disabled {
-    background: #f8f9fa !important;
-    color: #6c757d !important;
-    border-color: #dee2e6 !important;
-    cursor: not-allowed;
-    opacity: 0.6;
-    pointer-events: none;
+  background: var(--light-bg) !important;
+  color: #6c757d !important;
+  border-color: var(--border-dark) !important;
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
-/* ===== FOOTER ===== */
-.study-footer {
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 2px solid var(--border);
+
+/* ==========================================================================
+   17. IMAGES & FIGURES
+   ========================================================================== */
+.img-responsive {
+  display: block;
+  max-width: 70%;
+  height: auto;
 }
 
-.trial-info {
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+.figure {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.caption {
+  font-style: italic;
+}
+
+.image-feature {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+/* Side-by-side image pairs */
+.image-set-container {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.image-set-container-xs {
+  margin: 1.5rem auto;
+  max-width: 600px;
+}
+
+.image-set-container-md {
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.image-set-compact {
+  margin: 1.5rem auto;
+  max-width: 500px;
+}
+
+.image-set-caption {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--light-bg);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 6px 6px 0;
   font-size: 0.9rem;
+  color: #495057;
+  font-weight: 500;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-  body {
-    grid-template-columns: var(--sidebar-width-tablet) 1fr;
-    gap: 1.5rem;
-  }
+.image-set-caption strong {
+  color: var(--primary);
 }
 
-@media (max-width: 768px) {
-  body {
-    grid-template-columns: 1fr;
-  }
-  
-  .sidebar {
-    height: auto;
-    position: relative;
-    padding: 1.5rem;
-  }
-  
-  .methods-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .img-responsive {
-    max-width: 100%;
-  }
+.image-set-caption-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--light-bg);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.9rem;
+  color: #495057;
+  font-style: italic;
 }
 
-/* Key Statistic Box */
-body .key-statistic {
+.image-pair-small {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.image-pair-small img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-pair-small img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.image-individual-caption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.image-pair-xs img  { height: 150px; }
+.image-pair-md img  { height: 250px; }
+
+.image-set-compact .image-pair-small { gap: 0.75rem; }
+.image-set-compact img {
+  height: 120px;
+  border-radius: 4px;
+}
+.image-set-compact .image-set-caption {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* 2×2 scheduling photo grid */
+.scheduling-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.scheduling-grid-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--border);
+}
+
+.scheduling-grid-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.scheduling-grid-item img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.scheduling-grid-caption {
+  padding: 1rem;
+  text-align: center;
+}
+
+.scheduling-grid-caption h5 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.scheduling-grid-caption p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+
+/* ==========================================================================
+   18. CONTENT COMPONENTS
+   ========================================================================== */
+
+/* Key statistic box */
+.key-statistic {
   text-align: center;
   margin: 2rem 0;
   padding: 1.5rem;
@@ -696,7 +987,7 @@ body .key-statistic {
   border-radius: 8px;
 }
 
-body .statistic-number {
+.statistic-number {
   display: block;
   font-size: 2.5rem;
   font-weight: bold;
@@ -704,37 +995,31 @@ body .statistic-number {
   line-height: 1.2;
 }
 
-body .statistic-description {
+.statistic-description {
   font-size: 1.1rem;
 }
 
-/* Highlight Box */
-body .highlight-box {
-  background-color: rgba(44, 108, 177, 0.1);
+/* Highlight box */
+.highlight-box {
+  background-color: var(--primary-bg);
   border-left: 4px solid var(--primary);
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
   border-radius: 0 4px 4px 0;
 }
 
-body .highlight-box p {
+.highlight-box p {
   margin: 0;
 }
 
-/* Image Feature */
-.image-feature {
-  margin: 2.5rem 0;
-  text-align: center;
-}
-
-/* Side by Side */
+/* Side by side text columns */
 .side-by-side {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin: 2rem 0;
-  min-width: 0; /* Allows content to shrink */
-  overflow-wrap: break-word; /* Breaks long text */
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .side-by-side h4 {
@@ -742,22 +1027,7 @@ body .highlight-box p {
   margin-top: 0;
 }
 
-/* Method Card */
-body .method-card {
-  background-color: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border-top: 3px solid var(--secondary);
-}
-
-body .method-card h4 {
-  margin-top: 0;
-  color: var(--primary);
-}
-
-/* Research Grid */
+/* Research grid (3-up) */
 .research-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -777,7 +1047,7 @@ body .method-card h4 {
   color: var(--primary);
 }
 
-/* Research Timeline */
+/* Research timeline */
 .research-timeline {
   display: flex;
   justify-content: space-between;
@@ -814,139 +1084,318 @@ body .method-card h4 {
   margin-bottom: 0.5rem;
 }
 
-/* CTA Container */
-body .cta-container {
+/* CTA row */
+.cta-container {
   display: flex;
   gap: 1rem;
   margin: 3rem 0 1rem;
   justify-content: center;
 }
 
-/* Three-column layout for protocol page with dual sidebars */
-.protocol-layout {
-  display: grid;
-  grid-template-columns: var(--sidebar-width) 250px 1fr;
-  min-height: 100vh;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: var(--text-color);
-  line-height: 1.6;
-  max-width: var(--max-content-width);
-  margin: 0 auto;
-  gap: 0;
+
+/* ==========================================================================
+   19. RESOURCES PAGE COMPONENTS
+   ========================================================================== */
+.resource-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--primary);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Unified Navigation Sidebar CSS - Add this to your style.css */
-
-/* Shared navigation sidebar styles */
-.protocol-nav,
-.psychometric-nav {
-  background: #f8f9fa;
-  padding: 2rem 1.5rem;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
-  border-right: 1px solid var(--border);
+.resource-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.protocol-nav h3,
-.psychometric-nav h3 {
+.resource-card h3 {
   margin-top: 0;
   color: var(--primary);
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.protocol-nav ul,
-.psychometric-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.protocol-nav li,
-.psychometric-nav li {
-  margin-bottom: 0.25rem;
-}
-
-.protocol-nav a,
-.psychometric-nav a {
-  display: block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: var(--text-color);
-  border-radius: 4px;
-  transition: all 0.2s ease;
-  font-size: 0.9rem;
-  border-left: 3px solid transparent;
-}
-
-.protocol-nav a:hover,
-.psychometric-nav a:hover {
-  background-color: rgba(44, 108, 177, 0.1);
+.resource-card h4 {
   color: var(--primary);
-  border-left-color: var(--secondary);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.protocol-nav a.active,
-.psychometric-nav a.active {
-  background-color: rgba(44, 108, 177, 0.15);
-  color: var(--primary);
-  font-weight: 600;
-  border-left-color: var(--primary);
-}
-
-/* Layout grid systems */
-.protocol-layout,
-.psychometric-layout {
+.resource-grid {
   display: grid;
-  grid-template-columns: var(--sidebar-width) 220px 1fr;
-  min-height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
-/* Adjust main content for dual sidebar layout */
-.protocol-layout .main-content,
-.psychometric-layout .main-content {
+.resource-item {
+  background: var(--light-bg);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--secondary);
+  transition: all 0.2s ease;
+}
+
+.resource-item:hover {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.resource-item h4 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.resource-item p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #495057;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.resource-link:hover {
+  color: var(--primary-dark);
+  transform: translateX(2px);
+}
+
+/* Quick access banner */
+.quick-access {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
   padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: center;
 }
 
-/* Offset for anchor links */
-h2[id], h3[id] {
-  scroll-margin-top: 2rem;
+.quick-access h3 {
+  margin-top: 0;
+  color: white;
 }
 
-/* Responsive design */
+.quick-access-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.quick-access-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.quick-access-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.status-active      { background: #d4edda; color: #155724; }
+.status-development { background: #fff3cd; color: #856404; }
+.status-maintenance { background: #f8d7da; color: #721c24; }
+
+/* Resources nav subpage */
+.resources-nav-subpage {
+  border-top: 4px solid var(--teal);
+}
+
+.resources-nav-subpage h3 {
+  color: var(--teal);
+}
+
+
+/* ==========================================================================
+   20. FOOTER
+   ========================================================================== */
+.study-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+}
+
+.trial-info {
+  font-size: 0.9rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin: 3rem 0;
+}
+
+
+/* ==========================================================================
+   21. RESPONSIVE
+   ========================================================================== */
+
+/* Large tablets */
 @media (max-width: 1200px) {
-  .protocol-layout,
-  .psychometric-layout {
+  .dual-sidebar-layout {
     grid-template-columns: var(--sidebar-width-tablet) 220px 1fr;
   }
-  
-  .protocol-nav,
-  .psychometric-nav {
+
+  .secondary-nav {
     padding: 1.5rem 1rem;
   }
 }
 
+/* Tablets — hide secondary nav, collapse to 2 columns */
 @media (max-width: 1024px) {
-  .protocol-layout,
-  .psychometric-layout {
+  body {
+    grid-template-columns: var(--sidebar-width-tablet) 1fr;
+    gap: 1.5rem;
+  }
+
+  .sidebar {
+    width: var(--sidebar-width-tablet);
+  }
+
+  .dual-sidebar-layout {
     grid-template-columns: var(--sidebar-width-tablet) 1fr;
   }
-  
-  .protocol-nav,
-  .psychometric-nav {
+
+  .secondary-nav {
     display: none;
+  }
+
+  .dual-sidebar-layout .main-content {
+    grid-column: 2;
+  }
+
+  .resource-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .quick-access-grid {
+    grid-template-columns: 1fr;
   }
 }
 
+/* Mobile — full width, sidebar unsticks */
 @media (max-width: 768px) {
-  .protocol-layout,
-  .psychometric-layout {
+  body {
     grid-template-columns: 1fr;
   }
-  
+
   .sidebar {
     height: auto;
     position: relative;
+    width: 100%;
+    padding: 1.5rem;
   }
+
+  .main-content {
+    grid-column: 1;
+  }
+
+  .dual-sidebar-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dual-sidebar-layout .main-content {
+    grid-column: 1;
+    padding: 1rem;
+  }
+
+  .landing-cards,
+  .side-by-side,
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-pills {
+    grid-template-columns: 1fr;
+  }
+
+  .methods-grid,
+  .scheduling-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .img-responsive {
+    max-width: 100%;
+  }
+
+  .resource-card {
+    padding: 1rem;
+  }
+
+  .image-set-container,
+  .image-set-container-xs,
+  .image-set-container-md,
+  .image-set-compact {
+    max-width: 100%;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+  }
+
+  .image-pair-small,
+  .image-pair-xs,
+  .image-pair-md {
+    grid-template-columns: 1fr;
+  }
+
+  .image-pair-small img,
+  .image-pair-md img { height: 180px; }
+  .image-pair-xs img  { height: 140px; }
+  .image-set-compact img { height: 100px; }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .image-pair-small img,
+  .image-pair-md img  { height: 160px; }
+  .image-pair-xs img  { height: 120px; }
+  .image-set-compact img { height: 90px; }
+
+  .image-set-caption,
+  .image-set-caption-bottom {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .scheduling-grid-caption { padding: 0.6rem; }
+  .scheduling-grid-caption h5 { font-size: 0.85rem; }
+  .scheduling-grid-caption p  { font-size: 0.75rem; }
 }

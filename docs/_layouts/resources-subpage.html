@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/resources.css' | relative_url }}">
 </head>
-<body class="resources-layout">
+<body class="dual-sidebar-layout">
   
   <!-- Main sidebar (same as other layouts) -->
   {% include sidebar.html %}
   
   <!-- Resources navigation sidebar with back button -->
-  <nav class="resources-nav resources-nav-subpage">
+  <nav class="secondary-nav">
     
     <!-- Back button section -->
     <div class="nav-back-section">
@@ -61,32 +60,6 @@
         {% endif %}
       </a></li>
       
-      <li><a href="https://github.com/cnlab/Geoscan-public" class="nav-subpage-link {% if page.url contains '/codebase' %}nav-current{% endif %}">
-        <span class="nav-icon">💻</span>
-        <span class="nav-text">Codebase</span>
-        {% if page.url contains '/codebase' %}
-          <span class="nav-current-indicator">●</span>
-        {% else %}
-          <span class="nav-arrow">→</span>
-        {% endif %}
-      </a></li>
-      
-      <!-- External links -->
-      <li class="nav-divider"></li>
-      <li class="nav-section-title">🔗 External Links</li>
-      
-      <li><a href="{{ '/measures' | relative_url }}" class="nav-external-link">
-        <span class="nav-icon">📊</span>
-        <span class="nav-text">Psychometric Measures</span>
-        <span class="nav-arrow">↗</span>
-      </a></li>
-      
-      <li><a href="{{ '/protocol' | relative_url }}" class="nav-external-link">
-        <span class="nav-icon">📖</span>
-        <span class="nav-text">Study Protocol</span>
-        <span class="nav-arrow">↗</span>
-      </a></li>
-    </ul>
   </nav>
 
   <!-- Main content area -->
