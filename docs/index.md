@@ -153,11 +153,3 @@ Access study materials including Study Log, Lifedata documentation, and REDCap i
     </a>
   </div>
 </div>
-
-<footer class="study-footer" markdown="1">
-
-### Trial Registration
-ClinicalTrials.gov [NCT04279483](https://clinicaltrials.gov/ct2/show/NCT04279483)  
-**Funding**: 1R01CA229305-01A1
-
-</footer>
