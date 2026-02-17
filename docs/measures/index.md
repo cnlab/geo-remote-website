@@ -17,7 +17,7 @@ title: "Psychometric Measures"
 📁 Explore Interactive codebook
 </a>
 <a href="https://github.com/cnlab/Geoscan-public/tree/main/Data/Retailers" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-🗺️ View Retailer Database
+🗺️ View Tobacco Retailer Database
 </a>
 </div>
 
@@ -190,17 +190,17 @@ title: "Psychometric Measures"
 
 <div class="method-card">
 <h3>📍 Tobacco Retailer Locations</h3>
-<p>Tobacco retailer information is publicly available through open data sites for PA and DE, and updated retailer lists were downloaded by the study team monthly. Tobacco retailer information for NJ was available via request and was requested yearly by the study team.</p>
+<p>Tobacco retailer information is publicly available through open data sites for PA and DE, and updated tobacco retailer lists were downloaded by the study team monthly. Tobacco retailer information for NJ was available via request and was requested yearly by the study team.</p>
 
-<p>The tobacco retailer lists from each state consisted of trade name, license number, license type, and street address. The study team constructed a custom codebase to pre-process the retailer data. For instance, one feature adds the latitude and longitude coordinates of the NJ retailers based on the provided street addresses, enabling further cross-referencing between retailer location and participant locations collected via Google Maps. License start and expiration dates were also generated based on retailers appearing or being removed in newly published databases.</p>
+<p>The tobacco retailer lists from each state consisted of trade name, license number, license type, and street address. The study team constructed a custom codebase to pre-process the tobacco retailer data. For instance, one feature adds the latitude and longitude coordinates of the NJ tobacco retailers based on the provided street addresses, enabling further cross-referencing between tobacco retailer location and participant locations collected via Google Maps. License start and expiration dates were also generated based on tobacco retailers appearing or being removed in newly published databases.</p>
 
-<p> In total, the custom database contained 36,580 retailers, including 23,293 in PA, 11,843 in NJ, and 1,444 in DE. In cases where the retailer location was incorrectly provided, but recovering the correct location was feasible, we manually obtained the corrected geolocation via Google Maps and updated the database. Examples of cases that prompted further investigation include a missing address, an address outside of the three states, a non-existent address, or many retailers with the same address. 
+<p> In total, the custom database contained 36,580 tobacco retailers, including 23,293 in PA, 11,843 in NJ, and 1,444 in DE. In cases where the tobacco retailer location was incorrectly provided, but recovering the correct location was feasible, we manually obtained the corrected geolocation via Google Maps and updated the database. Examples of cases that prompted further investigation include a missing address, an address outside of the three states, a non-existent address, or many tobacco retailers with the same address. 
 </p>
 </div>
 
 <div style="text-align: center; margin-top: 1rem;">
   <a href="https://github.com/cnlab/Geoscan-public/tree/main/Data/Retailers" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-    🗺️ View Retailer Database
+    🗺️ View Tobacco Retailer Database
   </a>
 </div>
 
