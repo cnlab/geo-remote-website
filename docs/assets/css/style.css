@@ -93,7 +93,7 @@ h2[id], h3[id] {
   grid-column: 2;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 2rem 2rem;
+  padding: 0rem 1.5rem 2rem 2rem;
 }
 
 
@@ -356,20 +356,21 @@ h2[id], h3[id] {
 
 .landing-header__eyebrow {
   display: block;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
   color: white;
-  margin-bottom: 0.3rem;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   letter-spacing: 0.02em;
 }
 
 .landing-header__title {
   color: white;
-  font-size: 3rem;
+  font-size: 3.75rem;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.2;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -467,7 +468,7 @@ h2[id], h3[id] {
 .landing-text {
   color: var(--penn-red);
   display: block;
-  font-family: montserrat-ExtraBold, sans-serif;
+  font-family: montserrat sans-serif;
   font-weight: 800;
   font-size: 24px;
 }
