@@ -430,6 +430,12 @@ h2[id], h3[id] {
 }
 
 /* Landing cards — side by side */
+.landing-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem 2rem 2rem;
+}
+
 .landing-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;

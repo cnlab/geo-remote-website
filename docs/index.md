@@ -5,14 +5,15 @@ banner_image: assets/images/banner.jpg
 ---
 <div class="hero-statement" markdown="1">
 ## Understanding How Tobacco Retailers Shape Smoking Behavior
+<div class="landing-section" markdown="1">
+  <span class="landing-text">How do the places we go and things we see influence the way we use our brains? For example, do neural responses to point-of-sale tobacco (POST) cues change as a function of real-world exposure to those cues over time?</span>
 
-<span class="landing-text">How do the places we go and things we see influence the way we use our brains? For example, do neural responses to point-of-sale tobacco (POST) cues change as a function of real-world exposure to those cues over time?</span>
+  The Communication Neuroscience Lab at the University of Pennsylvania conducted a randomized controlled trial using real-world geolocation tracking, ecological momentary assessments, and neuroimaging to examine how exposure to tobacco retailers affects cigarette craving and smoking in daily life.
 
-The Communication Neuroscience Lab at the University of Pennsylvania conducted a randomized controlled trial using real-world geolocation tracking, ecological momentary assessments, and neuroimaging to examine how exposure to tobacco retailers affects cigarette craving and smoking in daily life.
-
-This study examines whether exposure to point-of-sale tobacco marketing affects smoking behavior, experiences of craving, and neural reactivity in response to different types of smoking cues, including pictures of retail outlets. If it is the case that lower exposure to point of sale tobacco marketing decreases smoking behavior, this emphasizes the importance of further regulation of retail advertising for tobacco. Examination of neural responses and craving in response to smoking cues will further provide evidence for a biological mechanism through which such effects take hold.
+  This study examines whether exposure to point-of-sale tobacco marketing affects smoking behavior, experiences of craving, and neural reactivity in response to different types of smoking cues, including pictures of retail outlets. If it is the case that lower exposure to point of sale tobacco marketing decreases smoking behavior, this emphasizes the importance of further regulation of retail advertising for tobacco. Examination of neural responses and craving in response to smoking cues will further provide evidence for a biological mechanism through which such effects take hold.
 
 [Visit the Communication Neuroscience Lab →](https://www.asc.upenn.edu/research/centers/communication-neuroscience-lab){: .btn .btn-outline}
+</div>
 </div>
 
 <div class="landing-cards" markdown="1">
