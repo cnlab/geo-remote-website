@@ -65,9 +65,9 @@ title: "Research Resources"
 
 <div class="resource-grid">
     <div class="resource-item">
-        <h4>Code Repository <span class="status-badge status-development">●&nbsp;Development</span></h4>
+        <h4>Code Repository</h4>
         <p>GitHub repository with analysis scripts, data processing pipelines, and documentation.</p>
-        <a href="https://github.com/cnlab/Geoscan-public" class="resource-link">
+        <a href="https://github.com/cnlab/Geoscan-public" class="resource-link" target="_blank" rel="noopener noreferrer">
             Browse Code <span class="arrow">→</span>
         </a>
     </div>
