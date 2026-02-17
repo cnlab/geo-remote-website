@@ -96,6 +96,8 @@ h2[id], h3[id] {
   padding: 2rem 1.5rem 2rem 2rem;
 }
 
+
+
 .page-content {
   max-width: 900px;
   margin: 0 auto;
@@ -308,19 +310,86 @@ h2[id], h3[id] {
    8. LANDING PAGE
    ========================================================================== */
 .landing-header {
+  grid-column: 2;
+  position: relative;
+  height: 380px;
   background-size: cover;
   background-position: center;
-  padding: 6rem 1rem;
-  text-align: center;
-  color: white;
-  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow-x: hidden;
+  margin-left: 1rem;
 }
 
+/* Brightened background image */
 .landing-header::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1.15) saturate(1.1);
+  z-index: 0;
+}
+
+/* Subtle dark gradient at bottom for text legibility */
+.landing-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+.landing-header__content {
+  position: relative;
+  padding: 2rem 2.5rem;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.landing-header__eyebrow {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.3rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.02em;
+}
+
+.landing-header__title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Hide subtitle to match the reference */
+.landing-header__subtitle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .landing-header {
+    display: none;
+  }
+
+  .landing-header__content {
+    padding: 1.5rem;
+  }
+
+  .landing-header__title {
+    font-size: 2rem;
+  }
 }
 
 .header-content {
@@ -590,6 +659,7 @@ h2[id], h3[id] {
 }
 
 .contact-btn-email {
+  cursor: pointer;
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -611,6 +681,27 @@ h2[id], h3[id] {
   color: #ffffff;
 }
 
+.copy-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--penn-blue);
+  color: white;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.copy-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 
 /* ==========================================================================
    12. METHOD CARDS (merged single definition)

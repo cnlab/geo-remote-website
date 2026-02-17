@@ -1,10 +1,8 @@
 ---
 layout: home
-title: GeoScan and Remote Geo Smoking Study
+title: GeoScan Smoking Study
 banner_image: assets/images/banner.jpg
 ---
-
-{% include banner.html %}
 
 <div class="hero-statement" markdown="1">
 ## Understanding How Tobacco Retailers Shape Smoking Behavior
@@ -144,12 +142,31 @@ Access study materials including Study Log, Lifedata documentation, and REDCap i
   </div>
 
   <div class="contact-actions">
-    <a href="mailto:geoscan@falklab.org" class="contact-btn contact-btn-email">
-      <span class="btn-icon">✉</span>
-      <span>geoscan@falklab.org</span>
-    </a>
+<button class="contact-btn contact-btn-email" onclick="copyEmail()" id="email-btn">
+  <span class="btn-icon">✉</span>
+  <span id="email-btn-text">geoscan@falklab.org</span>
+</button>
+
+<div class="copy-toast" id="copy-toast">✓ Copied to clipboard!</div>
     <a href="https://tinyurl.com/geoscan-data-request" class="contact-btn contact-btn-data" target="_blank" rel="noopener noreferrer">
       Data Request Form ↗
     </a>
   </div>
 </div>
+
+<script>
+  function copyEmail() {
+  navigator.clipboard.writeText("geoscan@falklab.org").then(() => {
+    const btn = document.getElementById("email-btn-text");
+    const toast = document.getElementById("copy-toast");
+
+    // Update button text briefly
+    btn.textContent = "Copied!";
+    setTimeout(() => btn.textContent = "geoscan@falklab.org", 2000);
+
+    // Show toast
+    toast.classList.add("show");
+    setTimeout(() => toast.classList.remove("show"), 2500);
+  });
+}
+</script>
