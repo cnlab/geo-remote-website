@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+{% include head.html %}
 </head>
-{% if page.url == "/" %}
-  {% include structured-data.html %}
-{% endif %}
 <body>
   {% include sidebar.html %}
   {% include banner.html %}
   <main class="main-content">
     {{ content }}
   </main>
+  {% if page.url == "/" %}
+    {% include structured-data.html %}
+  {% endif %}
 </body>
 </html>
