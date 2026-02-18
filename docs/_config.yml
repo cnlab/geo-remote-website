@@ -72,7 +72,7 @@ defaults:
       layout: "post"
 
 # Google Analytics (uncomment and add your ID when ready)
-# google_analytics: UA-XXXXXXXXX-X
+google_analytics: G-PT8WH6EQ95
 
 # Site verification codes (add when you set up Search Console)
 # google_site_verification: "your-verification-code"
