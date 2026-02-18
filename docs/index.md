@@ -2,6 +2,7 @@
 layout: home
 title: GeoScan Smoking Study
 banner_image: assets/images/banner.jpg
+description: An introduction to our study and study team.
 ---
 <div class="hero-statement" markdown="1">
 ## Understanding How Tobacco Retailers Shape Smoking Behavior

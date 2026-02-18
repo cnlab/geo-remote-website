@@ -5,6 +5,7 @@ nav_title: "📱 LifeData Platform"
 parent_page: "/resources"
 parent_name: "Resources"
 show_breadcrumb: true
+description: Learn more about how our study team used Lifedata to collect EMA data.
 ---
 
 # Lifedata for EMA: Real-Time Data Collection

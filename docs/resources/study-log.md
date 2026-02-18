@@ -5,6 +5,7 @@ nav_title: "📋 Study Log"
 parent_page: "/resources"
 parent_name: "Resources"
 show_breadcrumb: true
+description: Learn more about how our study team managed such a complex study with many participants going through separate phases at the same time.
 ---
 
 # How Our Advanced Study Log System Transformed Research Operations

@@ -1,6 +1,7 @@
 ---
 layout: resources
 title: "Research Resources"
+description: Access study materials, data codebooks, analysis scripts, and documentation from the GeoScan smoking study research project.
 ---
 
 # Geo-Remote Study Resources

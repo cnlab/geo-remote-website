@@ -1,6 +1,7 @@
 ---
 layout: protocol
 title: "Protocol"
+description: Detailed study procedures, timeline, and intervention protocols for the GeoScan smoking study including baseline, intervention, and neuroimaging phases.
 ---
 # Protocol
 

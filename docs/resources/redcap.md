@@ -5,6 +5,7 @@ nav_title: "📊 RedCap Database"
 parent_page: "/resources"
 parent_name: "Resources"
 show_breadcrumb: true
+description: Learn more about how our study utilized Redcap's automated messaging and survey capabilities to further our research.
 ---
 
 # RedCap Integration: Streamlining Research Data Management

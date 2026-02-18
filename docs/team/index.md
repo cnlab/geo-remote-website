@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Research Team
+description: Meet the researchers and collaborators from the Communication Neuroscience Lab at the University of Pennsylvania conducting the GeoScan smoking study. Collaborate with us to further our research.
 ---
 <div class="team-hero">
   <div class="collaborate-section">
