@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Understanding Tobacco Marketing in Retail Environments
+description: Background on study objectives with a short review of study literature.
 ---
 
 # The Impact of Tobacco Marketing

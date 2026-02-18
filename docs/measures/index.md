@@ -1,6 +1,7 @@
 ---
 layout: psychometric
 title: "Psychometric Measures"
+description: Comprehensive list of survey instruments, ecological momentary assessments, geolocation tracking, and neuroimaging protocols used in the GeoScan study.
 ---
 
 # Measures
