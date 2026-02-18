@@ -1,0 +1,31 @@
+/* TEAM */
+Principal Investigator: Emily Falk, PhD
+Co-Principal Investigator: Nicole Cooper, PhD
+Laboratory: Communication Neuroscience Lab
+Institution: University of Pennsylvania, Annenberg School for Communication
+Location: Philadelphia, Pennsylvania, USA
+Contact: geoscan@falklab.org
+
+/* STUDY */
+Name: GeoScan Smoking Study
+Clinical Trial ID: NCT04279483
+Funding: NIH Grant 1R01CA229305-01A1
+Participants: 310
+Duration: 2019-2024
+
+/* SITE */
+Last update: 2026/02/18
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, Markdown
+Components: Jekyll, GitHub Pages, Liquid
+IDE: Visual Studio Code
+
+/* THANKS */
+GitHub Pages for hosting
+Jekyll for static site generation
+University of Pennsylvania for institutional support
+All study participants for their invaluable contribution
+
+/* SITE CREDITS */
+Design & Development: Anthony Resnick

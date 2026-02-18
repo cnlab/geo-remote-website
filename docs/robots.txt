@@ -1,0 +1,12 @@
+# robots.txt for GeoScan Smoking Study
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Block any admin or config files
+Disallow: /assets/css/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://cnlab.github.io/geo-remote-website/sitemap.xml

@@ -1,35 +1,79 @@
-title: "Geoscan Smoking Study"
-description: "Clinical trial protocol and updates"
-baseurl: "/geo-remote-website"
+# Site settings for GitHub Pages
+title: GeoScan Smoking Study
+tagline: Understanding Tobacco Retail Exposure and Smoking Behavior
+description: >-
+  A randomized controlled trial using geolocation tracking, ecological 
+  momentary assessment, and neuroimaging to examine how exposure to 
+  tobacco retailers affects cigarette craving and smoking in daily life.
+  310 participants | University of Pennsylvania | NIH-funded (R01CA229305)
+
+# GitHub repository
+repository: cnlab/geo-remote-website
+
+# URLs - update these with your actual GitHub Pages URL
 url: "https://cnlab.github.io"
+baseurl: "/geo-remote-website"
 
-# GitHub Pages settings
-theme: minima
+# Author/Organization
+author:
+  name: Communication Neuroscience Lab
+  email: geoscan@falklab.org
+  url: https://www.asc.upenn.edu/research/centers/communication-neuroscience-lab
+
+# Social links
+social:
+  name: Communication Neuroscience Lab
+  links:
+    - https://github.com/cnlab/Geoscan-public
+    - https://www.asc.upenn.edu/research/centers/communication-neuroscience-lab
+    - https://clinicaltrials.gov/study/NCT04279483
+
+# Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: pretty
+theme: minima
 
-# Plugins - only use GitHub Pages supported plugins
+# Plugins for GitHub Pages
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
 
-# Remove problematic settings
-# source: .        # Remove this - causes issues
-# destination: ../_site  # Remove this - GitHub Pages handles it
+# Collections (if you add blog posts later)
+collections:
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title/
 
-# Collections and defaults
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+
+# Include files
+include:
+  - _pages
+
+# Defaults
 defaults:
-  - scope:
-      path: "protocol"
-    values:
-      layout: default  # Use 'default' or 'page' instead of custom 'protocol'
   - scope:
       path: ""
       type: "pages"
     values:
-      layout: default
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
-# Build settings
-safe: true  # GitHub Pages requirement
-incremental: false
+# Google Analytics (uncomment and add your ID when ready)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Site verification codes (add when you set up Search Console)
+# google_site_verification: "your-verification-code"
+# bing_site_verification: "your-verification-code"
