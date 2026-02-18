@@ -20,6 +20,40 @@ title: "Research Resources"
 </div>
 </div>
 
+<div id="analysis-tools"></div>
+
+## 🔬 Analysis Tools {#analysis-tools}
+
+<div class="resource-card">
+<h3>💻 Code & Analysis</h3>
+<p>Many of our scripts written for cleaning, processing, and analyzing our data were written in R. These will be available on github to be used with our data that you can request.</p>
+
+<div class="resource-grid">
+    <div class="resource-item">
+        <h4>Code Repository</h4>
+        <p>GitHub repository with analysis scripts, data processing pipelines, and documentation.</p>
+        <a href="https://github.com/cnlab/Geoscan-public" class="resource-link" target="_blank" rel="noopener noreferrer">
+            Browse Code <span class="arrow">→</span>
+        </a>
+    </div>
+    <div class="resource-item">
+        <h4>Psychometric Measures</h4>
+        <p>Measures were collected before beginning the Baseline period, Before beginning the Intervention period, immediately after the Intervention period, and a few more at the fMRI session.</p>
+        <a href="{{ '/measures#surveymeasures' | relative_url }}" class="resource-link">
+        📊 Psychometric Measures<span class="arrow">→</span>
+        </a>
+        <br>
+        <a href="https://github.com/cnlab/Geoscan-public/tree/main/Data/scoring_rubrics" class="resource-link" target="_blank" rel="noopener noreferrer">
+        📋 Scoring Rubrics<span class="arrow">→</span>
+        </a>
+        <br>
+        <a href="https://cnlab.shinyapps.io/geocodebook/" class="resource-link" target="_blank" rel="noopener noreferrer">
+        📁 Interactive codebook<span class="arrow">→</span>
+        </a>
+    </div>
+</div>
+</div>
+
 <div id="project-management"></div>
 
 ## 🗂️ Project Management
@@ -55,29 +89,10 @@ title: "Research Resources"
 </div>
 </div>
 
-<div id="analysis-tools"></div>
-
-## 🔬 Analysis Tools {#analysis-tools}
-
-<div class="resource-card">
-<h3>💻 Code & Analysis</h3>
-<p>Many of our scripts written for cleaning, processing, and analyzing our data were written in R. These will be available on github to be used with our data that you can request.</p>
-
-<div class="resource-grid">
-    <div class="resource-item">
-        <h4>Code Repository</h4>
-        <p>GitHub repository with analysis scripts, data processing pipelines, and documentation.</p>
-        <a href="https://github.com/cnlab/Geoscan-public" class="resource-link" target="_blank" rel="noopener noreferrer">
-            Browse Code <span class="arrow">→</span>
-        </a>
-    </div>
-</div>
-</div>
-
 ## Additional Resources
 
 <div class="cta-container">
-<a href="{{ '/measures' | relative_url }}" class="btn btn-primary">
+<a href="{{ '/measures#surveymeasures' | relative_url }}" class="btn btn-primary">
 📊 Psychometric Measures
 </a>
 <a href="{{ '/protocol' | relative_url }}" class="btn btn-outline">

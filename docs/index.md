@@ -12,7 +12,10 @@ banner_image: assets/images/banner.jpg
 
   This study examines whether exposure to point-of-sale tobacco marketing affects smoking behavior, experiences of craving, and neural reactivity in response to different types of smoking cues, including pictures of retail outlets. If it is the case that lower exposure to point of sale tobacco marketing decreases smoking behavior, this emphasizes the importance of further regulation of retail advertising for tobacco. Examination of neural responses and craving in response to smoking cues will further provide evidence for a biological mechanism through which such effects take hold.
 
-[Visit the Communication Neuroscience Lab →](https://www.asc.upenn.edu/research/centers/communication-neuroscience-lab){: .btn .btn-outline}
+
+<a href="https://www.asc.upenn.edu/research/centers/communication-neuroscience-lab" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+      Visit the Communication Neuroscience Lab →
+    </a>
 </div>
 </div>
 

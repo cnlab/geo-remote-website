@@ -737,7 +737,8 @@ h2[id], h3[id] {
 /* ==========================================================================
    13. TEAM GRID
    ========================================================================== */
-.authors-grid {
+
+   .authors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
@@ -808,6 +809,158 @@ h2[id], h3[id] {
   margin-left: 0.3em;
 }
 
+/* ==========================================================================
+   TEAM PAGE
+   ========================================================================== */
+
+/* Hero section - collaborate + contact */
+.team-hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--light-bg);
+  border-radius: 8px;
+}
+
+.collaborate-section h2 {
+  margin-top: 0;
+  color: var(--primary);
+  text-align: center;
+}
+
+.collaborate-section p {
+  line-height: 1.7;
+}
+
+.collaborate-section a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contact-sidebar {
+  background: var(--penn-blue);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-sidebar h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-email:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.email-icon {
+  font-size: 1.2rem;
+}
+
+/* PI profiles */
+.pi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.pi-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid var(--primary);
+  text-align: center;
+}
+
+.pi-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  border: 4px solid var(--light-bg);
+}
+
+.pi-card h3 {
+  margin: 0 0 0.25rem 0;
+  color: var(--primary);
+}
+
+.pi-title {
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.pi-bio {
+  text-align: left;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Team section headers */
+.main-content > h2 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+/* Affiliation key */
+.affil-key {
+  background: var(--light-bg);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+  border-left: 4px solid var(--cofirst-color);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .team-hero {
+    grid-template-columns: 1fr;
+  }
+  
+  .pi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-hero {
+    padding: 1.5rem;
+  }
+  
+  .contact-sidebar {
+    padding: 1.5rem;
+  }
+  
+  .pi-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
 
 /* ==========================================================================
    14. TABLES

@@ -2,16 +2,21 @@
 - name: "Nicole Cooper, PhD"
   affil: [1]
   photo: "nicolecooper.jpg"
-  cofirst: true
+  role: pi
+- name: "Emily B. Falk, PhD"
+  photo: "emilyfalk.jpg"
+  affil: [1, 18, 19, 20, 21]
+  role: pi
 - name: "Benjamin Muzekari, MA"
   affil: [1]
   photo: "benmuzekari.jpg"
-  cofirst: true
+  role: graduate
 
 # Other authors
 - name: "Mary Andrews, PhD"
   photo: "maryandrews.jpg"
   affil: [2,3]
+  role: graduate
 - name: "Elizabeth Beard, PhD"
   photo: "elizabethbeard.jpg"
   affil: [4]
@@ -21,48 +26,59 @@
 - name: "José Carreras-Tartak, MBDS"
   photo: "jose.jpg"
   affil: [1]
+  role: staff
 - name: "Susan Hao, PhD"
   photo: "susanhao.jpg"
   affil: [1]
 - name: "Darin Johnson, PhD"
   photo: "darinjohnson.jpg"
   affil: [6]
+  role: graduate
 - name: "Bradley Mattan, PhD"
   photo: "bradleymattan.jpg"
   affil: [1]
 - name: "Alexandra M. Paul, BA"
   photo: "allypaul.jpg"
   affil: [1]
+  role: staff
 - name: "Anthony Resnick, BS"
   photo: "anthony.jpg"
   affil: [1]
+  role: staff
 - name: "Farah Sayed, BA"
   photo: "farahsayed.jpg"
   affil: [7]
+  role: staff
 - name: "Christin Scholz, PhD"
   photo: "christinscholz.jpg"
   affil: [8]
+  role: collaborator
 - name: "Omaya Torres-Grillo, MPH"
   photo: "omayatorres.jpg"
   affil: [1]
+  role: staff
 - name: "Ian Barnett, PhD"
   photo: "ianbarnett.jpg"
   affil: [9]
+  role: collaborator
 - name: "Michael Fichman, MCP"
   photo: "michaelfichman.jpg"
   affil: [10]
+  role: collaborator
 - name: "Lisa Henriksen, PhD"
   photo: "lisahenriksen.jpg"
   affil: [11]
+  role: collaborator
 - name: "Thomas Kirchner, PhD"
   photo: "thomaskirchner.jpg"
   affil: [12, 13]
+  role: collaborator
 - name: "David M. Lydon-Staley, PhD"
   photo: "davidlydonstaley.jpg"
   affil: [14, 15]
+  role: collaborator
 - name: "Andrew A. Strasser, PhD"
   photo: "andrewstrasser.jpg"
   affil: [1, 16, 17]
-- name: "Emily B. Falk, PhD"
-  photo: "emilyfalk.jpg"
-  affil: [1, 18, 19, 20, 21]
+  role: collaborator
+
