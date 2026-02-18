@@ -9,17 +9,6 @@ title: "Research Resources"
 <p><strong>Comprehensive Research Tools:</strong> Access all the tools, databases, and resources used in the GeoSmoking Study for data collection, analysis, and collaboration.</p>
 </div>
 
-## Quick Access 
-
-<div class="quick-access">
-<h3>🚀 Essential Tools</h3>
-<div class="quick-access-grid">
-    <a href="{{ '/resources/study-log' | relative_url }}" class="quick-access-btn">
-        📋 Study Log
-    </a>
-</div>
-</div>
-
 <div id="analysis-tools"></div>
 
 ## 🔬 Analysis Tools {#analysis-tools}
@@ -87,15 +76,4 @@ title: "Research Resources"
     </a>
 </div>
 </div>
-</div>
-
-## Additional Resources
-
-<div class="cta-container">
-<a href="{{ '/measures#surveymeasures' | relative_url }}" class="btn btn-primary">
-📊 Psychometric Measures
-</a>
-<a href="{{ '/protocol' | relative_url }}" class="btn btn-outline">
-📖 Study Protocol
-</a>
 </div>
