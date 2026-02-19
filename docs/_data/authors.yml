@@ -1,12 +1,15 @@
 # Co-first authors marked with 'cofirst: true'
-- name: "Nicole Cooper, PhD"
-  affil: [1]
-  photo: "nicolecooper.jpg"
-  role: pi
 - name: "Emily B. Falk, PhD"
   photo: "emilyfalk.jpg"
   affil: [1, 18, 19, 20, 21]
   role: pi
+  title: Principal Investigator
+- name: "Nicole Cooper, PhD"
+  affil: [1]
+  photo: "nicolecooper.jpg"
+  role: pi
+  title: Research Director
+
 - name: "Benjamin Muzekari, MA"
   affil: [1]
   photo: "benmuzekari.jpg"

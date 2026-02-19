@@ -1,9 +1,6 @@
 source "https://rubygems.org"
 
-# Jekyll version
-gem "jekyll", "~> 4.3"
-
-# GitHub Pages gem (includes most plugins)
+# Use GitHub Pages gem (includes Jekyll 3.10.0 and approved plugins)
 gem "github-pages", group: :jekyll_plugins
 
 # Additional plugins for SEO and functionality

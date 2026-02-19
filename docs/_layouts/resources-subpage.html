@@ -56,7 +56,16 @@
           <span class="nav-arrow">→</span>
         {% endif %}
       </a></li>
-      
+
+      <li><a href="{{ '/resources/visual-communication' | relative_url }}" class="nav-subpage-link">
+        <span class="nav-icon">🎨</span>
+        <span class="nav-text">Visual Communication</span>
+        {% if page.url contains '/visual-communication' %}
+          <span class="nav-current-indicator">●</span>
+        {% else %}
+          <span class="nav-arrow">→</span>
+        {% endif %}
+      </a></li>
   </nav>
 
   <!-- Main content area -->

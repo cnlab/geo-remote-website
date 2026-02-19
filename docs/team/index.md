@@ -15,9 +15,9 @@ description: Meet the researchers and collaborators from the Communication Neuro
   <div class="contact-sidebar">
     <h3>Questions?</h3>
     <p>For any questions about our research, please reach out:</p>
-    <a href="mailto:geoscan@falklab.org" class="contact-email" target="_blank" rel="noopener noreferrer">
+    <a href="mailto:{{ site.contact_email }}" class="contact-email" target="_blank" rel="noopener noreferrer">
       <span class="email-icon">✉</span>
-      geoscan@falklab.org
+      {{ site.contact_email }}
     </a>
   </div>
 </div>
@@ -32,7 +32,7 @@ description: Meet the researchers and collaborators from the Communication Neuro
       <div class="pi-card">
         <img src="{{ '/assets/images/team/' | relative_url }}{{ author.photo }}" alt="{{ author.name }}" class="pi-photo">
         <h3>{{ author.name }}</h3>
-        <p class="pi-title">Principal Investigator</p>
+        <p class="pi-title">{{ author.title }}</p>
         <p class="pi-bio">
           {% if author.name contains "Falk" %}
             Emily Falk is a professor of Communication, Psychology, Marketing, and OID at the University of Pennsylvania, where she is also the director of the Communication Neuroscience Lab, the vice dean of the Annenberg School for Communication, and the director of the Climate Communication Division of the Annenberg Public Policy Center. Falk is an expert in the science of attitude and behavior change. She is the author of "What We Value", a book on the neuroscience of choice and change.

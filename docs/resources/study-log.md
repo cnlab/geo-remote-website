@@ -15,7 +15,7 @@ description: Learn more about how our study team managed such a complex study wi
 <ul>
 <li>Our longitudinal behavioral research study successfully tracked over 300 participants through a complex multi-phase intervention using a sophisticated study log system, achieving high compliance and seamless team coordination. Our robust study log helped give us a visual overview of every participant's progress, compliance, and road-blocks. It was adaptable and provided a clear guide on the steps each participant required to ensure every participant received proper attention.</li>
 <li>We have provided below a link to a sample template of the actual study log we used, containing sample data showcasing some of the logic and abilities of our study log. We encourage researchers to use it for inspiration or as a base to help manage your own project!</li>
-<li>Please reach out with any questions you might have at 📧 <a href="mailto:geo@falklab.org">geo@falklab.org</a></li>
+<li>Please reach out with any questions you might have at 📧 <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
 </ul>
 </div>
 

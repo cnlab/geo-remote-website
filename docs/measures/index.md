@@ -11,10 +11,10 @@ description: Comprehensive list of survey instruments, ecological momentary asse
 </div>
 
 <div class="cta-container">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScs7wR7DZsrq6eC7bXC6N2KmwKU2I5fixr97h4kSfoHvTJpiQ/viewform?usp=dialog" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+<a href="{{ site.links.data_request_url }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
 📊 Request Data Sharing
 </a>
-<a href="https://cnlab.shinyapps.io/geocodebook/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+<a href="{{ site.links.codebook_url }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
 📁 Explore Interactive codebook
 </a>
 <a href="https://github.com/cnlab/Geoscan-public/tree/main/Data/Retailers" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
@@ -291,7 +291,6 @@ description: Comprehensive list of survey instruments, ecological momentary asse
             </div>
         </div>
     </div>
-
     <div class="acquisition-section">
         <h4>Acquisition Details</h4>
         <div class="param-list">

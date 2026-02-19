@@ -9,13 +9,13 @@ description: An introduction to our study and study team.
 <div class="landing-section" markdown="1">
   <span class="landing-text">How do the places we go and things we see influence the way we use our brains? For example, do neural responses to point-of-sale tobacco (POST) cues change as a function of real-world exposure to those cues over time?</span>
 
-  The Communication Neuroscience Lab at the University of Pennsylvania conducted a randomized controlled trial using real-world geolocation tracking, ecological momentary assessments, and neuroimaging to examine how exposure to tobacco retailers affects cigarette craving and smoking in daily life.
+  The {{ site.lab.name }} at the University of Pennsylvania conducted a randomized controlled trial using real-world geolocation tracking, ecological momentary assessments, and neuroimaging to examine how exposure to tobacco retailers affects cigarette craving and smoking in daily life.
 
   This study examines whether exposure to point-of-sale tobacco marketing affects smoking behavior, experiences of craving, and neural reactivity in response to different types of smoking cues, including pictures of retail outlets. If it is the case that lower exposure to point of sale tobacco marketing decreases smoking behavior, this emphasizes the importance of further regulation of retail advertising for tobacco. Examination of neural responses and craving in response to smoking cues will further provide evidence for a biological mechanism through which such effects take hold.
 
 
-<a href="https://www.asc.upenn.edu/research/centers/communication-neuroscience-lab" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-      Visit the Communication Neuroscience Lab →
+<a href="{{ site.links.lab_url }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+      Visit the {{ site.lab.name }} →
     </a>
 </div>
 </div>
@@ -146,31 +146,12 @@ Access study materials including Study Log, Lifedata documentation, and REDCap i
   </div>
 
   <div class="contact-actions">
-<button class="contact-btn contact-btn-email" onclick="copyEmail()" id="email-btn">
-  <span class="btn-icon">✉</span>
-  <span id="email-btn-text">geoscan@falklab.org</span>
-</button>
-
-<div class="copy-toast" id="copy-toast">✓ Copied to clipboard!</div>
+    <a href="mailto:{{ site.contact_email }}" class="contact-btn contact-btn-email" target="_blank" rel="noopener noreferrer">
+      <span class="btn-icon">✉</span>
+      <span>{{ site.contact_email }}</span>
+    </a>
     <a href="https://tinyurl.com/geoscan-data-request" class="contact-btn contact-btn-data" target="_blank" rel="noopener noreferrer">
-      Data Request Form ↗
+          Data Request Form ↗
     </a>
   </div>
 </div>
-
-<script>
-  function copyEmail() {
-  navigator.clipboard.writeText("geoscan@falklab.org").then(() => {
-    const btn = document.getElementById("email-btn-text");
-    const toast = document.getElementById("copy-toast");
-
-    // Update button text briefly
-    btn.textContent = "Copied!";
-    setTimeout(() => btn.textContent = "geoscan@falklab.org", 2000);
-
-    // Show toast
-    toast.classList.add("show");
-    setTimeout(() => toast.classList.remove("show"), 2500);
-  });
-}
-</script>
