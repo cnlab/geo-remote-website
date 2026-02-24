@@ -140,7 +140,7 @@ Access study materials including Study Log, Lifedata documentation, and REDCap i
 
 <div class="contact-section">
   <div class="contact-affiliation">
-    <strong>Communication Neuroscience Lab</strong><br>
+    <strong>{{ site.lab.name }}</strong><br>
     University of Pennsylvania<br>
     Annenberg School for Communication &amp; Annenberg Public Policy Center
   </div>

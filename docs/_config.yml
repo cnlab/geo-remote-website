@@ -14,17 +14,18 @@ repository: cnlab/geo-remote-website
 url: "https://cnlab.github.io"
 baseurl: "/geo-remote-website"
 
-# Contact
-contact_email: lab.manager@falklab.com
+
 
 # Author/Organization
 author:
   name: Communication Neuroscience Lab
   email: geoscan@falklab.org
   url: https://www.asc.upenn.edu/research/centers/communication-neuroscience-lab
+
 lab: 
   name: Communication Neuroscience Lab
-
+# Contact
+contact_email: lab.manager@falklab.com
 
 # External Links
 links:
