@@ -45,6 +45,14 @@
   photo: "jose.jpg"
   affil: [1]
   role: staff
+- name: "Steven Mesquiti"
+  photo: "stevenmesquiti.jpg"
+  affil: [22]
+  role: staff
+- name: "Christian Benitez"
+  photo: "christianbenitez.jpg"
+  affil: [1]
+  role: staff
 - name: "Susan Hao, PhD"
   photo: "susanhao.jpg"
   affil: [1]
