@@ -24,7 +24,14 @@ description: Access study materials, data codebooks, analysis scripts, and docum
         <p>GitHub repository with analysis scripts, data processing pipelines, and documentation.</p>
         <a href="https://github.com/cnlab/Geoscan-public" class="resource-link" target="_blank" rel="noopener noreferrer">
             Browse Code <span class="arrow">→</span>
-        </a>
+        </a> 
+        <br>
+        &nbsp;&nbsp;&nbsp;🧠 <a href="https://github.com/cnlab/Geoscan-public/tree/main/Scripts/fMRI%20Pipeline/scripts" target="_blank" rel="noopener noreferrer" class="resource-link">fMRI Pipeline <span class="arrow">→</span></a>
+        <br>
+        &nbsp;&nbsp;&nbsp;🗺️ <a href="https://github.com/cnlab/Geoscan-public/tree/main/Data/Retailers" target="_blank" rel="noopener noreferrer" class="resource-link">Tobacco Retailers Database <span class="arrow">→</span></a>
+        <br>
+        &nbsp;&nbsp;&nbsp;📝 <a href="https://github.com/cnlab/Geoscan-public/tree/main/Data/Qualtrics%20Surveys" target="_blank" rel="noopener noreferrer" class="resource-link">Qualtrics Surveys <span class="arrow">→</span></a>
+
     </div>
     <div class="resource-item">
         <h4>Psychometric Measures</h4>
