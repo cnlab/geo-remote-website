@@ -13,14 +13,14 @@ description: Visual health communication strategies created by Omaya Torres-Gril
 
 <div class="method-card">
   <h3>Project Background</h3>
-  <p>This was a complex, two-part, 6-week longitudinal remote research study. To increase understanding of study procedures and reduce attrition, research coordinator <strong>Omaya Torres-Grillo</strong> created a series of visuals to help keep participants engaged and informed of the study tasks ahead of them, incorporating participant feedback as part of her MPH capstone project.</p>
+  <p>This was a complex 6-week longitudinal remote research study. To increase understanding of study procedures and reduce attrition, research coordinator <strong>Omaya Torres-Grillo</strong> created a series of visuals to help keep participants engaged and informed of the study tasks ahead of them, incorporating participant feedback as part of her MPH capstone project.</p>
 </div>
 
 ## Areas of Focus
 
 Two areas of participant frustration were specifically targeted:
 
-1. **Setting up participant phones** for location tracking
+1. **Setting up participant devices** to complete study tasks and understand study procedures  
 2. **Answering daily surveys** sent from Lifedata's RealLife Exp app
 
 ### Design Principles Applied
@@ -30,14 +30,27 @@ The graphics and instructions incorporated:
 - Non-condescending tone
 - Only relevant information (avoiding information overload)
 
-## Study Timeline Visualization
+## Participant Timeline Visualization
 
 <div style="max-width: 70%; margin: 2rem auto;">
   <img src="{{ '/assets/images/measures/study_timeline_instructions.jpg' | relative_url }}" 
-       alt="Study timeline showing app setup and usage throughout the 6-week study period"
+       alt="Timeline showing app setup and usage throughout the 6-week study period"
        style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <p class="image-caption">
     Timeline explaining how the apps on the participant's phones will be set up and used throughout the study.
+  </p>
+</div>
+
+---
+
+## Study Timeline Visualization
+
+<div style="max-width: 70%; margin: 2rem auto;">
+  <img src="{{ '/assets/images/protocol/study-design.png' | relative_url }}" 
+       alt="Timeline showing participation timeline"
+       style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <p class="image-caption">
+    Timeline explaining how long each phase of the study is, what participants do in each stage, and when they complete the online study sessions.
   </p>
 </div>
 
